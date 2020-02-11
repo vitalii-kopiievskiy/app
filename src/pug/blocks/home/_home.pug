@@ -13,10 +13,12 @@ mixin home
             .main__head.head
                 .container
                     .row
+                        .col-6.d-flex.justify-content-center.align-items-center
+                            h1.head__title We conceptualize, 
+                                | #[strong design and develop] apps that people love
+                            
                         .col-6
-                            h1.head__title WE CONCEPTUALIZE, DESIGN AND DEVELOP APPS THAT PEOPLE LOVE
-                        .col-6
-                            img.head__image(src="https://www.sparkleappz.com/wp-content/uploads/2019/12/banner_img.png", alt="header image")
+                            img.img-fluid.head__image(src="https://www.sparkleappz.com/wp-content/uploads/2019/12/banner_img.png", alt="header image")
 
         section
             .main__work.work
@@ -25,7 +27,8 @@ mixin home
                         .col-12
                             h2.work__title We love
                             h3.work__subtitle What we do
-                            p.work__text #[a(href="#") Sparkle Appz] values their customers and strives to deliver software applications for them. These solutions help enterprises and clients increase productivity and facilitate workflow management. We focus to deliver our expertise to our clients within time and make sure that our solutions be aesthetic, technically functional, user-friendly and responsive.
+                            p.work__text #[a.work__link(href="#") Sparkle Appz] values their customers and strives to deliver software applications for them. These solutions help enterprises and clients increase productivity and facilitate workflow management. We focus to deliver our expertise to our clients within time and make sure that our solutions be aesthetic, technically functional, user-friendly and responsive.
+                            a.work__btn.mx-auto(href="services/contact.html") About us
  
         section
             .main__help.help
