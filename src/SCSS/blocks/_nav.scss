@@ -1,0 +1,51 @@
+.menu {
+  &-item {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #3a3a3a;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s linear;
+    &:hover {
+      color: #4169e1;
+      transition: all 0.3s linear;
+    }
+  }
+}
+.nav {
+  margin: 20px 0;
+  &-link {
+    padding-top: 14px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #2355da;
+    display: block;
+    text-align: center;
+    height: 45px;
+    width: 150px;
+    border-radius: 50px;
+    font-size: 13px;
+    color: #2355da;
+    border: 2px solid #2355da;
+    text-decoration: none;
+    transition: all 0.3s linear;
+    &:hover {
+      color: white;
+      background-color: #2355da;
+    }
+
+    &--call {
+      margin-left: 3px;
+      color: #4de55c;
+      border: 2px solid #4de55c;
+      height: 45px;
+      width: 80px;
+      &:hover {
+        background-color: #4de55c;
+      }
+    }
+  }
+}

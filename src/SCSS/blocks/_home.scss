@@ -1,3 +1,23 @@
+.header {
+  background-color: #f9fafd;
+}
 .headline {
-  background-color: #fff;
+  margin: 8px 0;
+  &__link {
+    padding: 8px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s linear;
+    &:hover {
+      color: rgb(65, 65, 247);
+      transition: all 0.3s linear;
+    }
+  }
+  &__icon {
+    font-size: 12px;
+    padding-right: 2px;
+  }
 }
