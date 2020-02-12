@@ -61,3 +61,29 @@ new Swiper('.portfolio__slider', {
   //   el: '.swiper-scrollbar'
   // }
 });
+
+let nav = document.querySelector('.nav');
+document.addEventListener('scroll', function() {
+  if (window.pageYOffset >= 4) {
+    nav.classList.add('scroll');
+  } else {
+    nav.classList.remove('scroll');
+  }
+});
+
+// Выпадающее меню пункта service
+$(function() {
+  $('#menu li#sub__menu ul').hide();
+  // $('#menu li#sub__menu').hover(
+  //   function() {
+  //     $(this)
+  //       .find('ul')
+  //       .slideDown();
+  //   },
+  //   function() {
+  //     $(this)
+  //       .find('ul')
+  //       .slideUp('fast');
+  //   }
+  // );
+});

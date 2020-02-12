@@ -8,16 +8,27 @@
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s linear;
+
     &:hover {
       color: #4169e1;
       transition: all 0.3s linear;
+      text-decoration: none;
     }
+  }
+  &__icon {
+    font-size: 9px;
   }
 }
 .nav {
-  margin: 20px 0;
+  background-color: white;
+  // position: sticky;
+  top: 0;
+  z-index: 100;
+  &__item {
+    padding-top: 16px;
+  }
   &-link {
-    padding-top: 14px;
+    padding-top: 11px;
     font-family: 'Varela Round', sans-serif;
     font-size: 13px;
     font-weight: 600;
@@ -48,4 +59,8 @@
       }
     }
   }
+}
+.scroll {
+  margin-top: -80px;
+  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.16);
 }
