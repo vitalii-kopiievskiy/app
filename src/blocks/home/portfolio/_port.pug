@@ -1,28 +1,24 @@
 section
-    .main__port
+    .main__portfolio.portfolio
         .container
             .row
-                .col-6
-                    .port__link
-                        a.port-link(href="#")
-                            img.port__image(src="https://www.sparkleappz.com/wp-content/uploads/2019/05/IG-Cleaner_inner.jpg", alt="IG Cleaner inner")
-                            h3.port__title IG Cleaner inner
-                .col-6
-                    .port__link
-                        a.port-link(href="")
-                            img.port__image(src="https://www.sparkleappz.com/wp-content/uploads/2019/05/Nomadic-Wall_inner.jpg", alt="Nomadic Wall inner")
-                            h3.port__title Nomadic Wall inner
-                .col-6
-                    .port__link
-                        a.port-link(href="")
-                            img.w-100.port__image(src="https://www.sparkleappz.com/wp-content/uploads/2019/05/Keezi-Keyboards-Free_inner.jpg", alt="Keezi Keyboards Free inner")
-                            h3.port__title Keezi Keyboards Free inner
-                .col-6
-                    .port__link
-                        a.port-link(href="")
-                            img.w-100.port__image(src="https://www.sparkleappz.com/wp-content/uploads/2019/05/hidephoto-inner.jpg", alt="")
-                            h3.port__title
                 .col-12
-                    .port__btn
-                        a.port-btn(href="") Check out other Projects
-                            i.fas.fa-long-arrow-alt-right
+                    h2.portfolio__title Portfolio
+            .row.d-flex.justify-content-center
+                .col-10
+                    .portfolio__slider.swiper-container
+                        .portfolio__wrapper.swiper-wrapper
+                            
+                            .portfolio__slide.swiper-slide
+                                img.portfolio__image(src="https://www.sparkleappz.com/wp-content/uploads/2019/05/Nomadic-Wall_inner.jpg", alt="Nomadic Wall inner")
+                            .portfolio__slide.swiper-slide
+                                img.portfolio__image(src="https://www.sparkleappz.com/wp-content/uploads/2019/05/Keezi-Keyboards-Free_inner.jpg", alt="Keezi Keyboards Free inner")
+                            .portfolio__slide.swiper-slide
+                                img.portfolio__image(src="https://www.sparkleappz.com/wp-content/uploads/2019/05/hidephoto-inner.jpg", alt="")
+                            
+                .col-3.mt-2.d-flex.justify-content-center
+                    .portfolio__pagination.mx-auto.swiper-pagination.d-flex.justify-content-between.align-items-center
+            .row
+                .col-3.mx-auto
+                    a.portfolio__btn.mx-auto(href="portfolio.html") Chek Out Other Project
+                        i.portfolio__icon.fas.fa-long-arrow-alt-right

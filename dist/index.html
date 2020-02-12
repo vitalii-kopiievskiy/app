@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Montserrat:300,400,500,700|Poppins:400,700|Varela+Round&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"/>
     <title>sparkleappz.com</title>
   </head>
 </html>
@@ -197,35 +199,57 @@
           <div class="row">
             <div class="col-12">
               <h2 class="partners__title">Who we`ve worked with</h2>
-              <div class="partners__slider"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10 mx-auto order-2">
+              <div class="partners__slider swiper-container">
+                <div class="partners__wrapper swiper-wrapper">
+                  <div class="partners__slide swiper-slide"><img class="partners__image" src="https://www.sparkleappz.com/wp-content/uploads/2020/01/1.png" alt="slide 1"/></div>
+                  <div class="partners__slide swiper-slide"><img class="partners__image" src="https://www.sparkleappz.com/wp-content/uploads/2020/01/3.png" alt="slide 2"/></div>
+                  <div class="partners__slide swiper-slide"><img class="partners__image" src="https:www.sparkleappz.com/wp-content/uploads/2020/01/4.png" alt="slide 3"/></div>
+                  <div class="partners__slide swiper-slide"><img class="partners__image" src="https:www.sparkleappz.com/wp-content/uploads/2020/01/5.png" alt="slide 4"/></div>
+                  <div class="partners__slide swiper-slide"><img class="partners__image" src="https:www.sparkleappz.com/wp-content/uploads/2020/01/6.png" alt="slide 5"/></div>
+                  <div class="partners__slide swiper-slide"><img class="partners__image" src="https:www.sparkleappz.com/wp-content/uploads/2020/01/7.png" alt="slide 6"/></div>
+                  <div class="partners__slide swiper-slide"><img class="partners__image" src="https:www.sparkleappz.com/wp-content/uploads/2020/01/8.png" alt="slide 7"/></div>
+                  <div class="partners__slide swiper-slide"><img class="partners__image" src="https:www.sparkleappz.com/wp-content/uploads/2020/01/9.png" alt="slide 8"/></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-1 order-3">  
+              <div class="partners__button d-flex justify-content-center"><i class="partners__icon-next fas fa-chevron-right"></i></div>
+            </div>
+            <div class="col-1 order-1">   
+              <div class="partners__button d-flex justify-content-center"><i class="partners__icon-prev fas fa-chevron-left"></i></div>
             </div>
           </div>
         </div>
       </div>
     </section>
     <section>
-      <div class="main__port">
+      <div class="main__portfolio portfolio">
         <div class="container">
           <div class="row">
-            <div class="col-6">
-              <div class="port__link"><a class="port-link" href="#"><img class="port__image" src="https://www.sparkleappz.com/wp-content/uploads/2019/05/IG-Cleaner_inner.jpg" alt="IG Cleaner inner"/>
-                  <h3 class="port__title">IG Cleaner inner</h3></a></div>
-            </div>
-            <div class="col-6">
-              <div class="port__link"><a class="port-link" href=""><img class="port__image" src="https://www.sparkleappz.com/wp-content/uploads/2019/05/Nomadic-Wall_inner.jpg" alt="Nomadic Wall inner"/>
-                  <h3 class="port__title">Nomadic Wall inner</h3></a></div>
-            </div>
-            <div class="col-6">
-              <div class="port__link"><a class="port-link" href=""><img class="w-100 port__image" src="https://www.sparkleappz.com/wp-content/uploads/2019/05/Keezi-Keyboards-Free_inner.jpg" alt="Keezi Keyboards Free inner"/>
-                  <h3 class="port__title">Keezi Keyboards Free inner</h3></a></div>
-            </div>
-            <div class="col-6">
-              <div class="port__link"><a class="port-link" href=""><img class="w-100 port__image" src="https://www.sparkleappz.com/wp-content/uploads/2019/05/hidephoto-inner.jpg" alt=""/>
-                  <h3 class="port__title"></h3></a></div>
-            </div>
             <div class="col-12">
-              <div class="port__btn"><a class="port-btn" href="">Check out other Projects<i class="fas fa-long-arrow-alt-right"></i></a></div>
+              <h2 class="portfolio__title">Portfolio</h2>
             </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-10">
+              <div class="portfolio__slider swiper-container">
+                <div class="portfolio__wrapper swiper-wrapper">
+                  <div class="portfolio__slide swiper-slide"><img class="portfolio__image" src="https://www.sparkleappz.com/wp-content/uploads/2019/05/Nomadic-Wall_inner.jpg" alt="Nomadic Wall inner"/></div>
+                  <div class="portfolio__slide swiper-slide"><img class="portfolio__image" src="https://www.sparkleappz.com/wp-content/uploads/2019/05/Keezi-Keyboards-Free_inner.jpg" alt="Keezi Keyboards Free inner"/></div>
+                  <div class="portfolio__slide swiper-slide"><img class="portfolio__image" src="https://www.sparkleappz.com/wp-content/uploads/2019/05/hidephoto-inner.jpg" alt=""/></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 mt-2 d-flex justify-content-center">
+              <div class="portfolio__pagination mx-auto swiper-pagination d-flex justify-content-between align-items-center"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3 mx-auto"><a class="portfolio__btn mx-auto" href="portfolio.html">Chek Out Other Project<i class="portfolio__icon fas fa-long-arrow-alt-right"></i></a></div>
           </div>
         </div>
       </div>
@@ -614,6 +638,8 @@
       </div>
     </footer>
   </main>
+  <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="https://kit.fontawesome.com/b7ba7defb8.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
