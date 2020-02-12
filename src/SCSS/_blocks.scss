@@ -1,5 +1,8 @@
-@import './blocks/home.scss';
-@import './blocks/nav.scss';
+@import '../blocks/home/home.scss';
+@import '../blocks/home/nav/nav.scss';
+@import '../blocks/home/head/head.scss';
+@import '../blocks/home/work/work.scss';
+@import '../blocks/home/help/help.scss';
 // @import './blocks/about.scss';
 // @import './blocks/services.scss';
 // @import './blocks/portfolio.scss';

@@ -1,0 +1,17 @@
+.help {
+  color: white;
+  background-image: url('https://www.sparkleappz.com/wp-content/uploads/2019/12/blue_img-2.png');
+  &__title {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__text {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: inherit;
+  }
+}

@@ -3315,6 +3315,55 @@ html {
     font-size: 12px;
     padding-right: 2px; }
 
+.menu-item {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 14px;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #3a3a3a;
+  font-weight: 600;
+  text-decoration: none;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+  .menu-item:hover {
+    color: #4169e1;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+
+.nav {
+  margin: 20px 0; }
+  .nav-link {
+    padding-top: 14px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #2355da;
+    display: block;
+    text-align: center;
+    height: 45px;
+    width: 150px;
+    border-radius: 50px;
+    font-size: 13px;
+    color: #2355da;
+    border: 2px solid #2355da;
+    text-decoration: none;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+    .nav-link:hover {
+      color: white;
+      background-color: #2355da; }
+    .nav-link--call {
+      margin-left: 3px;
+      color: #4de55c;
+      border: 2px solid #4de55c;
+      height: 45px;
+      width: 80px; }
+      .nav-link--call:hover {
+        background-color: #4de55c; }
+
 .head__title {
   font-family: 'Montserrat', sans-serif;
   font-size: 40px;
@@ -3376,51 +3425,17 @@ html {
       background-color: #fff;
       border: 1px solid #3425f4; }
 
-.menu-item {
-  font-family: 'Varela Round', sans-serif;
-  font-size: 14px;
-  line-height: 56px;
-  text-transform: uppercase;
-  color: #3a3a3a;
-  font-weight: 600;
-  text-decoration: none;
-  -webkit-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear; }
-  .menu-item:hover {
-    color: #4169e1;
-    -webkit-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-    transition: all 0.3s linear; }
-
-.nav {
-  margin: 20px 0; }
-  .nav-link {
-    padding-top: 14px;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 13px;
-    font-weight: 600;
-    color: #2355da;
-    display: block;
+.help {
+  color: white;
+  background-image: url("https://www.sparkleappz.com/wp-content/uploads/2019/12/blue_img-2.png"); }
+  .help__title {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 42px;
+    line-height: 42px;
     text-align: center;
-    height: 45px;
-    width: 150px;
-    border-radius: 50px;
-    font-size: 13px;
-    color: #2355da;
-    border: 2px solid #2355da;
-    text-decoration: none;
-    -webkit-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-    transition: all 0.3s linear; }
-    .nav-link:hover {
-      color: white;
-      background-color: #2355da; }
-    .nav-link--call {
-      margin-left: 3px;
-      color: #4de55c;
-      border: 2px solid #4de55c;
-      height: 45px;
-      width: 80px; }
-      .nav-link--call:hover {
-        background-color: #4de55c; }
+    text-transform: uppercase; }
+  .help__text {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: inherit; }
