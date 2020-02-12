@@ -8343,7 +8343,7 @@ a.text-dark:hover, a.text-dark:focus {
 .main {
   font-family: 'Lora', serif; }
 
-.service__title, .partners__title, .portfolio__title {
+.service__title, .partners__title, .portfolio__title, .process__title {
   margin-top: 90px;
   font-family: "Poppins", sans-serif;
   font-size: 42px;
@@ -8352,7 +8352,7 @@ a.text-dark:hover, a.text-dark:focus {
   text-transform: uppercase;
   text-align: center; }
 
-.service__subtitle {
+.service__subtitle, .process__subtitle {
   font-family: "Varela Round", sans-serif;
   font-size: 22px;
   line-height: 28px;
@@ -8360,11 +8360,12 @@ a.text-dark:hover, a.text-dark:focus {
   text-transform: unset;
   color: black; }
 
-.service__text {
+.service__text, .process__number, .process__text {
   font-family: "Varela Round", sans-serif;
   font-size: 14px;
   line-height: 28px;
-  font-weight: 400; }
+  font-weight: 400;
+  color: #7a7a7a; }
 
 .work__link, .service__link {
   text-decoration: none;
@@ -8632,3 +8633,39 @@ a.text-dark:hover, a.text-dark:focus {
 
 .portfolio__icon {
   margin-left: 14px; }
+
+.process {
+  background-color: #f9fafd;
+  padding-bottom: 110px; }
+  .process__block {
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 20px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 8px -4px #000000;
+    box-shadow: 0px 0px 8px -4px #000000;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+    .process__block:hover {
+      -webkit-box-shadow: 0px 0px 16px -4px #000000;
+      box-shadow: 0px 0px 16px -4px #000000;
+      -webkit-transition: all 0.3s linear;
+      -o-transition: all 0.3s linear;
+      transition: all 0.3s linear;
+      cursor: pointer; }
+  .process__number {
+    margin-top: 38px;
+    font-size: 30px;
+    line-height: 42px;
+    color: #3a3a3a;
+    text-align: center; }
+  .process__subtitle {
+    margin-top: 30px;
+    line-height: 29px;
+    font-weight: 600;
+    pointer-events: none;
+    text-align: center; }
+  .process__text {
+    text-align: center;
+    pointer-events: none; }
