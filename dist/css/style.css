@@ -8343,19 +8343,57 @@ a.text-dark:hover, a.text-dark:focus {
 .main {
   font-family: 'Lora', serif; }
 
-.work__link {
+.service__title {
+  margin-top: 90px;
+  font-family: "Poppins", sans-serif;
+  font-size: 42px;
+  line-height: 42px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center; }
+
+.service__subtitle {
+  font-family: "Varela Round", sans-serif;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 400;
+  text-transform: unset;
+  color: black; }
+
+.service__text {
+  font-family: "Varela Round", sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400; }
+
+.work__link, .service__link {
   text-decoration: none;
   color: #007bff;
   -webkit-transition: all 0.4s linear;
   -o-transition: all 0.4s linear;
   transition: all 0.4s linear; }
-  .work__link:hover {
+  .work__link:hover, .service__link:hover {
     text-decoration: none;
     border-bottom: 1px solid #545454;
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     transition: all 0.4s;
     color: #545454; }
+
+.help__link {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  font-weight: bold; }
+  .help__link:hover {
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    color: white; }
 
 .tabs__content.active {
   display: block; }
@@ -8490,6 +8528,7 @@ a.text-dark:hover, a.text-dark:focus {
     margin-top: 77px;
     margin-bottom: 62px; }
     .work__btn:hover {
+      text-decoration: none;
       color: #3425f4;
       -webkit-transition: all 0.3s linear;
       -o-transition: all 0.3s linear;
@@ -8514,3 +8553,7 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 14px;
     line-height: 26px;
     margin-bottom: 91px; }
+
+.service__blocks {
+  margin-top: 56px;
+  margin-bottom: 110px; }

@@ -1,0 +1,18 @@
+.service {
+  &__title {
+    @extend %title-p-b;
+  }
+  &__blocks {
+    margin-top: 56px;
+    margin-bottom: 110px;
+  }
+  &__subtitle {
+    @extend %subtitle-v-r;
+  }
+  &__text {
+    @extend %text-v-r;
+  }
+  &__link {
+    @extend %link;
+  }
+}
