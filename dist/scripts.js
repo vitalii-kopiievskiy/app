@@ -1,4 +1,4 @@
-new Swiper('.partners__slider', {
+new Swiper('.tech__slider', {
   direction: 'horizontal',
   loop: true,
   spaceBetween: 40,
@@ -14,8 +14,8 @@ new Swiper('.partners__slider', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.partners__icon-prev',
-    prevEl: '.partners__icon-next'
+    nextEl: '.tech__icon-prev',
+    prevEl: '.tech__icon-next'
   }
 });
 
@@ -53,13 +53,34 @@ new Swiper('.portfolio__slider', {
   // Navigation arrows
   navigation: {
     nextEl: '.ortfolio__icon-prev',
-    prevEl: '.partners__icon-next'
+    prevEl: '.tech__icon-next'
   }
 
   // // And if we need scrollbar
   // scrollbar: {
   //   el: '.swiper-scrollbar'
   // }
+});
+
+new Swiper('.tech__slider', {
+  direction: 'horizontal',
+  loop: true,
+  spaceBetween: 40,
+  autoHeight: true,
+  speed: 1000,
+  slidesPerView: 3,
+  centeredSlides: true,
+  effect: 'slide',
+  slidesOffsetBefore: 360,
+  autoplay: {
+    delay: 2000
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.tech__icon-prev',
+    prevEl: '.tech__icon-next'
+  }
 });
 
 let nav = document.querySelector('.nav');

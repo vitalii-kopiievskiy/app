@@ -8343,7 +8343,7 @@ a.text-dark:hover, a.text-dark:focus {
 .main {
   font-family: 'Lora', serif; }
 
-.service__title, .partners__title, .portfolio__title, .process__title, .ranking__title, .clients__title, .clients__subtitle, .features__title {
+.service__title, .partners__title, .portfolio__title, .process__title, .ranking__title, .clients__title, .clients__subtitle, .features__title, .tech__title {
   margin-top: 90px;
   font-family: "Poppins", sans-serif;
   font-size: 42px;
@@ -8716,6 +8716,21 @@ a.text-dark:hover, a.text-dark:focus {
 
 .features__subtitle {
   font-weight: 600; }
+
+.tech {
+  background-color: #f9fafd; }
+  .tech__title {
+    margin-top: 90px; }
+  .tech__button {
+    color: #8c8c8c;
+    font-size: 22px;
+    margin-top: 119px;
+    cursor: pointer; }
+    .tech__button :focus {
+      outline: none; }
+  .tech__slider {
+    margin-top: 40px;
+    margin-bottom: 90px; }
 
 /*
  *  Owl Carousel - Core
