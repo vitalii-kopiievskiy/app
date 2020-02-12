@@ -1,9 +1,6 @@
 .head {
-    &__title {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 40px;
-      line-height: 64px;
-      font-weight: 500;
-      text-transform: uppercase;
-    }
+  &__title {
+    @include title($mFont, 40px, 64px, 500);
+    text-align: start;
   }
+}

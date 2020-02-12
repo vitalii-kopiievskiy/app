@@ -1,0 +1,21 @@
+@mixin title($font-family, $font-size, $line-height, $font-weight) {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+%link {
+  text-decoration: none;
+  color: #007bff;
+  transition: all 0.4s linear;
+
+  &:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #545454;
+    transition: all 0.4s;
+    color: #545454;
+  }
+}
