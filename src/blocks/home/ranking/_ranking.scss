@@ -1,0 +1,6 @@
+.ranking {
+  padding-bottom: 90px;
+  &__title {
+    @extend %title-p-b;
+  }
+}

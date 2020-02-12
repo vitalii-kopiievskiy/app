@@ -1,0 +1,43 @@
+.clients {
+  background-color: #2355da;
+  &__content {
+    color: white;
+  }
+  &__title {
+    @extend %title-p-b;
+    color: white;
+  }
+  &__img {
+    max-width: 150px;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 10px solid rgba(255, 255, 255, 0.5);
+  }
+  &__text,
+  &__comp {
+    text-align: center;
+    font-family: $mFont;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: none;
+  }
+  &__line {
+    color: white;
+    background-color: white;
+    height: 1px;
+    width: 50%;
+    border: none;
+  }
+  &__subtitle {
+    @extend %title-p-b;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 0;
+  }
+}
+
+.owl-carousel {
+  padding-bottom: 90px;
+}
