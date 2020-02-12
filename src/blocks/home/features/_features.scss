@@ -1,0 +1,21 @@
+.features {
+  &__title {
+    @extend %title-p-b;
+  }
+  &__block {
+    margin-top: 20px;
+  }
+  &__description {
+    @extend %text-v-r;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+  }
+  &__subtitle {
+    @extend %subtitle-v-r;
+    font-weight: 600;
+  }
+  &__text {
+    @extend %text-v-r;
+  }
+}

@@ -8343,7 +8343,7 @@ a.text-dark:hover, a.text-dark:focus {
 .main {
   font-family: 'Lora', serif; }
 
-.service__title, .partners__title, .portfolio__title, .process__title, .ranking__title, .clients__title, .clients__subtitle {
+.service__title, .partners__title, .portfolio__title, .process__title, .ranking__title, .clients__title, .clients__subtitle, .features__title {
   margin-top: 90px;
   font-family: "Poppins", sans-serif;
   font-size: 42px;
@@ -8352,7 +8352,7 @@ a.text-dark:hover, a.text-dark:focus {
   text-transform: uppercase;
   text-align: center; }
 
-.service__subtitle, .process__subtitle {
+.service__subtitle, .process__subtitle, .features__subtitle {
   font-family: "Varela Round", sans-serif;
   font-size: 22px;
   line-height: 28px;
@@ -8360,7 +8360,7 @@ a.text-dark:hover, a.text-dark:focus {
   text-transform: unset;
   color: black; }
 
-.service__text, .process__number, .process__text {
+.service__text, .process__number, .process__text, .features__description, .features__text {
   font-family: "Varela Round", sans-serif;
   font-size: 14px;
   line-height: 28px;
@@ -8705,6 +8705,17 @@ a.text-dark:hover, a.text-dark:focus {
 
 .owl-carousel {
   padding-bottom: 90px; }
+
+.features__block {
+  margin-top: 20px; }
+
+.features__description {
+  text-align: center;
+  color: black;
+  font-weight: 600; }
+
+.features__subtitle {
+  font-weight: 600; }
 
 /*
  *  Owl Carousel - Core
