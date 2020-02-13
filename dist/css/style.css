@@ -8343,7 +8343,7 @@ a.text-dark:hover, a.text-dark:focus {
 .main {
   font-family: 'Lora', serif; }
 
-.service__title, .partners__title, .portfolio__title, .process__title, .ranking__title, .clients__title, .clients__subtitle, .features__title, .tech__title, .industries__title {
+.service__title, .partners__title, .portfolio__title, .process__title, .ranking__title, .clients__title, .clients__subtitle, .features__title, .tech__title, .industries__title, .values__title {
   margin-top: 90px;
   font-family: "Poppins", sans-serif;
   font-size: 42px;
@@ -8360,7 +8360,7 @@ a.text-dark:hover, a.text-dark:focus {
   text-transform: unset;
   color: black; }
 
-.service__text, .process__number, .process__text, .features__description, .features__text, .industries__subtitle {
+.service__text, .process__number, .process__text, .features__description, .features__text, .industries__subtitle, .values__subtitle {
   font-family: "Varela Round", sans-serif;
   font-size: 14px;
   line-height: 28px;
@@ -8732,6 +8732,9 @@ a.text-dark:hover, a.text-dark:focus {
     margin-top: 40px;
     margin-bottom: 90px; }
 
+.industries__blocks {
+  margin-bottom: 90px; }
+
 .industries__block {
   padding: 20px;
   margin-top: 28px;
@@ -8758,6 +8761,37 @@ a.text-dark:hover, a.text-dark:focus {
   margin: 20px 0;
   text-align: center;
   font-size: 21px; }
+
+.values {
+  background-color: #f9fafd; }
+  .values__blocks {
+    margin-top: 60px;
+    padding-bottom: 120px; }
+  .values__block {
+    padding: 20px; }
+  .values__subtitle {
+    margin-top: 30px;
+    color: black;
+    font-weight: 600;
+    text-align: center; }
+  .values__image {
+    height: 75px; }
+  .values__img {
+    max-width: 75px; }
+  .values__descr {
+    font-family: "Poppins", sans-serif;
+    font-size: 21px;
+    line-height: 29px;
+    font-weight: 600;
+    margin-top: 20px; }
+  .values__txt {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #7a7a7a;
+    text-align: center;
+    margin-top: 20px; }
 
 /*
  *  Owl Carousel - Core

@@ -1,0 +1,46 @@
+.values {
+  background-color: $bg;
+
+  &__blocks {
+    margin-top: 60px;
+    padding-bottom: 120px;
+  }
+  &__block {
+    padding: 20px;
+  }
+  &__title {
+    @extend %title-p-b;
+  }
+
+  &__subtitle {
+    @extend %text-v-r;
+    margin-top: 30px;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+  }
+  &__image {
+    height: 75px;
+  }
+  &__img {
+    max-width: 75px;
+  }
+
+  &__descr {
+    font-family: $pFont;
+    font-size: 21px;
+    line-height: 29px;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+
+  &__txt {
+    font-family: $pFont;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #7a7a7a;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
