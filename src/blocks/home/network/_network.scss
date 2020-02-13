@@ -1,0 +1,15 @@
+.network {
+  &__link {
+    @extend %subtitle-v-r;
+
+    transition: all 0.3s linear;
+    &:hover {
+      color: #4169e1;
+      transition: all 0.3s linear;
+      text-decoration: none;
+    }
+  }
+  &__icon {
+    margin-right: 5px;
+  }
+}

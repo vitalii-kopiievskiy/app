@@ -1,0 +1,65 @@
+.footer {
+  background-color: $bg;
+  &__logo {
+    width: 150px;
+  }
+  &__txt {
+    font-family: $vFont;
+    font-size: 12px;
+    line-height: 22px;
+  }
+  &__txtlink {
+    @extend %link;
+  }
+  &__title {
+    font-family: $vFont;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  &__menu {
+    margin-top: 20px;
+  }
+  &__item {
+    margin-top: 20px;
+  }
+  &__link {
+    font-family: $vFont;
+    font-size: 12px;
+    line-height: 10px;
+    color: black;
+    &:hover {
+      color: #007bff;
+      text-decoration: none;
+    }
+  }
+  &__icon {
+    color: #007bff;
+    margin-right: 6px;
+    font-size: 16px;
+  }
+}
+
+.foot {
+  &__subtitle {
+    font-family: $vFont;
+    font-size: 12px;
+    line-height: 20px;
+    color: black;
+    font-weight: bold;
+  }
+  &__link {
+    font-family: $vFont;
+    font-size: 12px;
+    line-height: 20px;
+    color: black;
+    &:hover {
+      color: #007bff;
+      text-decoration: none;
+    }
+  }
+  &__icon {
+    color: #007bff;
+    font-size: 22px;
+    margin-right: 10px;
+  }
+}
