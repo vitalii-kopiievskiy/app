@@ -1,4 +1,4 @@
-new Swiper('.tech__slider', {
+new Swiper('.partners__slider', {
   direction: 'horizontal',
   loop: true,
   spaceBetween: 40,
@@ -14,8 +14,8 @@ new Swiper('.tech__slider', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.tech__icon-prev',
-    prevEl: '.tech__icon-next'
+    nextEl: '.partners__icon-prev',
+    prevEl: '.partners__icon-next'
   }
 });
 

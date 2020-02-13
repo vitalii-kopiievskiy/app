@@ -8343,7 +8343,7 @@ a.text-dark:hover, a.text-dark:focus {
 .main {
   font-family: 'Lora', serif; }
 
-.service__title, .partners__title, .portfolio__title, .process__title, .ranking__title, .clients__title, .clients__subtitle, .features__title, .tech__title {
+.service__title, .partners__title, .portfolio__title, .process__title, .ranking__title, .clients__title, .clients__subtitle, .features__title, .tech__title, .industries__title {
   margin-top: 90px;
   font-family: "Poppins", sans-serif;
   font-size: 42px;
@@ -8352,7 +8352,7 @@ a.text-dark:hover, a.text-dark:focus {
   text-transform: uppercase;
   text-align: center; }
 
-.service__subtitle, .process__subtitle, .features__subtitle {
+.service__subtitle, .process__subtitle, .features__subtitle, .industries__desc {
   font-family: "Varela Round", sans-serif;
   font-size: 22px;
   line-height: 28px;
@@ -8360,7 +8360,7 @@ a.text-dark:hover, a.text-dark:focus {
   text-transform: unset;
   color: black; }
 
-.service__text, .process__number, .process__text, .features__description, .features__text {
+.service__text, .process__number, .process__text, .features__description, .features__text, .industries__subtitle {
   font-family: "Varela Round", sans-serif;
   font-size: 14px;
   line-height: 28px;
@@ -8731,6 +8731,33 @@ a.text-dark:hover, a.text-dark:focus {
   .tech__slider {
     margin-top: 40px;
     margin-bottom: 90px; }
+
+.industries__block {
+  padding: 20px;
+  margin-top: 28px;
+  margin-right: -10px;
+  margin-left: -10px;
+  background-color: #f9fafd;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+  .industries__block:hover {
+    background-color: #c4c6cd;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+
+.industries__subtitle {
+  line-height: 26px;
+  text-align: center; }
+
+.industries__img {
+  height: 92px; }
+
+.industries__desc {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 21px; }
 
 /*
  *  Owl Carousel - Core

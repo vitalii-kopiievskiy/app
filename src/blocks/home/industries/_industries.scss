@@ -1,0 +1,32 @@
+.industries {
+  &__block {
+    padding: 20px;
+    margin-top: 28px;
+    margin-right: -10px;
+    margin-left: -10px;
+    background-color: $bg;
+    transition: all 0.3s linear;
+    &:hover {
+      background-color: #c4c6cd;
+      transition: all 0.3s linear;
+    }
+  }
+  &__title {
+    @extend %title-p-b;
+  }
+  &__subtitle {
+    @extend %text-v-r;
+    line-height: 26px;
+    text-align: center;
+  }
+  &__img {
+    height: 92px;
+  }
+
+  &__desc {
+    margin: 20px 0;
+    @extend %subtitle-v-r;
+    text-align: center;
+    font-size: 21px;
+  }
+}
