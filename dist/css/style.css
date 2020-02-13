@@ -8360,7 +8360,7 @@ a.text-dark:hover, a.text-dark:focus {
   text-transform: unset;
   color: black; }
 
-.service__text, .process__number, .process__text, .features__description, .features__text, .industries__subtitle, .values__subtitle {
+.service__text, .process__number, .process__text, .features__description, .features__text, .industries__subtitle, .values__subtitle, .form__text {
   font-family: "Varela Round", sans-serif;
   font-size: 14px;
   line-height: 28px;
@@ -8396,8 +8396,11 @@ a.text-dark:hover, a.text-dark:focus {
     transition: all 0.4s;
     color: white; }
 
-.tabs__content.active {
-  display: block; }
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0; }
 
 .header {
   background-color: #f9fafd; }
@@ -8446,8 +8449,6 @@ a.text-dark:hover, a.text-dark:focus {
 
 .nav {
   background-color: white;
-  position: -webkit-sticky;
-  position: sticky;
   top: 0;
   z-index: 100; }
   .nav__item {
@@ -8792,6 +8793,183 @@ a.text-dark:hover, a.text-dark:focus {
     color: #7a7a7a;
     text-align: center;
     margin-top: 20px; }
+
+.form {
+  background-color: #2355da; }
+  .form-group {
+    background-color: #f9fafd;
+    margin-top: 56px;
+    padding: 20px; }
+  .form-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 40px; }
+  .form__text {
+    text-align: center;
+    color: black; }
+  .form-control {
+    height: 61px;
+    border-radius: 2px;
+    border-color: none;
+    resize: none;
+    border-color: #7a7a7a1c;
+    color: #7a7a7a; }
+  .form__input {
+    margin-top: 20px;
+    font-family: "Varela Round", sans-serif;
+    font-size: 14px;
+    line-height: 26px; }
+  .form__btn {
+    font-family: "Varela Round", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 3px;
+    color: #2355da;
+    display: block;
+    text-align: center;
+    height: 45px;
+    width: 100%;
+    border-radius: 50px;
+    font-size: 13px;
+    color: #2355da;
+    border: 1px solid #2355da;
+    text-decoration: none;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    background-color: #fff; }
+    .form__btn:hover {
+      color: white;
+      background-color: #2355da; }
+
+.form-control::-webkit-input-placeholder {
+  font-family: "Varela Round", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: #7a7a7a;
+  margin-left: 10px; }
+
+.form-control::-moz-placeholder {
+  font-family: "Varela Round", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: #7a7a7a;
+  margin-left: 10px; }
+
+.form-control:-moz-placeholder {
+  font-family: "Varela Round", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: #7a7a7a;
+  margin-left: 10px; }
+
+.form-control:-ms-input-placeholder {
+  font-family: "Varela Round", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: #7a7a7a;
+  margin-left: 10px; }
+
+.form-control:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  color: #7a7a7a; }
+
+.form-control:focus::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; }
+
+.form-control:focus:-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  color: #7a7a7a; }
+
+.form-control:focus:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  color: #7a7a7a; }
+
+.form-control:-webkit-autofill {
+  font-family: "Varela Round", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: #7a7a7a;
+  padding-left: 10px;
+  -webkit-box-shadow: inset 0 0 0 50px white;
+  box-shadow: inset 0 0 0 50px white;
+  -webkit-text-fill-color: #909090; }
+
+.info {
+  margin-top: 120px; }
+  .info__title {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    text-align: left; }
+  .info__subtitle {
+    font-family: "Varela Round", sans-serif;
+    font-size: 17px;
+    line-height: 23px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    text-align: left;
+    text-transform: unset;
+    margin-top: 20px; }
+  .info__link {
+    font-family: "Varela Round", sans-serif;
+    font-size: 14px;
+    line-height: 32px;
+    color: white; }
+    .info__link:hover {
+      color: white; }
+    .info__link:hover .info__icon {
+      text-decoration: underline; }
+  .info__btn {
+    height: 60px;
+    font-family: "Varela Round", sans-serif;
+    border: 2px solid white;
+    border-radius: 50px;
+    font-size: 16px;
+    line-height: 30px;
+    color: white;
+    width: 116px;
+    padding-top: 13px;
+    -webkit-transition: 0.3s all linear;
+    -o-transition: 0.3s all linear;
+    transition: 0.3s all linear; }
+    .info__btn--width {
+      width: 160px; }
+    .info__btn:hover {
+      color: white;
+      text-decoration: none;
+      color: #2355da;
+      background-color: #fff;
+      -webkit-transition: 0.3s all linear;
+      -o-transition: 0.3s all linear;
+      transition: 0.3s all linear; }
+  .info__img {
+    width: 90px; }
 
 /*
  *  Owl Carousel - Core

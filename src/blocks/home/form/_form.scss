@@ -1,0 +1,171 @@
+.form {
+  background-color: #2355da;
+
+  &-group {
+    background-color: $bg;
+    margin-top: 56px;
+    padding: 20px;
+  }
+
+  &-title {
+    @include title($pFont, 30px, 30px, bold);
+    padding-top: 40px;
+  }
+  &__text {
+    @extend %text-v-r;
+    text-align: center;
+    color: black;
+  }
+  &-control {
+    height: 61px;
+    border-radius: 2px;
+    border-color: none;
+    resize: none;
+    border-color: #7a7a7a1c;
+    color: #7a7a7a;
+  }
+  &__input {
+    margin-top: 20px;
+    font-family: $vFont;
+    font-size: 14px;
+    line-height: 26px;
+  }
+  &__btn {
+    @include title($vFont, 16px, 16px, 400);
+    padding-top: 3px;
+    color: #2355da;
+    display: block;
+    text-align: center;
+    height: 45px;
+    width: 100%;
+    border-radius: 50px;
+    font-size: 13px;
+    color: #2355da;
+    border: 1px solid #2355da;
+    text-decoration: none;
+    transition: all 0.3s linear;
+    background-color: #fff;
+    &:hover {
+      color: white;
+      background-color: #2355da;
+    }
+  }
+}
+
+.form-control::-webkit-input-placeholder {
+  font-family: $vFont;
+  font-size: 14px;
+  line-height: 26px;
+  color: #7a7a7a;
+  margin-left: 10px;
+}
+
+.form-control::-moz-placeholder {
+  font-family: $vFont;
+  font-size: 14px;
+  line-height: 26px;
+  color: #7a7a7a;
+  margin-left: 10px;
+}
+
+.form-control:-moz-placeholder {
+  font-family: $vFont;
+  font-size: 14px;
+  line-height: 26px;
+  color: #7a7a7a;
+  margin-left: 10px;
+}
+
+.form-control:-ms-input-placeholder {
+  font-family: $vFont;
+  font-size: 14px;
+  line-height: 26px;
+  color: #7a7a7a;
+  margin-left: 10px;
+}
+
+.form-control:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: #7a7a7a;
+}
+
+.form-control:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.form-control:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: #7a7a7a;
+}
+
+.form-control:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: #7a7a7a;
+}
+
+.form-control:-webkit-autofill {
+  font-family: $vFont;
+  font-size: 14px;
+  line-height: 26px;
+  color: #7a7a7a;
+  padding-left: 10px;
+  box-shadow: inset 0 0 0 50px white;
+  -webkit-text-fill-color: #909090;
+}
+
+.info {
+  margin-top: 120px;
+  &__title {
+    @include title($pFont, 30px, 30px, bold);
+    color: white;
+    text-align: left;
+  }
+  &__subtitle {
+    @include title($vFont, 17px, 23px, bold);
+    color: white;
+    text-align: left;
+    text-transform: unset;
+    margin-top: 20px;
+  }
+  &__link {
+    font-family: $vFont;
+    font-size: 14px;
+    line-height: 32px;
+    color: white;
+    &:hover {
+      color: white;
+    }
+    &:hover .info__icon {
+      text-decoration: underline;
+    }
+  }
+  &__btn {
+    height: 60px;
+    font-family: $vFont;
+    border: 2px solid white;
+    border-radius: 50px;
+    font-size: 16px;
+    line-height: 30px;
+    color: white;
+    width: 116px;
+    padding-top: 13px;
+    transition: 0.3s all linear;
+    &--width {
+      width: 160px;
+    }
+    &:hover {
+      color: white;
+      text-decoration: none;
+      color: #2355da;
+      background-color: #fff;
+      transition: 0.3s all linear;
+    }
+  }
+  &__img {
+    width: 90px;
+  }
+}
