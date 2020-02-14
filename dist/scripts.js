@@ -150,7 +150,7 @@ $(window).scroll(function() {
   $('.achiev__number--third').animate(
     { num: 250 - 3 /* - начало */ },
     {
-      duration: 3000,
+      duration: 2000,
       step: function(num) {
         this.innerHTML = (num + 3).toFixed() + 'K+';
       }
@@ -168,4 +168,20 @@ $(window).scroll(function() {
       }
     }
   );
+});
+
+// Аккордеон
+
+$(document).ready(function() {
+  $('.accordion__head').click(function() {
+    $(this)
+      .toggleClass('in')
+      .next()
+      .slideToggle();
+    $('.accordion__head')
+      .not(this)
+      .removeClass('in')
+      .next()
+      .slideUp();
+  });
 });

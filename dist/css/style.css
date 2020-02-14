@@ -8343,7 +8343,7 @@ a.text-dark:hover, a.text-dark:focus {
 .main {
   font-family: 'Lora', serif; }
 
-.service__title, .partners__title, .portfolio__title, .process__title, .ranking__title, .clients__title, .clients__subtitle, .features__title, .tech__title, .industries__title, .values__title, .achiev__title, .history__title, .desc__title, .our__title {
+.service__title, .partners__title, .portfolio__title, .process__title, .ranking__title, .clients__title, .clients__subtitle, .features__title, .tech__title, .industries__title, .values__title, .achiev__title, .history__title, .desc__title, .our__title, .choose__title {
   margin-top: 90px;
   font-family: "Poppins", sans-serif;
   font-size: 42px;
@@ -9181,6 +9181,60 @@ a.text-dark:hover, a.text-dark:focus {
 
 .our__txt {
   margin-top: 40px; }
+
+.choose__blocks {
+  background-color: #f9fafd;
+  padding: 30px; }
+
+.choose__image {
+  background-color: #315fda;
+  margin-left: -40px; }
+
+.accordion {
+  background-color: #fff; }
+  .accordion__head {
+    cursor: pointer;
+    padding: 15px 20px;
+    border: 1px solid #f0f0f0;
+    border-bottom: none; }
+  .accordion__head .accordion__item::after {
+    content: '\f067';
+    font-family: 'FontAwesome';
+    position: absolute;
+    right: 15px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+  .accordion__head.in .accordion__item::after {
+    content: '\f068'; }
+  .accordion__num {
+    color: blue; }
+  .accordion__item {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+    color: black;
+    display: block;
+    margin-bottom: 0;
+    position: relative;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+  .accordion__txt {
+    padding: 15px 20px;
+    font-family: "Varela Round", sans-serif;
+    font-size: 12px;
+    line-height: 22px;
+    color: #545454;
+    margin-bottom: 0; }
+  .accordion__panel {
+    border: 1px solid #f0f0f0;
+    display: none;
+    border-bottom: none; }
+    .accordion__panel:last-child {
+      border-bottom: 1px solid #f0f0f0;
+      border-top: none; }
 
 /*
  *  Owl Carousel - Core
