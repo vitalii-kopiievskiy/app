@@ -1,0 +1,27 @@
+.achiev {
+  background-color: #315fda;
+  &__title {
+    @include title($pFont, 42px, 42px, bold);
+    color: white;
+    margin-top: 60px;
+  }
+  &__blocks {
+    padding-bottom: 90px;
+  }
+  &__number {
+    @include title($vFont, 70px, 70px, 400);
+    color: white;
+    display: block;
+    margin: 0 auto;
+  }
+  &__desc {
+    @include title($vFont, 19px, 47px, 400);
+    color: white;
+    text-transform: unset;
+  }
+  &__line {
+    background-color: white;
+    width: 1px;
+    height: 100%;
+  }
+}

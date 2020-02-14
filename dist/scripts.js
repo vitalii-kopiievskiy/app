@@ -120,3 +120,52 @@ $(document).ready(function() {
     items: 1
   });
 });
+
+// Block about - animate numbers
+$(window).scroll(function() {
+  $('.achiev__number--first').animate(
+    { num: 150 - 3 /* - начало */ },
+    {
+      duration: 2000,
+      step: function(num) {
+        this.innerHTML = (num + 3).toFixed() + '+';
+      }
+    }
+  );
+});
+
+$(window).scroll(function() {
+  $('.achiev__number--second').animate(
+    { num: 140 - 3 /* - начало */ },
+    {
+      duration: 2000,
+      step: function(num) {
+        this.innerHTML = (num + 3).toFixed() + '+';
+      }
+    }
+  );
+});
+
+$(window).scroll(function() {
+  $('.achiev__number--third').animate(
+    { num: 250 - 3 /* - начало */ },
+    {
+      duration: 3000,
+      step: function(num) {
+        this.innerHTML = (num + 3).toFixed() + 'K+';
+      }
+    }
+  );
+});
+
+$(window).scroll(function() {
+  $('.achiev__number--fourth').animate(
+    { num: 12 - 3 /* - начало */ },
+    {
+      duration: 2000,
+      step: function(num) {
+        this.innerHTML = (num + 3).toFixed();
+      }
+    }
+  );
+});
