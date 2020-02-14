@@ -8343,7 +8343,7 @@ a.text-dark:hover, a.text-dark:focus {
 .main {
   font-family: 'Lora', serif; }
 
-.service__title, .partners__title, .portfolio__title, .process__title, .ranking__title, .clients__title, .clients__subtitle, .features__title, .tech__title, .industries__title, .values__title, .achiev__title, .history__title, .desc__title {
+.service__title, .partners__title, .portfolio__title, .process__title, .ranking__title, .clients__title, .clients__subtitle, .features__title, .tech__title, .industries__title, .values__title, .achiev__title, .history__title, .desc__title, .our__title {
   margin-top: 90px;
   font-family: "Poppins", sans-serif;
   font-size: 42px;
@@ -8360,20 +8360,20 @@ a.text-dark:hover, a.text-dark:focus {
   text-transform: unset;
   color: black; }
 
-.service__text, .process__number, .process__text, .features__description, .features__text, .industries__subtitle, .values__subtitle, .form__text, .history__txt, .desc__txt {
+.service__text, .process__number, .process__text, .features__description, .features__text, .industries__subtitle, .values__subtitle, .form__text, .history__txt, .desc__txt, .our__txt {
   font-family: "Varela Round", sans-serif;
   font-size: 14px;
   line-height: 28px;
   font-weight: 400;
   color: #7a7a7a; }
 
-.work__link, .service__link, .footer__txtlink, .about-head__link, .history__link, .desc__link {
+.work__link, .service__link, .footer__txtlink, .about-head__link, .history__link, .desc__link, .our__link {
   text-decoration: none;
   color: #007bff;
   -webkit-transition: all 0.4s linear;
   -o-transition: all 0.4s linear;
   transition: all 0.4s linear; }
-  .work__link:hover, .service__link:hover, .footer__txtlink:hover, .about-head__link:hover, .history__link:hover, .desc__link:hover {
+  .work__link:hover, .service__link:hover, .footer__txtlink:hover, .about-head__link:hover, .history__link:hover, .desc__link:hover, .our__link:hover {
     text-decoration: none;
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
@@ -9156,6 +9156,28 @@ a.text-dark:hover, a.text-dark:focus {
   width: 1px;
   height: 100%;
   background-color: #7a7a7a; }
+
+.our__blocks {
+  margin-top: 30px; }
+
+.our__subtitle {
+  font-family: "Varela Round", sans-serif;
+  font-size: 35px;
+  line-height: 35px;
+  color: black;
+  position: relative; }
+
+.our__num {
+  margin-top: -30px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 98px;
+  line-height: 98px;
+  color: #f4f4f4;
+  position: absolute;
+  z-index: 0; }
+
+.our__txt {
+  margin-top: 40px; }
 
 /*
  *  Owl Carousel - Core
