@@ -1,9 +1,8 @@
 .achiev {
   background-color: #315fda;
   &__title {
-    @include title($pFont, 42px, 42px, bold);
+    @extend %title-p-b;
     color: white;
-    margin-top: 60px;
   }
   &__blocks {
     padding-bottom: 90px;

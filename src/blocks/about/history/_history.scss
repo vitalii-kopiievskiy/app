@@ -1,0 +1,16 @@
+.history {
+  background-color: $bg;
+  &__title {
+    @extend %title-p-b;
+  }
+  &__content {
+    margin-bottom: 160px;
+  }
+  &__txt {
+    @extend %text-v-r;
+    text-align: center;
+  }
+  &__link {
+    @extend %link;
+  }
+}
