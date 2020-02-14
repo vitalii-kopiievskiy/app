@@ -9103,6 +9103,9 @@ a.text-dark:hover, a.text-dark:focus {
 .about-head__icon {
   margin-left: 14px; }
 
+.about-head__image {
+  width: 400px; }
+
 .achiev {
   background-color: #315fda; }
   .achiev__title {
