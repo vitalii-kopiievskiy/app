@@ -1,4 +1,4 @@
-mixin head(_title, _subtitle, _txt, _txtTwo, _link, _img, _alt)
+mixin head(_title, _subtitle, _txt, _txtTwo, _link, _txtlink, _img, _alt)
     section 
         .about.about-head
             .container
@@ -8,7 +8,7 @@ mixin head(_title, _subtitle, _txt, _txtTwo, _link, _img, _alt)
                         h2.about-head__subtitle= _subtitle 
                         p.about-head__text.mt-4= _txt
                         p.about-head__text= _txtTwo
-                        a.about-head__btn.mt-5(href="portfolio.html")= _link 
+                        a.about-head__btn.mt-5(href= _link)= _txtlink
                             i.about-head__icon.fas.fa-long-arrow-alt-right
                     .col-6
                         img.img-fluid.d-block.mx-auto.about-head__image.mt-4(src= _img, alt= _alt)
