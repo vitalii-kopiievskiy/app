@@ -1,38 +1,5 @@
 @import '../blocks/head/head.scss';
 
-// Block Home
-
-@import '../blocks/home/headline/headline.scss';
-@import '../blocks/home/nav/nav.scss';
-@import '../blocks/home/head/head.scss';
-@import '../blocks/home/work/work.scss';
-@import '../blocks/home/help/help.scss';
-@import '../blocks/home/service/service.scss';
-@import '../blocks/home/partners/partners.scss';
-@import '../blocks/home/portfolio/portfolio.scss';
-@import '../blocks/home/process/process.scss';
-@import '../blocks/home/ranking/ranking.scss';
-@import '../blocks/home/clients/clients.scss';
-@import '../blocks/home/features/features.scss';
-@import '../blocks/home/technologies/technologies.scss';
-@import '../blocks/home/industries/industries.scss';
-@import '../blocks/home/values/values.scss';
-@import '../blocks/home/team/team.scss';
-@import '../blocks/home/form/form.scss';
-@import '../blocks/home/network/network.scss';
-@import '../blocks/home/footer/footer.scss';
-@import '../blocks/home/copyright/copyright.scss';
-
-// Block About
-
-@import '../blocks/about/achievements/achievements.scss';
-@import '../blocks/about/history/history.scss';
-@import '../blocks/about/description/desc.scss';
-@import '../blocks/about/our/our.scss';
-@import '../blocks/about/choose/choose.scss';
-@import '../blocks/about/form/about-form.scss';
-// @import './blocks/about.scss';
-// @import './blocks/services.scss';
-// @import './blocks/portfolio.scss';
-// @import './blocks/blog.scss';
-// @import './blocks/contact.scss';
+@import '../blocks/home/home.scss';
+@import '../blocks/about/about.scss';
+@import '../blocks/portfolio/portfolio.scss';
