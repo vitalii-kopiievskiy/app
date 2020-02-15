@@ -1,6 +1,6 @@
 
 include ../home/nav/_nav.pug
-
+include ../head/_head.pug
 <!DOCTYPE html>
     html(lang="en")
         head
@@ -16,7 +16,13 @@ include ../home/nav/_nav.pug
         body
             include ../home/headline/_headline.pug
             +nav('','nav__active')
-            include head/_head.pug
+            +head('About', 
+            'SPARKLE APPZ', 
+            'Sparkle Appz is an IT company in India, offering quality software related solutions including Mobile Application Development , SEO, Unity 3D, and Web Design and Development. We believe in “Complete Customer Satisfaction” as our definition of quality.', 
+            'We focus to deliver our expertise to our clients within time and make sure that our solutions be aesthetic, technically functional, user-friendly and responsive.',
+            'Our portfolio',
+            "https:/www.sparkleappz.com/wp-content/uploads/2020/01/slider_image.png",
+            'team')
             include achievements/_achievements.pug
             include history/_history.pug
             include description/_desc.pug

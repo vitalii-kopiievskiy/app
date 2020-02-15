@@ -8367,13 +8367,13 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: 400;
   color: #7a7a7a; }
 
-.work__link, .service__link, .footer__txtlink, .about-head__link, .history__link, .desc__link, .our__link {
+.about-head__link, .work__link, .service__link, .footer__txtlink, .history__link, .desc__link, .our__link {
   text-decoration: none;
   color: #007bff;
   -webkit-transition: all 0.4s linear;
   -o-transition: all 0.4s linear;
   transition: all 0.4s linear; }
-  .work__link:hover, .service__link:hover, .footer__txtlink:hover, .about-head__link:hover, .history__link:hover, .desc__link:hover, .our__link:hover {
+  .about-head__link:hover, .work__link:hover, .service__link:hover, .footer__txtlink:hover, .history__link:hover, .desc__link:hover, .our__link:hover {
     text-decoration: none;
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
@@ -8400,6 +8400,73 @@ a.text-dark:hover, a.text-dark:focus {
 :focus {
   outline: 0;
   outline-offset: 0; }
+
+.about-head__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 27px;
+  line-height: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  text-align: left; }
+
+.about-head__subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  text-align: left;
+  color: #7a7a7a; }
+
+.about-head__text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  text-transform: unset;
+  text-align: left;
+  color: #7a7a7a; }
+
+.about-head__btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  text-transform: unset;
+  color: #2185f5;
+  display: block;
+  width: 214px;
+  height: 46px;
+  border: 1px solid #2185f5;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  border-radius: 50px;
+  background-color: white;
+  padding-top: 14px;
+  margin-bottom: 62px;
+  -webkit-box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.16); }
+  .about-head__btn:hover {
+    text-decoration: none;
+    color: white;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    background-color: #2185f5;
+    border: 1px solid #2185f5; }
+
+.about-head__icon {
+  margin-left: 14px; }
+
+.about-head__image {
+  width: 400px; }
 
 .header {
   background-color: #f9fafd; }
@@ -9059,73 +9126,6 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: "Varela Round", sans-serif;
   font-size: 14px;
   line-height: 26px; }
-
-.about-head__title {
-  font-family: "Poppins", sans-serif;
-  font-size: 27px;
-  line-height: 35px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-  text-align: left; }
-
-.about-head__subtitle {
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  line-height: 26px;
-  font-weight: 300;
-  text-transform: uppercase;
-  text-align: center;
-  text-align: left;
-  color: #7a7a7a; }
-
-.about-head__text {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-align: center;
-  text-transform: unset;
-  text-align: left;
-  color: #7a7a7a; }
-
-.about-head__btn {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-align: center;
-  text-transform: unset;
-  color: #2185f5;
-  display: block;
-  width: 214px;
-  height: 46px;
-  border: 1px solid #2185f5;
-  -webkit-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-  border-radius: 50px;
-  background-color: white;
-  padding-top: 14px;
-  margin-bottom: 62px;
-  -webkit-box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.16);
-  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.16); }
-  .about-head__btn:hover {
-    text-decoration: none;
-    color: white;
-    -webkit-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-    background-color: #2185f5;
-    border: 1px solid #2185f5; }
-
-.about-head__icon {
-  margin-left: 14px; }
-
-.about-head__image {
-  width: 400px; }
 
 .achiev {
   background-color: #315fda; }
