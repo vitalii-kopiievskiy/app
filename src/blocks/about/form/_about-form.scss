@@ -1,0 +1,16 @@
+.form {
+  &__content {
+    margin-top: 45%;
+  }
+  &__headline {
+    @include title($pFont, 42px, 80px, bold);
+    color: white;
+  }
+  &__txt {
+    font-family: $vFont;
+    font-size: 18px;
+    line-height: 33px;
+    color: white;
+    text-align: center;
+  }
+}

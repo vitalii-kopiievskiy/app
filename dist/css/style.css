@@ -9263,6 +9263,25 @@ a.text-dark:hover, a.text-dark:focus {
       border-bottom: 1px solid #f0f0f0;
       border-top: none; }
 
+.form__content {
+  margin-top: 45%; }
+
+.form__headline {
+  font-family: "Poppins", sans-serif;
+  font-size: 42px;
+  line-height: 80px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: white; }
+
+.form__txt {
+  font-family: "Varela Round", sans-serif;
+  font-size: 18px;
+  line-height: 33px;
+  color: white;
+  text-align: center; }
+
 /*
  *  Owl Carousel - Core
  */
