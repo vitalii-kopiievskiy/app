@@ -1,3 +1,4 @@
+include ../home/nav/_nav.pug
 <!DOCTYPE html>
     html(lang="en")
         head
@@ -12,7 +13,7 @@
             title sparkleappz.com
         body
             include ../home/headline/_headline.pug
-            include ../home/nav/_nav.pug
+            +nav('','nav__active')
             include head/_head.pug
             include achievements/_achievements.pug
             include history/_history.pug
