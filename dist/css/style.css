@@ -9191,7 +9191,12 @@ a.text-dark:hover, a.text-dark:focus {
 
 .choose__image {
   background-color: #315fda;
+  height: 100%;
   margin-left: -40px; }
+
+.choose__img {
+  padding-top: 3%;
+  width: 60%; }
 
 .accordion {
   background-color: #fff; }

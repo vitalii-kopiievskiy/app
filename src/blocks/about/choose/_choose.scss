@@ -8,8 +8,12 @@
   }
   &__image {
     background-color: #315fda;
-
+    height: 100%;
     margin-left: -40px;
+  }
+  &__img {
+    padding-top: 3%;
+    width: 60%;
   }
 }
 
