@@ -1,4 +1,4 @@
-mixin nav(_class1, _class2, _class3, _class4, _class5, _class6)
+mixin nav(_c1, _c2, _c3, _c4, _c5, _c6)
     nav.nav
         .container
             .row.d-flex.align-items-center
@@ -9,11 +9,11 @@ mixin nav(_class1, _class2, _class3, _class4, _class5, _class6)
                 .col-5.offset-2
                         ul.nav__menu.menu.d-flex.justify-content-between
                             li.nav__item
-                                a.menu-item(href="index.html", class= `${_class1}`) Home  
+                                a.menu-item(href="index.html", class= `${_c1}`) Home  
                             li.nav__item
-                                a.menu-item.active(href="about.html", class= `${_class2}`) About
+                                a.menu-item.active(href="about.html", class= `${_c2}`) About
                             li.nav__item
-                                a.menu-item(href="services/services.html", class= `${_class3}`) Services
+                                a.menu-item(href="services/services.html", class= `${_c3}`) Services
                                     i.menu__icon.fas.fa-chevron-down.ml-2
                                 //- ul.down__menu.d-flex.flex-column
                                 //-     li.down__item
@@ -29,18 +29,15 @@ mixin nav(_class1, _class2, _class3, _class4, _class5, _class6)
                                 //-     li.down__item
                                 //-         a.down-item(href="contact.html") UI/UX Design Services
                             li.nav__item
-                                a.menu-item(href="portfolio.html", class= `${_class4}`) Portfolio
+                                a.menu-item(href="portfolio.html", class= `${_c4}`) Portfolio
                             li.nav__item
-                                a.menu-item(href="blog.html", class= `${_class5}`) Blog
+                                a.menu-item(href="blog.html", class= `${_c5}`) Blog
                             li.nav__item
-                                a.menu-item(href="contact.html", class= `${_class6}`) Contact
+                                a.menu-item(href="contact.html", class= `${_c6}`) Contact
                                 
                 .col-3
                     .nav__links.d-flex.justify-content-end
                         a.nav-link(href="services/contact.html") Get a free quote
                         a.nav-link.nav-link--call(href="services/contact.html") Call 
                                 i.contact-icon.fas.fa-phone
-                                
-                            
-
     hr.nav__line

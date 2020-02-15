@@ -1,0 +1,26 @@
+.team {
+  &__title {
+    @extend %title-p-b;
+  }
+  &__blocks {
+    margin-bottom: 100px;
+  }
+  &__img {
+    width: 300px;
+    border-radius: 50%;
+  }
+
+  &__subtitle {
+    font-family: $vFont;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+  }
+
+  &__desc {
+    font-family: $vFont;
+    font-size: 14px;
+    line-height: 26px;
+    color: #7a7a7a;
+  }
+}
