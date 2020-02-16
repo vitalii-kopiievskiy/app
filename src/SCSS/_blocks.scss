@@ -1,5 +1,13 @@
-@import '../blocks/head/head.scss';
-
+// General blocks
 @import '../blocks/home/home.scss';
 @import '../blocks/about/about.scss';
 @import '../blocks/portfolio/portfolio.scss';
+
+// Secondary blocks
+@import '../blocks/blocks-secondary/head/head.scss';
+@import '../blocks/blocks-secondary/partners/partners.scss';
+@import '../blocks/blocks-secondary/process/process.scss';
+@import '../blocks/blocks-secondary/ranking/ranking.scss';
+@import '../blocks/blocks-secondary/team/team.scss';
+@import '../blocks/blocks-secondary/form-second/form-second.scss';
+@import '../blocks/blocks-secondary/form/form.scss';

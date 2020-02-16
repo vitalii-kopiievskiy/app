@@ -1,5 +1,15 @@
 .projects {
   background-color: $bg;
+
+  &__title {
+    @extend %title-p-b;
+  }
+
+  &__subtitle {
+    @extend %text-v-r;
+    text-align: center;
+  }
+
   &__items {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -42,13 +52,5 @@
   &__max-item {
     grid-row: span 3;
     grid-column: span 3;
-  }
-  &__title {
-    @extend %title-p-b;
-  }
-
-  &__subtitle {
-    @extend %text-v-r;
-    text-align: center;
   }
 }
