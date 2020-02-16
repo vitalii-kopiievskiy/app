@@ -1,0 +1,60 @@
+include ../../blocks-secondary/title/_title.pug
+include ../../blocks-secondary/nav/_nav.pug
+include ../../blocks-secondary/head/_head.pug
+include ../glimpse/_glimpse.pug
+<!DOCTYPE html>
+    html(lang="en")
+        head
+            meta(charset="UTF-8")
+            meta(name="viewport", content="width=device-width, initial-scale=1.0")
+            meta(http-equiv="X-UA-Compatible", content="ie=edge")
+            link(href='https://fonts.googleapis.com/css?family=Archivo+Black|Montserrat:300,400,500,700|Poppins:400,700,900|Varela+Round&display=swap', rel='stylesheet')
+            link(rel="stylesheet", href="css/style.css")
+            //- link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh', crossorigin='anonymous')
+            link(rel='stylesheet', href='https://unpkg.com/swiper/css/swiper.css')
+            link(rel='stylesheet', href='https://unpkg.com/swiper/css/swiper.min.css')
+            title sparkleappz.com
+        body
+            include ../../blocks-secondary/headline/_headline.pug
+            +nav('','','nav__active')
+            +head('IOS APP', 
+            'DEVELOPMENT', 
+            'SparkleAppz have experience of more than 10 years in making world’s leading brands go mobile by developing inspiring apps in Apple platform. Add boost to your business needs by using our expertise in iOS app development to build beautiful, engaging and seamless app.', 
+            
+            '',
+            
+            'portfolio.html',
+            
+            'Our portfolio',
+            
+            "https:/www.sparkleappz.com/wp-content/uploads/2020/01/img_slider.png",
+            
+            'team')
+            
+            +glimpse('GLIMPSE OF WORK', 
+            
+            'We have a reputation to deliver services that are cost effective, yet quality oriented that customer expects. We have delivered beautiful, functional and fun to use apps that mesh with customer’s personal vision. Our solutions are known to be reliable and focused on customer’s business needs.',
+            
+            'We have designed advanced and beloved Apple iOS apps in a range of genres. Not only our applications pass Apple’s strict approval process, but they have also gone on to find audiences on countless iPhones and iPads around the globe.', 
+            
+            'portfolio.html', 
+            
+            'SEE OUR WORK')
+            
+            include ../../blocks-secondary/partners/_partners.pug
+            
+            include ../../blocks-secondary/form-second/_form-second.pug
+            include ../../blocks-secondary/network/_network.pug
+            include ../../blocks-secondary/footer/_footer.pug
+            include ../../blocks-secondary/copyright/_copyright.pug
+            
+        
+            script(src='https://unpkg.com/swiper/js/swiper.js')
+            script(src='https://unpkg.com/swiper/js/swiper.min.js')
+            script(src="https://kit.fontawesome.com/b7ba7defb8.js" crossorigin="anonymous")
+            script(src='https://code.jquery.com/jquery-3.4.1.slim.min.js', integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n', crossorigin='anonymous')
+            script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js', integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo', crossorigin='anonymous')
+            script(src='https://code.jquery.com/jquery-3.4.1.js', crossorigin='anonymous')
+            script(src='owl.carousel.min.js')
+            script(src="scripts.js")
+            script(src="accordeon.js")

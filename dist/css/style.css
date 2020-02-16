@@ -8788,9 +8788,9 @@ a.text-dark:hover, a.text-dark:focus {
     padding-top: 16px; }
     .nav__item:hover .submenu {
       visibility: visible;
-      -webkit-transition: all 0.5s linear;
-      -o-transition: all 0.5s linear;
-      transition: all 0.5s linear;
+      -webkit-transition: all 0.2s linear;
+      -o-transition: all 0.2s linear;
+      transition: all 0.2s linear;
       opacity: 1; }
   .nav-link {
     padding-top: 11px;
@@ -8833,9 +8833,9 @@ a.text-dark:hover, a.text-dark:focus {
   visibility: hidden;
   position: absolute;
   z-index: 100;
-  -webkit-transition: opacity 0.5s linear;
-  -o-transition: opacity 0.5s linear;
-  transition: opacity 0.5s linear;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
   opacity: 0;
   border: 1px solid #2355da;
   background-color: #fff; }
@@ -9448,6 +9448,45 @@ a.text-dark:hover, a.text-dark:focus {
     width: 100%; }
   .items__content {
     background-color: #f9fafd; }
+
+.glimpse {
+  color: white;
+  background-color: #315fda; }
+  .glimpse__title {
+    margin-top: 70px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 63px;
+    letter-spacing: 2.3px; }
+  .glimpse__txt, .glimpse__subtxt {
+    font-family: "Varela Round", sans-serif;
+    font-size: 16px;
+    line-height: 28px; }
+  .glimpse__link {
+    display: block;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 3px;
+    width: 200px;
+    height: 46px;
+    border: 2px solid white;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 50px;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+    .glimpse__link:hover {
+      text-decoration: none;
+      color: #315fda;
+      background-color: white;
+      -webkit-transition: all 0.3s linear;
+      -o-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
 
 /*
  *  Owl Carousel - Core
