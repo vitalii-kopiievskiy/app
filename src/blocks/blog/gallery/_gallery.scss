@@ -1,0 +1,52 @@
+.gallery {
+  color: white;
+  background-color: $bg;
+  padding-bottom: 170px;
+
+  &__block {
+    position: relative;
+  }
+  &__title {
+    font-family: $vFont;
+    font-size: 30px;
+    line-height: 42px;
+  }
+  &__subtitle {
+    font-family: $vFont;
+    font-size: 11px;
+    line-height: 24px;
+    letter-spacing: 1px;
+  }
+  &__txt {
+    font-family: $vFont;
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  &__link {
+    font-family: $vFont;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    color: #313131;
+    display: block;
+    width: 30%;
+    height: 36px;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 4px;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &__img {
+    width: 100%;
+  }
+  &__content {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    margin-top: 20%;
+  }
+}

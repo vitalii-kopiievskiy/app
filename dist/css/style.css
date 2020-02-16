@@ -9328,6 +9328,47 @@ a.text-dark:hover, a.text-dark:focus {
     -ms-grid-column-span: 3;
     grid-column: span 3; }
 
+.gallery {
+  color: white;
+  background-color: #f9fafd;
+  padding-bottom: 170px; }
+  .gallery__block {
+    position: relative; }
+  .gallery__title {
+    font-family: "Varela Round", sans-serif;
+    font-size: 30px;
+    line-height: 42px; }
+  .gallery__subtitle {
+    font-family: "Varela Round", sans-serif;
+    font-size: 11px;
+    line-height: 24px;
+    letter-spacing: 1px; }
+  .gallery__txt {
+    font-family: "Varela Round", sans-serif;
+    font-size: 14px;
+    line-height: 26px; }
+  .gallery__link {
+    font-family: "Varela Round", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    color: #313131;
+    display: block;
+    width: 30%;
+    height: 36px;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 4px; }
+    .gallery__link:hover {
+      text-decoration: none; }
+  .gallery__img {
+    width: 100%; }
+  .gallery__content {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    margin-top: 20%; }
+
 /*
  *  Owl Carousel - Core
  */
