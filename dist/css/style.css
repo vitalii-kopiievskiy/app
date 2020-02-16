@@ -9330,8 +9330,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .gallery {
   color: white;
-  background-color: #f9fafd;
-  padding-bottom: 170px; }
+  background-color: #eee;
+  padding-bottom: 270px; }
   .gallery__block {
     position: relative; }
   .gallery__title {
@@ -9358,7 +9358,7 @@ a.text-dark:hover, a.text-dark:focus {
     height: 36px;
     background-color: #fff;
     text-align: center;
-    padding-top: 4px; }
+    padding-top: 5px; }
     .gallery__link:hover {
       text-decoration: none; }
   .gallery__img {
@@ -9368,6 +9368,56 @@ a.text-dark:hover, a.text-dark:focus {
     z-index: 2;
     top: 0;
     margin-top: 20%; }
+
+.items {
+  color: white;
+  padding-bottom: 170px; }
+  .items__blocks {
+    margin-top: -100px; }
+  .items__title {
+    font-family: "Varela Round", sans-serif;
+    font-size: 25px;
+    line-height: 35px;
+    color: #3a3a3a; }
+  .items__subtitle {
+    font-family: "Varela Round", sans-serif;
+    font-size: 11px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: #777777; }
+  .items__txt {
+    font-family: "Varela Round", sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    color: #3a3a3a; }
+  .items__link {
+    font-family: "Varela Round", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    color: white;
+    display: block;
+    width: 20%;
+    height: 36px;
+    background-color: #3a3a3a;
+    text-align: center;
+    padding-top: 4px;
+    border: 1px solid #f9fafd;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+    .items__link:hover {
+      text-decoration: none;
+      background-color: white;
+      color: #2b2a2a;
+      border: 1px solid #2b2a2a;
+      -webkit-transition: all 0.3s linear;
+      -o-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+  .items__img {
+    width: 100%; }
+  .items__content {
+    background-color: #f9fafd; }
 
 /*
  *  Owl Carousel - Core

@@ -1,26 +1,29 @@
-.gallery {
+.items {
   color: white;
-  background-color: #eee;
-  padding-bottom: 270px;
 
-  &__block {
-    position: relative;
+  padding-bottom: 170px;
+
+  &__blocks {
+    margin-top: -100px;
   }
   &__title {
     font-family: $vFont;
-    font-size: 30px;
-    line-height: 42px;
+    font-size: 25px;
+    line-height: 35px;
+    color: #3a3a3a;
   }
   &__subtitle {
     font-family: $vFont;
     font-size: 11px;
-    line-height: 24px;
+    line-height: 20px;
     letter-spacing: 1px;
+    color: #777777;
   }
   &__txt {
     font-family: $vFont;
     font-size: 14px;
     line-height: 26px;
+    color: #3a3a3a;
   }
 
   &__link {
@@ -28,25 +31,28 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 26px;
-    color: #313131;
+    color: white;
     display: block;
-    width: 30%;
+    width: 20%;
     height: 36px;
-    background-color: #fff;
+    background-color: #3a3a3a;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 4px;
+    border: 1px solid $bg;
+    transition: all 0.3s linear;
 
     &:hover {
       text-decoration: none;
+      background-color: white;
+      color: #2b2a2a;
+      border: 1px solid #2b2a2a;
+      transition: all 0.3s linear;
     }
   }
   &__img {
     width: 100%;
   }
   &__content {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    margin-top: 20%;
+    background-color: $bg;
   }
 }

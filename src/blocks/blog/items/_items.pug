@@ -1,0 +1,26 @@
+mixin item(_title, _path, _alt)
+    .items__block()&attributes(attributes)
+        img.items__img(src= _path, alt= _alt)
+        .items__content.pl-3.pt-4.pb-5
+            h2.items__title.mt-3= _title
+            h3.items__subtitle.mt-3 DECEMBER 27, 2018 
+                span.ml-5 NO COMMENTS
+            p.items__txt.mt-3 Duis iaculis mattis rutrum. Sed iaculis magna sit amet suscipit ornare. Nulla ornare leo a tortor aliquam, quis interdum ex tempor. Quisque ultricies consequat suscipit.…
+            a.items__link(href="") Read More
+                    
+
+
+section
+    .items
+        .container
+            .items__blocks
+                .row
+                    .col-5.offset-1.mb-5
+                        +item('Sparkle Appz – Mobile App Development', 'images/blog/ios-app.jpg', 'ios app')
+                    .col-5.mb-5
+                        +item('Playful illustration', 'https://www.sparkleappz.com/wp-content/uploads/2018/12/blog05-free-img.jpg', 'blog free img1')
+                    .col-5.offset-1
+                        +item('Standardization between design tools', 'https://www.sparkleappz.com/wp-content/uploads/2018/12/blog04-free-img.jpg', 'blog free img2')
+                    .col-5
+                        +item('More adventurous colors', 'https://www.sparkleappz.com/wp-content/uploads/2018/12/blog03-free-img.jpg', 'blog free img3')
+                    
