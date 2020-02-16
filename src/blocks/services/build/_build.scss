@@ -1,0 +1,49 @@
+.build {
+  &__txt {
+    @extend %holder;
+    color: #545454;
+    text-align: center;
+  }
+  &__img {
+    width: 100%;
+  }
+
+  &__subtitle {
+    font-family: $vFont;
+    font-size: 25px;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  &__desc {
+    font-family: $vFont;
+    font-size: 16px;
+    line-height: 32px;
+    color: #bfbfbf;
+    text-align: center;
+  }
+  &__link {
+    display: block;
+    color: #4064d7;
+    font-family: $mFont;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 3px;
+    width: 274px;
+    height: 46px;
+    border: 2px solid #4064d7;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 50px;
+    transition: all 0.3s linear;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+    &:hover {
+      text-decoration: none;
+      color: white;
+      background-color: #4064d7;
+      transition: all 0.3s linear;
+    }
+  }
+}

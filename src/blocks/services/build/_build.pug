@@ -1,0 +1,21 @@
+mixin build(_title, _txt, _link, _alt, _subt, _desc, _link2, _alt2, _subt2, _desc2)
+    section
+        .build
+            .container
+                +title(_title).build__title
+                p.build__txt= _txt
+                .row.mt-5    
+                    .col-5.mx-auto
+                        .build__block
+                            img.build__img(src= _link, alt= _alt)
+                            h3.build__subtitle= _subt
+                            p.build__desc= _desc
+                    .col-5.mx-auto
+                        .build__block
+                            img.build__img(src= _link2, alt= _alt2)
+                            h3.build__subtitle= _subt2
+                            p.build__desc= _desc2
+                    .col-12
+                        a.mx-auto.mt-5.build__link(href="portfolio.html") show more projects
+
+                
