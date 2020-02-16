@@ -1,5 +1,7 @@
-include ../home/nav/_nav.pug
+include ../blocks-secondary/title/_title.pug
+include ../blocks-secondary/nav/_nav.pug
 include ../blocks-secondary/head/_head.pug
+
 <!DOCTYPE html>
     html(lang="en")
         head
@@ -13,7 +15,7 @@ include ../blocks-secondary/head/_head.pug
             link(rel='stylesheet', href='https://unpkg.com/swiper/css/swiper.min.css')
             title sparkleappz.com
         body
-            include ../home/headline/_headline.pug
+            include ../blocks-secondary/headline/_headline.pug
             +nav('','','','nav__active')
             +head('PORTFOLIO', 
             '', 

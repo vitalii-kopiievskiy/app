@@ -8343,7 +8343,7 @@ a.text-dark:hover, a.text-dark:focus {
 .main {
   font-family: 'Lora', serif; }
 
-.service__title, .portfolio__title, .clients__title, .clients__subtitle, .features__title, .tech__title, .industries__title, .values__title, .achiev__title, .history__title, .desc__title, .our__title, .choose__title, .projects__title, .partners__title, .process__title, .ranking__title, .team__title {
+.portfolio__title, .clients__title, .clients__subtitle, .features__title, .tech__title, .industries__title, .values__title, .achiev__title, .history__title, .desc__title, .our__title, .choose__title, .projects__title, .main__title, .partners__title, .process__title, .ranking__title, .team__title {
   margin-top: 90px;
   font-family: "Poppins", sans-serif;
   font-size: 42px;
@@ -8352,7 +8352,7 @@ a.text-dark:hover, a.text-dark:focus {
   text-transform: uppercase;
   text-align: center; }
 
-.service__subtitle, .features__subtitle, .industries__desc, .network__link, .process__subtitle {
+.service__subtitle, .features__subtitle, .industries__desc, .process__subtitle, .network__link {
   font-family: "Varela Round", sans-serif;
   font-size: 22px;
   line-height: 28px;
@@ -8367,13 +8367,13 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: 400;
   color: #7a7a7a; }
 
-.work__link, .service__link, .footer__txtlink, .history__link, .desc__link, .our__link, .about-head__link {
+.work__link, .service__link, .history__link, .desc__link, .our__link, .about-head__link, .footer__txtlink {
   text-decoration: none;
   color: #007bff;
   -webkit-transition: all 0.4s linear;
   -o-transition: all 0.4s linear;
   transition: all 0.4s linear; }
-  .work__link:hover, .service__link:hover, .footer__txtlink:hover, .history__link:hover, .desc__link:hover, .our__link:hover, .about-head__link:hover {
+  .work__link:hover, .service__link:hover, .history__link:hover, .desc__link:hover, .our__link:hover, .about-head__link:hover, .footer__txtlink:hover {
     text-decoration: none;
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
@@ -8400,94 +8400,6 @@ a.text-dark:hover, a.text-dark:focus {
 :focus {
   outline: 0;
   outline-offset: 0; }
-
-.header {
-  background-color: #f9fafd; }
-
-.headline {
-  margin: 8px 0; }
-  .headline__link {
-    padding: 8px;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 14px;
-    line-height: 26px;
-    text-decoration: none;
-    color: black;
-    -webkit-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-    transition: all 0.3s linear; }
-    .headline__link:hover {
-      color: #4141f7;
-      -webkit-transition: all 0.3s linear;
-      -o-transition: all 0.3s linear;
-      transition: all 0.3s linear; }
-  .headline__icon {
-    font-size: 12px;
-    padding-right: 2px; }
-
-.menu-item {
-  font-family: 'Varela Round', sans-serif;
-  font-size: 14px;
-  line-height: 56px;
-  text-transform: uppercase;
-  color: #3a3a3a;
-  font-weight: 600;
-  text-decoration: none;
-  -webkit-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear; }
-  .menu-item:hover {
-    color: #4169e1;
-    -webkit-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-    text-decoration: none; }
-
-.menu__icon {
-  font-size: 9px; }
-
-.nav {
-  background-color: white;
-  top: 0;
-  z-index: 100; }
-  .nav__item {
-    padding-top: 16px; }
-  .nav-link {
-    padding-top: 11px;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 13px;
-    font-weight: 600;
-    color: #2355da;
-    display: block;
-    text-align: center;
-    height: 45px;
-    width: 150px;
-    border-radius: 50px;
-    font-size: 13px;
-    color: #2355da;
-    border: 2px solid #2355da;
-    text-decoration: none;
-    -webkit-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-    transition: all 0.3s linear; }
-    .nav-link:hover {
-      color: white;
-      background-color: #2355da; }
-    .nav-link--call {
-      margin-left: 3px;
-      color: #4de55c;
-      border: 2px solid #4de55c;
-      height: 45px;
-      width: 80px; }
-      .nav-link--call:hover {
-        background-color: #4de55c; }
-  .nav__active {
-    color: #2355da; }
-
-.scroll {
-  margin-top: -80px;
-  -webkit-box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.16);
-  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.16); }
 
 .head__title {
   font-family: "Montserrat", sans-serif;
@@ -8741,75 +8653,6 @@ a.text-dark:hover, a.text-dark:focus {
     color: #7a7a7a;
     text-align: center;
     margin-top: 20px; }
-
-.network__link {
-  -webkit-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear; }
-  .network__link:hover {
-    color: #4169e1;
-    -webkit-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-    text-decoration: none; }
-
-.network__icon {
-  margin-right: 5px; }
-
-.footer {
-  background-color: #f9fafd; }
-  .footer__logo {
-    width: 150px; }
-  .footer__txt {
-    font-family: "Varela Round", sans-serif;
-    font-size: 12px;
-    line-height: 22px; }
-  .footer__title {
-    font-family: "Varela Round", sans-serif;
-    font-size: 20px;
-    line-height: 30px; }
-  .footer__menu {
-    margin-top: 20px; }
-  .footer__item {
-    margin-top: 20px; }
-  .footer__link {
-    font-family: "Varela Round", sans-serif;
-    font-size: 12px;
-    line-height: 10px;
-    color: black; }
-    .footer__link:hover {
-      color: #007bff;
-      text-decoration: none; }
-  .footer__icon {
-    color: #007bff;
-    margin-right: 6px;
-    font-size: 16px; }
-
-.foot__subtitle {
-  font-family: "Varela Round", sans-serif;
-  font-size: 12px;
-  line-height: 20px;
-  color: black;
-  font-weight: bold; }
-
-.foot__link {
-  font-family: "Varela Round", sans-serif;
-  font-size: 12px;
-  line-height: 20px;
-  color: black; }
-  .foot__link:hover {
-    color: #007bff;
-    text-decoration: none; }
-
-.foot__icon {
-  color: #007bff;
-  font-size: 22px;
-  margin-right: 10px; }
-
-.copyright-txt {
-  font-family: "Varela Round", sans-serif;
-  font-size: 14px;
-  line-height: 26px; }
 
 .achiev {
   background-color: #315fda; }
@@ -9331,6 +9174,163 @@ a.text-dark:hover, a.text-dark:focus {
       transition: 0.3s all linear; }
   .info__img {
     width: 90px; }
+
+.header {
+  background-color: #f9fafd; }
+
+.headline {
+  margin: 8px 0; }
+  .headline__link {
+    padding: 8px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    text-decoration: none;
+    color: black;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+    .headline__link:hover {
+      color: #4141f7;
+      -webkit-transition: all 0.3s linear;
+      -o-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+  .headline__icon {
+    font-size: 12px;
+    padding-right: 2px; }
+
+.menu-item {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 14px;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #3a3a3a;
+  font-weight: 600;
+  text-decoration: none;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+  .menu-item:hover {
+    color: #4169e1;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    text-decoration: none; }
+
+.menu__icon {
+  font-size: 9px; }
+
+.nav {
+  background-color: white;
+  top: 0;
+  z-index: 100; }
+  .nav__item {
+    padding-top: 16px; }
+  .nav-link {
+    padding-top: 11px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #2355da;
+    display: block;
+    text-align: center;
+    height: 45px;
+    width: 150px;
+    border-radius: 50px;
+    font-size: 13px;
+    color: #2355da;
+    border: 2px solid #2355da;
+    text-decoration: none;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+    .nav-link:hover {
+      color: white;
+      background-color: #2355da; }
+    .nav-link--call {
+      margin-left: 3px;
+      color: #4de55c;
+      border: 2px solid #4de55c;
+      height: 45px;
+      width: 80px; }
+      .nav-link--call:hover {
+        background-color: #4de55c; }
+  .nav__active {
+    color: #2355da; }
+
+.scroll {
+  margin-top: -80px;
+  -webkit-box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.16); }
+
+.network__link {
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+  .network__link:hover {
+    color: #4169e1;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    text-decoration: none; }
+
+.network__icon {
+  margin-right: 5px; }
+
+.footer {
+  background-color: #f9fafd; }
+  .footer__logo {
+    width: 150px; }
+  .footer__txt {
+    font-family: "Varela Round", sans-serif;
+    font-size: 12px;
+    line-height: 22px; }
+  .footer__title {
+    font-family: "Varela Round", sans-serif;
+    font-size: 20px;
+    line-height: 30px; }
+  .footer__menu {
+    margin-top: 20px; }
+  .footer__item {
+    margin-top: 20px; }
+  .footer__link {
+    font-family: "Varela Round", sans-serif;
+    font-size: 12px;
+    line-height: 10px;
+    color: black; }
+    .footer__link:hover {
+      color: #007bff;
+      text-decoration: none; }
+  .footer__icon {
+    color: #007bff;
+    margin-right: 6px;
+    font-size: 16px; }
+
+.foot__subtitle {
+  font-family: "Varela Round", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  color: black;
+  font-weight: bold; }
+
+.foot__link {
+  font-family: "Varela Round", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  color: black; }
+  .foot__link:hover {
+    color: #007bff;
+    text-decoration: none; }
+
+.foot__icon {
+  color: #007bff;
+  font-size: 22px;
+  margin-right: 10px; }
+
+.copyright-txt {
+  font-family: "Varela Round", sans-serif;
+  font-size: 14px;
+  line-height: 26px; }
 
 /*
  *  Owl Carousel - Core

@@ -1,5 +1,5 @@
-
-include ../home/nav/_nav.pug
+include ../blocks-secondary/title/_title.pug
+include ../blocks-secondary/nav/_nav.pug
 include ../blocks-secondary/head/_head.pug
 <!DOCTYPE html>
     html(lang="en")
@@ -14,7 +14,7 @@ include ../blocks-secondary/head/_head.pug
             link(rel='stylesheet', href='https://unpkg.com/swiper/css/swiper.min.css')
             title sparkleappz.com
         body
-            include ../home/headline/_headline.pug
+            include ../blocks-secondary/headline/_headline.pug
             +nav('','nav__active')
             +head('About', 
             'SPARKLE APPZ', 
@@ -34,9 +34,9 @@ include ../blocks-secondary/head/_head.pug
             include choose/_choose.pug
             include ../blocks-secondary/team/_team.pug
             include ../blocks-secondary/form-second/_form-second.pug
-            include ../home/network/_network.pug
-            include ../home/footer/_footer.pug
-            include ../home/copyright/_copyright.pug
+            include ../blocks-secondary/network/_network.pug
+            include ../blocks-secondary/footer/_footer.pug
+            include ../blocks-secondary/copyright/_copyright.pug
             
         
             script(src='https://unpkg.com/swiper/js/swiper.js')

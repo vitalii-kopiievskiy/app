@@ -4,6 +4,7 @@
 @import '../blocks/portfolio/portfolio.scss';
 
 // Secondary blocks
+@import '../blocks/blocks-secondary/title/title.scss';
 @import '../blocks/blocks-secondary/head/head.scss';
 @import '../blocks/blocks-secondary/partners/partners.scss';
 @import '../blocks/blocks-secondary/process/process.scss';
@@ -11,3 +12,8 @@
 @import '../blocks/blocks-secondary/team/team.scss';
 @import '../blocks/blocks-secondary/form-second/form-second.scss';
 @import '../blocks/blocks-secondary/form/form.scss';
+@import '../blocks/blocks-secondary/headline/headline.scss';
+@import '../blocks/blocks-secondary/nav/nav.scss';
+@import '../blocks/blocks-secondary/network/network.scss';
+@import '../blocks/blocks-secondary/footer/footer.scss';
+@import '../blocks/blocks-secondary/copyright/copyright.scss';
