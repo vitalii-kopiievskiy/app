@@ -7,6 +7,7 @@ mixin nav(_c1, _c2, _c3, _c4, _c5, _c6)
                         a(href="#home")
                             img(src="https://www.sparkleappz.com/wp-content/uploads/2019/12/logo-187x66.png", alt="logo")
                 .col-5.offset-2
+                    
                         ul.nav__menu.menu.d-flex.justify-content-between
                             li.nav__item
                                 a.menu-item(href="index.html", class= `${_c1}`) Home  
@@ -15,19 +16,21 @@ mixin nav(_c1, _c2, _c3, _c4, _c5, _c6)
                             li.nav__item
                                 a.menu-item(href="services/services.html", class= `${_c3}`) Services
                                     i.menu__icon.fas.fa-chevron-down.ml-2
-                                //- ul.down__menu.d-flex.flex-column
-                                //-     li.down__item
-                                //-         a.down-item.active(href="index.html") iOS App Development
-                                //-     li.down_item
-                                //-         a.down-item.active(href="about.html") Android App Development
-                                //-     li.down__item
-                                //-         a.down-item(href="services/services.html") Websites Development Services
-                                //-     li.down__item
-                                //-         a.down-item(href="portfolio.html") Unity 3D Game Development
-                                //-     li.down__item
-                                //-         a.down-item(href="blog.html") Digital Marketing Services
-                                //-     li.down__item
-                                //-         a.down-item(href="contact.html") UI/UX Design Services
+                                ul.nav__submenu.submenu
+                                    .row
+                                        .col-12
+                                            li.submenu__item
+                                                a.submenu-item(href="index.html") iOS App Development
+                                            li.submenu_item
+                                                a.submenu-item(href="about.html") Android App Development
+                                            li.submenu__item
+                                                a.submenu-item(href="services/services.html") Websites Development Services
+                                            li.submenu__item
+                                                a.submenu-item(href="portfolio.html") Unity 3D Game Development
+                                            li.submenu__item
+                                                a.submenu-item(href="blog.html") Digital Marketing Services
+                                            li.submenu__item
+                                                a.submenu-item(href="contact.html") UI/UX Design Services
                             li.nav__item
                                 a.menu-item(href="portfolio.html", class= `${_c4}`) Portfolio
                             li.nav__item
