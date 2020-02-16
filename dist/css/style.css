@@ -8343,7 +8343,7 @@ a.text-dark:hover, a.text-dark:focus {
 .main {
   font-family: 'Lora', serif; }
 
-.portfolio__title, .clients__title, .clients__subtitle, .features__title, .tech__title, .industries__title, .values__title, .achiev__title, .history__title, .desc__title, .our__title, .choose__title, .projects__title, .main__title, .partners__title, .process__title, .ranking__title, .team__title {
+.clients__title, .clients__subtitle, .achiev__title, .history__title, .desc__title, .choose__title, .projects__title, .main__title {
   margin-top: 90px;
   font-family: "Poppins", sans-serif;
   font-size: 42px;
@@ -8580,8 +8580,6 @@ a.text-dark:hover, a.text-dark:focus {
 
 .tech {
   background-color: #f9fafd; }
-  .tech__title {
-    margin-top: 90px; }
   .tech__button {
     color: #8c8c8c;
     font-size: 22px;
@@ -8909,8 +8907,6 @@ a.text-dark:hover, a.text-dark:focus {
 
 .partners {
   background-color: #f9fafd; }
-  .partners__title {
-    margin-top: 90px; }
   .partners__button {
     color: #8c8c8c;
     font-size: 22px;

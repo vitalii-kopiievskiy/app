@@ -2,10 +2,6 @@
   background-color: $bg;
   padding-bottom: 110px;
 
-  &__title {
-    @extend %title-p-b;
-  }
-
   &__block {
     margin-left: -10px;
     margin-right: -10px;

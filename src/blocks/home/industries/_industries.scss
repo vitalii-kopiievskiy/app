@@ -15,11 +15,6 @@
       transition: all 0.3s linear;
     }
   }
-
-  &__title {
-    @extend %title-p-b;
-  }
-
   &__subtitle {
     @extend %text-v-r;
     line-height: 26px;

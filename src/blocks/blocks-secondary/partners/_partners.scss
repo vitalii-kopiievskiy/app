@@ -1,9 +1,6 @@
 .partners {
   background-color: $bg;
-  &__title {
-    @extend %title-p-b;
-    margin-top: 90px;
-  }
+
   &__button {
     color: #8c8c8c;
     font-size: 22px;

@@ -1,10 +1,9 @@
 section
     .projects
         .container
-            .row
-                .col-12
-                    h2.projects__title OUR PORJECTS
-                    p.projects__subtitle Here is a glimpse of our notable works done, so far
+            +title('OUR PORJECTS').projects__title
+            p.projects__subtitle Here is a glimpse of our notable works done, so far
+            .row    
                 .co-12
                     .projects__items
                         a.projects__link.projects__min-item(href="javascript:void(0)")

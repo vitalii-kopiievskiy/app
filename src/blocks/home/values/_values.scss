@@ -8,9 +8,6 @@
   &__block {
     padding: 20px;
   }
-  &__title {
-    @extend %title-p-b;
-  }
 
   &__subtitle {
     @extend %text-v-r;
