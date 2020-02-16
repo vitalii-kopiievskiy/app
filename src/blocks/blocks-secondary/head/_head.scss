@@ -1,4 +1,4 @@
-.about-head {
+.main-head {
   &__title {
     @include title($pFont, 27px, 35px, bold);
     text-align: left;

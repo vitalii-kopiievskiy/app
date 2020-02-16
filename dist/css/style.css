@@ -8367,13 +8367,13 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: 400;
   color: #7a7a7a; }
 
-.work__link, .service__link, .history__link, .desc__link, .our__link, .about-head__link, .footer__txtlink {
+.work__link, .service__link, .history__link, .desc__link, .our__link, .main-head__link, .footer__txtlink {
   text-decoration: none;
   color: #007bff;
   -webkit-transition: all 0.4s linear;
   -o-transition: all 0.4s linear;
   transition: all 0.4s linear; }
-  .work__link:hover, .service__link:hover, .history__link:hover, .desc__link:hover, .our__link:hover, .about-head__link:hover, .footer__txtlink:hover {
+  .work__link:hover, .service__link:hover, .history__link:hover, .desc__link:hover, .our__link:hover, .main-head__link:hover, .footer__txtlink:hover {
     text-decoration: none;
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
@@ -8838,7 +8838,7 @@ a.text-dark:hover, a.text-dark:focus {
     -ms-grid-column-span: 3;
     grid-column: span 3; }
 
-.about-head__title {
+.main-head__title {
   font-family: "Poppins", sans-serif;
   font-size: 27px;
   line-height: 35px;
@@ -8847,7 +8847,7 @@ a.text-dark:hover, a.text-dark:focus {
   text-align: center;
   text-align: left; }
 
-.about-head__subtitle {
+.main-head__subtitle {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   line-height: 26px;
@@ -8857,7 +8857,7 @@ a.text-dark:hover, a.text-dark:focus {
   text-align: left;
   color: #7a7a7a; }
 
-.about-head__text {
+.main-head__text {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 26px;
@@ -8868,7 +8868,7 @@ a.text-dark:hover, a.text-dark:focus {
   text-align: left;
   color: #7a7a7a; }
 
-.about-head__btn {
+.main-head__btn {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 16px;
@@ -8890,7 +8890,7 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 62px;
   -webkit-box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.16);
   box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.16); }
-  .about-head__btn:hover {
+  .main-head__btn:hover {
     text-decoration: none;
     color: white;
     -webkit-transition: all 0.3s linear;
@@ -8899,10 +8899,10 @@ a.text-dark:hover, a.text-dark:focus {
     background-color: #2185f5;
     border: 1px solid #2185f5; }
 
-.about-head__icon {
+.main-head__icon {
   margin-left: 14px; }
 
-.about-head__image {
+.main-head__image {
   width: 400px; }
 
 .partners {

@@ -1,14 +1,14 @@
 mixin head(_title, _subtitle, _txt, _txtTwo, _link, _txtlink, _img, _alt)
     section 
-        .about.about-head
+        .main-head
             .container
                 .row
                     .col-6
-                        h1.about-head__title.mt-5= _title
-                        h2.about-head__subtitle= _subtitle 
-                        p.about-head__text.mt-4= _txt
-                        p.about-head__text= _txtTwo
-                        a.about-head__btn.mt-5(href= _link)= _txtlink
-                            i.about-head__icon.fas.fa-long-arrow-alt-right
+                        h1.main-head__title.mt-5= _title
+                        h2.main-head__subtitle= _subtitle 
+                        p.main-head__text.mt-4= _txt
+                        p.main-head__text= _txtTwo
+                        a.main-head__btn.mt-5(href= _link)= _txtlink
+                            i.main-head__icon.fas.fa-long-arrow-alt-right
                     .col-6
-                        img.img-fluid.d-block.mx-auto.about-head__image.mt-4(src= _img, alt= _alt)
+                        img.img-fluid.d-block.mx-auto.main-head__image.mt-4(src= _img, alt= _alt)
