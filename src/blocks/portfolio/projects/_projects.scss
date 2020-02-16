@@ -1,0 +1,50 @@
+.projects {
+  background-color: $bg;
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 2fr;
+    grid-gap: 4px;
+    margin: 25px 25px 120px;
+  }
+  &__link {
+    position: relative;
+    &:before {
+      content: 'mix music';
+      color: white;
+      width: 100%;
+      display: block;
+      position: absolute;
+      background-color: red;
+      bottom: 0;
+    }
+  }
+  &__desc {
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    top: 0;
+  }
+  &__item {
+    max-width: 100%;
+  }
+
+  &__min-image {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+
+  &__max-image {
+    grid-row: span 3;
+    grid-column: span 3;
+  }
+  &__title {
+    @extend %title-p-b;
+  }
+
+  &__subtitle {
+    @extend %text-v-r;
+    text-align: center;
+  }
+}

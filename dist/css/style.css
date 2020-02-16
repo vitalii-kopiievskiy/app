@@ -8343,7 +8343,7 @@ a.text-dark:hover, a.text-dark:focus {
 .main {
   font-family: 'Lora', serif; }
 
-.service__title, .partners__title, .portfolio__title, .process__title, .ranking__title, .clients__title, .clients__subtitle, .features__title, .tech__title, .industries__title, .values__title, .team__title, .achiev__title, .history__title, .desc__title, .our__title, .choose__title {
+.service__title, .partners__title, .portfolio__title, .process__title, .ranking__title, .clients__title, .clients__subtitle, .features__title, .tech__title, .industries__title, .values__title, .team__title, .achiev__title, .history__title, .desc__title, .our__title, .choose__title, .projects__title {
   margin-top: 90px;
   font-family: "Poppins", sans-serif;
   font-size: 42px;
@@ -8360,7 +8360,7 @@ a.text-dark:hover, a.text-dark:focus {
   text-transform: unset;
   color: black; }
 
-.service__text, .process__number, .process__text, .features__description, .features__text, .industries__subtitle, .values__subtitle, .form__text, .history__txt, .desc__txt, .our__txt {
+.service__text, .process__number, .process__text, .features__description, .features__text, .industries__subtitle, .values__subtitle, .form__text, .history__txt, .desc__txt, .our__txt, .projects__subtitle {
   font-family: "Varela Round", sans-serif;
   font-size: 14px;
   line-height: 28px;
@@ -9281,6 +9281,48 @@ a.text-dark:hover, a.text-dark:focus {
   line-height: 33px;
   color: white;
   text-align: center; }
+
+.projects {
+  background-color: #f9fafd; }
+  .projects__items {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[6];
+    grid-template-columns: repeat(6, 1fr);
+    -ms-grid-rows: 2fr;
+    grid-template-rows: 2fr;
+    grid-gap: 4px;
+    margin: 25px 25px 120px; }
+  .projects__link {
+    position: relative; }
+    .projects__link:before {
+      content: 'mix music';
+      color: white;
+      width: 100%;
+      display: block;
+      position: absolute;
+      background-color: red;
+      bottom: 0; }
+  .projects__desc {
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    top: 0; }
+  .projects__item {
+    max-width: 100%; }
+  .projects__min-image {
+    -ms-grid-row-span: 2;
+    grid-row: span 2;
+    -ms-grid-column-span: 2;
+    grid-column: span 2; }
+  .projects__max-image {
+    -ms-grid-row-span: 3;
+    grid-row: span 3;
+    -ms-grid-column-span: 3;
+    grid-column: span 3; }
+  .projects__subtitle {
+    text-align: center; }
 
 /*
  *  Owl Carousel - Core
