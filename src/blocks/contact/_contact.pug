@@ -1,24 +1,44 @@
-include _con.pug
-
+include ../blocks-secondary/title/_title.pug
+include ../blocks-secondary/nav/_nav.pug
+include ../blocks-secondary/head/_head.pug
 <!DOCTYPE html>
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        link(href='https://fonts.googleapis.com/css?family=Lora|Merriweather&display=swap', rel='stylesheet')
-        link(rel="stylesheet", href="css/style.css")
-        //- link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh', crossorigin='anonymous')
-        title Ann Popova
+    html(lang="en")
+        head
+            meta(charset="UTF-8")
+            meta(name="viewport", content="width=device-width, initial-scale=1.0")
+            meta(http-equiv="X-UA-Compatible", content="ie=edge")
+            link(href='https://fonts.googleapis.com/css?family=Archivo+Black|Montserrat:300,400,500,700|Poppins:400,700,900|Varela+Round&display=swap', rel='stylesheet')
+            link(rel="stylesheet", href="css/style.css")
+            //- link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh', crossorigin='anonymous')
+            link(rel='stylesheet', href='https://unpkg.com/swiper/css/swiper.css')
+            link(rel='stylesheet', href='https://unpkg.com/swiper/css/swiper.min.css')
+            title sparkleappz.com
+        body
+            include ../blocks-secondary/headline/_headline.pug
+            +nav('','','','','','nav__active')
+            +head('CONTACT US', 
+            '', 
+            'Sparkle Appz, an app development Indian company in Jodhpur, is a broad spectrum organization involved in creating world-class custom application software & website solutions. Our mission is to offer custom software solutions and build niche market products that will allow the company to deploy faster go to market solutions for its clients. We will be pleased to see in our network, We always care about our customer, and never let our customer worry about anything.', 
+            'If you have any ideas or if you want to bring your business to grow, get in touch with us and we help you to bring your ideas and needs to life. You can also visit us in our Paota, Jodhpur office at the address given below.',
+            'portfolio.html',
+            'Check out Our portfolio',
+            "https:/www.sparkleappz.com/wp-content/uploads/2020/01/map_bg-1.png",
+            'map')
+            
+            include ../blocks-secondary/form/_form.pug
+            include ../blocks-secondary/partners/_partners.pug
+            include ../home/clients/_clients.pug
+            include ../blocks-secondary/network/_network.pug
+            include ../blocks-secondary/footer/_footer.pug
+            include ../blocks-secondary/copyright/_copyright.pug
+            
         
-    body 
-        
-        +con
-        include ../main/_footer.pug
-
-        script(src="https://kit.fontawesome.com/b7ba7defb8.js" crossorigin="anonymous")
-        script(src='https://code.jquery.com/jquery-3.4.1.slim.min.js', integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n', crossorigin='anonymous')
-        script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js', integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo', crossorigin='anonymous')
-        script(src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous")
-        //- script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js', integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6', crossorigin='anonymous')
-        script(src="scripts.js")
+            script(src='https://unpkg.com/swiper/js/swiper.js')
+            script(src='https://unpkg.com/swiper/js/swiper.min.js')
+            script(src="https://kit.fontawesome.com/b7ba7defb8.js" crossorigin="anonymous")
+            script(src='https://code.jquery.com/jquery-3.4.1.slim.min.js', integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n', crossorigin='anonymous')
+            script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js', integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo', crossorigin='anonymous')
+            script(src='https://code.jquery.com/jquery-3.4.1.js', crossorigin='anonymous')
+            script(src='owl.carousel.min.js')
+            script(src="scripts.js")
+            script(src="accordeon.js")
