@@ -9295,28 +9295,36 @@ a.text-dark:hover, a.text-dark:focus {
     margin: 25px 25px 120px; }
   .projects__link {
     position: relative; }
-    .projects__link:before {
-      content: 'mix music';
-      color: white;
-      width: 100%;
-      display: block;
-      position: absolute;
-      background-color: red;
-      bottom: 0; }
+    .projects__link:hover .projects__desc {
+      -webkit-transition: bottom 0.2s linear;
+      -o-transition: bottom 0.2s linear;
+      transition: bottom 0.2s linear;
+      bottom: 0;
+      opacity: 1; }
   .projects__desc {
+    display: bolck;
     position: absolute;
-    display: block;
-    background-color: #fff;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
     width: 100%;
-    top: 0; }
-  .projects__item {
+    height: 36px;
+    z-index: 0;
+    left: 0;
+    bottom: -36px;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    padding-left: 10px;
+    padding-top: 4px;
+    opacity: 0; }
+  .projects__img {
     max-width: 100%; }
-  .projects__min-image {
+  .projects__min-item {
     -ms-grid-row-span: 2;
     grid-row: span 2;
     -ms-grid-column-span: 2;
     grid-column: span 2; }
-  .projects__max-image {
+  .projects__max-item {
     -ms-grid-row-span: 3;
     grid-row: span 3;
     -ms-grid-column-span: 3;
