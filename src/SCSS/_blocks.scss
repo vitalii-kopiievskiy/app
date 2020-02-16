@@ -1,8 +1,3 @@
-// General blocks
-@import '../blocks/home/home.scss';
-@import '../blocks/about/about.scss';
-@import '../blocks/portfolio/portfolio.scss';
-
 // Secondary blocks
 @import '../blocks/blocks-secondary/title/title.scss';
 @import '../blocks/blocks-secondary/head/head.scss';
@@ -17,3 +12,9 @@
 @import '../blocks/blocks-secondary/network/network.scss';
 @import '../blocks/blocks-secondary/footer/footer.scss';
 @import '../blocks/blocks-secondary/copyright/copyright.scss';
+
+// General blocks
+@import '../blocks/home/home.scss';
+@import '../blocks/about/about.scss';
+@import '../blocks/portfolio/portfolio.scss';
+@import '../blocks/blog/blog.scss';
