@@ -1,0 +1,93 @@
+include ../../blocks-secondary/title/_title.pug
+include ../../blocks-secondary/nav/_nav.pug
+include ../../blocks-secondary/head/_head.pug
+include ../glimpse/_glimpse.pug
+include ../build/_build.pug
+include ../development/_development.pug
+include ../questions/_questions.pug
+
+<!DOCTYPE html>
+    html(lang="en")
+        head
+            meta(charset="UTF-8")
+            meta(name="viewport", content="width=device-width, initial-scale=1.0")
+            meta(http-equiv="X-UA-Compatible", content="ie=edge")
+            link(href='https://fonts.googleapis.com/css?family=Archivo+Black|Montserrat:300,400,500,700|Poppins:400,700,900|Varela+Round&display=swap', rel='stylesheet')
+            link(rel="stylesheet", href="css/style.css")
+            //- link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh', crossorigin='anonymous')
+            link(rel='stylesheet', href='https://unpkg.com/swiper/css/swiper.css')
+            link(rel='stylesheet', href='https://unpkg.com/swiper/css/swiper.min.css')
+            title sparkleappz.com
+        body
+            include ../../blocks-secondary/headline/_headline.pug
+            +nav('','','nav__active')
+           
+            +head('UNITY 3D GAME', 
+                'DEVELOPMENT', 
+                'Apart from mobile app development on iOS and Android platforms, our company is also an expertise in mobile gaming development using Unity 3D. We have successfully designed and developed multiple successful 3D graphics, imaging, and visualization application for our customers.Our game developers ensure that they give their best to deliver top notch 2D and 3D games. We make sure that we deliver thrilling games that have awesome graphics and unbeatable performance level.', 
+                '',
+                'portfolio.html',
+                'Our portfolio',
+                "https://www.sparkleappz.com/wp-content/uploads/2020/01/img_slider-3.png",
+                'unity 3D'
+                )
+            
+            +glimpse('GLIMPSE OF WORK', 
+                'As experienced development experts and solution providers, we have developed custom solutions for websites, e-commerce stores.',
+            
+                'From front-end to all back-end admin panels and management systems, we provide mobile responsive solutions. Based on your business needs, we advise you on the right web solution.', 
+            
+                'portfolio.html', 
+                'SEE OUR WORK'
+                )
+            
+            +build('BUILD WEBSITE FOR ANY BUSINESS',
+                'We proudly flaunt a professional team of skilled web developers who portray expertise in developing high-end web applications. We have the expertise to develop the web projects for various industries with different business requirements. We handle everything from a small business site to an enterprise level application. We develop websites that offer good usability that provides seamless experience to the visitors and improves your chances of success.',
+                
+                'https://www.sparkleappz.com/wp-content/uploads/2019/06/Screenshot-2019-06-12-at-8.01.03-PM.png',
+                'North Rex Apps',
+                'North Rex Apps',
+                '',
+                
+                'https://www.sparkleappz.com/wp-content/uploads/2019/06/Screenshot-2019-06-12-at-8.01.16-PM.png',
+                'Titan VPN',
+                'Titan VPN',
+                ''
+            )
+            +dev('WEBSITE DEVELOPMENT INCLUDES',
+                'https://www.sparkleappz.com/wp-content/uploads/2020/01/php-1.png',
+                        'PHP , Laravel', 
+                        'PHP , Laravel', 
+                        'PHP is launched for the feature-pack & elite website development. Our team of expert PHP developers combines the best technological frameworks to offer robust and cost-effective solutions to the users.',
+                'https://www.sparkleappz.com/wp-content/uploads/2020/01/java-2.png',
+                        'Java', 
+                        'Java', 
+                        "From the release, java is used to develop scalable & secure mobile apps. Our team of canny developers uses this framework's flexibility to build the most innovative apps by leveraging the right java expertise in everything from architecture to implementation.",
+                'https://www.sparkleappz.com/wp-content/uploads/2020/01/html5.png',
+                        'HTML5 , Angular', 
+                        'HTML5 , Angular', 
+                        'HTML5 web development framework has led to a whole new era of web apps. Our HTML5 developers hold expertise in this technology and provide immaculate websites according to the user demand.',
+                'https://www.sparkleappz.com/wp-content/uploads/2020/01/codignator.png',
+                        'CodeIgniter , Zend', 
+                        'CodeIgniter , Zend', 
+                        "Powered by MVC architectural design, Codignitor ensures safe, economical web development; our team of technical savvy makes quick deliveries of scalable web solutions in well-documented phases."
+                )
+            +questionsWeb
+            
+            include ../../blocks-secondary/partners/_partners.pug
+            include ../form-dev/_form-dev.pug
+            //- include ../../blocks-secondary/form-second/_form-second.pug
+            include ../../blocks-secondary/network/_network.pug
+            include ../../blocks-secondary/footer/_footer.pug
+            include ../../blocks-secondary/copyright/_copyright.pug
+            
+        
+            script(src='https://unpkg.com/swiper/js/swiper.js')
+            script(src='https://unpkg.com/swiper/js/swiper.min.js')
+            script(src="https://kit.fontawesome.com/b7ba7defb8.js" crossorigin="anonymous")
+            script(src='https://code.jquery.com/jquery-3.4.1.slim.min.js', integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n', crossorigin='anonymous')
+            script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js', integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo', crossorigin='anonymous')
+            script(src='https://code.jquery.com/jquery-3.4.1.js', crossorigin='anonymous')
+            script(src='owl.carousel.min.js')
+            script(src="scripts.js")
+            script(src="accordeon.js")
