@@ -4,7 +4,7 @@ mixin nav(_c1, _c2, _c3, _c4, _c5, _c6)
             .row.d-flex.align-items-center
                 .col-2
                     .nav__logo
-                        a(href="#home")
+                        a(href="index.html")
                             img(src="https://www.sparkleappz.com/wp-content/uploads/2019/12/logo-187x66.png", alt="logo")
                 .col-5.offset-2
                     
@@ -43,4 +43,6 @@ mixin nav(_c1, _c2, _c3, _c4, _c5, _c6)
                         a.nav-link(href="services/contact.html") Get a free quote
                         a.nav-link.nav-link--call(href="services/contact.html") Call 
                                 i.contact-icon.fas.fa-phone
+                include burger/_burger.pug
+                
     hr.nav__line
