@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Montserrat:300,400,500,700|Poppins:400,700,900|Varela+Round&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"/>
     <title>sparkleappz.com</title>
@@ -32,7 +33,7 @@
                 <ul class="nav__menu menu d-flex justify-content-between">
                   <li class="nav__item"><a class="menu-item nav__active" href="index.html">Home  </a></li>
                   <li class="nav__item"><a class="menu-item active undefined" href="about.html">About</a></li>
-                  <li class="nav__item"><a class="menu-item undefined" href="services/services.html">Services<i class="menu__icon fas fa-chevron-down ml-2"></i></a>
+                  <li class="nav__item"><a class="menu-item undefined" href="javascript:void(0)">Services<i class="menu__icon fas fa-chevron-down ml-2"></i></a>
                     <ul class="nav__submenu submenu">
                       <div class="row">
                         <div class="col-12">
@@ -64,7 +65,7 @@
           <div class="container">
             <div class="row">
               <div class="col-6 d-flex align-items-center">
-                <div class="head__content">
+                <div class="head__content" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-sine">
                   <h1 class="head__title">
                     We conceptualize, <strong>design and develop</strong>
                     apps that people love
@@ -72,7 +73,7 @@
                 </div>
               </div>
               <div class="col-6">
-                <div class="head__img"><img class="img-fluid head__image" src="https://www.sparkleappz.com/wp-content/uploads/2019/12/banner_img.png" alt="header image"/></div>
+                <div class="head__img"><img class="img-fluid head__img mt-5" src="https://www.sparkleappz.com/wp-content/uploads/2019/12/banner_img.png" alt="header image" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine"/></div>
               </div>
             </div>
           </div>
@@ -83,28 +84,28 @@
           <div class="container">
             <div class="row">
               <div class="col-12">
-                <div class="work__content">
+                <div class="work__content" data-aos="fade-right" data-aos-duration="1000">
                   <h2 class="work__title">We love</h2>
                   <h3 class="work__subtitle">What we do</h3>
                   <p class="work__text"><a class="work__link" href="#">Sparkle Appz</a> values their customers and strives to deliver software applications for them. These solutions help enterprises and clients increase productivity and facilitate workflow management. We focus to deliver our expertise to our clients within time and make sure that our solutions be aesthetic, technically functional, user-friendly and responsive.</p>
                 </div>
-                <div class="work__button"><a class="work__btn mx-auto" href="services/contact.html">About us</a></div>
+                <div class="work__button"><a class="work__btn mx-auto" href="services/contact.html" data-aos="fade-up" data-aos-duration="1000">About us</a></div>
               </div>
             </div>
           </div>
         </div>
       </section>
       <section>
-        <div class="main__help help">
+        <div class="main__help help" id="app">
           <div class="container">
             <div class="row">
               <div class="col-12">
-                <div class="help__headline">
+                <div class="help__headline" data-aos="fade-left" data-aos-duration="1000">
                   <h2 class="help__title">How we can help you?</h2>
                 </div>
               </div>
               <div class="col-10 mx-auto">
-                <div class="help__text">
+                <div class="help__text" data-aos="fade-right" data-aos-duration="1000">
                   <p class="help__txt text-center">We believe in building <strong>fully fledged, stable, and scalable product applications and designs.</strong>  We professionally cater all the major platforms and development tools including <a class="help__link" href="#">Android,</a> <a class="help__link" href="#">IOS,</a>  <a class="help__link" href="#">Unity3D,</a> <a class="help__link" href="#">UI/UX designs,</a> <a class="help__link" href="#">Web development</a> services. We also offer SEO & ASO which is essential for any digital marketing strategy.</p>
                 </div>
               </div>
@@ -123,7 +124,7 @@
             <div class="service__blocks">
               <div class="row">
                 <div class="col-4">
-                  <div class="main__block">
+                  <div class="main__block" data-aos="fade-up" data-aos-duration="500">
                     <div class="row">   
                       <div class="col-3"><img class="service__image" src="https://www.sparkleappz.com/wp-content/uploads/2020/01/iphone_appdeve.png" alt="iphone"/></div>
                       <div class="col-6">
@@ -136,7 +137,7 @@
                   </div>
                 </div>
                 <div class="col-4">   
-                  <div class="main__block">
+                  <div class="main__block" data-aos="fade-up" data-aos-duration="1500">
                     <div class="row">   
                       <div class="col-3"><img class="service__image" src="https://www.sparkleappz.com/wp-content/uploads/2020/01/android.png" alt="android"/></div>
                       <div class="col-6">
@@ -149,7 +150,7 @@
                   </div>
                 </div>
                 <div class="col-4">
-                  <div class="main__block">
+                  <div class="main__block" data-aos="fade-up" data-aos-duration="2500">
                     <div class="row">   
                       <div class="col-3"><img class="service__image" src="https://www.sparkleappz.com/wp-content/uploads/2020/01/uiux_design.png" alt="uiux design"/></div>
                       <div class="col-6">
@@ -162,7 +163,7 @@
                   </div>
                 </div>
                 <div class="col-4">
-                  <div class="main__block">
+                  <div class="main__block" data-aos="fade-up" data-aos-duration="500">
                     <div class="row">   
                       <div class="col-3"><img class="service__image" src="https://www.sparkleappz.com/wp-content/uploads/2020/01/webdevelopment.png" alt="webdevelopment"/></div>
                       <div class="col-6">
@@ -175,7 +176,7 @@
                   </div>
                 </div>
                 <div class="col-4">
-                  <div class="main__block">
+                  <div class="main__block" data-aos="fade-up" data-aos-duration="1500">
                     <div class="row">   
                       <div class="col-3"><img class="service__image" src="https://www.sparkleappz.com/wp-content/uploads/2020/01/gamedevelopment.png" alt="gamedevelopment"/></div>
                       <div class="col-6">
@@ -188,7 +189,7 @@
                   </div>
                 </div>
                 <div class="col-4">
-                  <div class="main__block">
+                  <div class="main__block" data-aos="fade-up" data-aos-duration="2500">
                     <div class="row">   
                       <div class="col-3"><img class="service__image" src="https://www.sparkleappz.com/wp-content/uploads/2020/01/seo.png" alt="seo"/></div>
                       <div class="col-6">
@@ -213,7 +214,7 @@
                     <h2 class="main__title">Who we've worked with</h2>
                   </div>
                 </div>
-            <div class="row">
+            <div class="row mt-5">
               <div class="col-10 mx-auto order-2">
                 <div class="partners__slider swiper-container">
                   <div class="partners__wrapper swiper-wrapper">
@@ -261,15 +262,6 @@
             </div>
             <div class="row">
               <div class="col-3 mx-auto"><a class="portfolio__btn mx-auto" href="portfolio.html">Chek Out Other Project<i class="portfolio__icon fas fa-long-arrow-alt-right"></i></a></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="main__slider">
-          <div class="container">
-            <div class="row">
-              <div class="col-12"></div>
             </div>
           </div>
         </div>
@@ -346,7 +338,7 @@
                     <h2 class="main__title">Top ranking on</h2>
                   </div>
                 </div>
-            <div class="row">   
+            <div class="row mt-3">   
               <div class="col-3"><img class="ranking__img" src="https://www.sparkleappz.com/wp-content/uploads/2019/12/1.png" alt="clutch"/></div>
               <div class="col-3"><img class="ranking__img" src="https://www.sparkleappz.com/wp-content/uploads/2019/12/4.png" alt="upwork"/></div>
               <div class="col-3"><img class="ranking__img" src="https://www.sparkleappz.com/wp-content/uploads/2019/12/3.png" alt="appfutura"/></div>
@@ -814,12 +806,12 @@
           <div class="container">
             <div class="network__blocks mt-5 mb-5">
               <div class="row">
-                <div class="col-2"><a class="network__link" href="https://www.facebook.com/"> <img class="network__icon" src="https://www.sparkleappz.com/wp-content/uploads/2019/12/fb.png" alt=""/>Facebook</a></div>
-                <div class="col-2"><a class="network__link" href="https://www.facebook.com/"><img class="network__icon" src="https:www.sparkleappz.com/wp-content/uploads/2019/12/twitter.png" alt=""/>Twitter</a></div>
-                <div class="col-2"><a class="network__link" href="https://www.facebook.com/"><img class="network__icon" src="https:www.sparkleappz.com/wp-content/uploads/2019/12/insta.png" alt=""/>Instagram</a></div>
-                <div class="col-2"><a class="network__link" href="www.linkedin.com"><img class="network__icon" src="https://www.sparkleappz.com/wp-content/uploads/2019/12/inkedin.png" alt=""/>Linkedin</a></div>
-                <div class="col-2"><a class="network__link" href=""><img class="network__icon" src="https://www.sparkleappz.com/wp-content/uploads/2019/12/clutch.png" alt=""/>Clutch</a></div>
-                <div class="col-2"><a class="network__link" href=""><img class="network__icon" src="https://www.sparkleappz.com/wp-content/uploads/2019/12/upwork.png" alt=""/>Upwork</a></div>
+                <div class="col-2"><a class="network__link" href="https://www.facebook.com/" target="_blank"> <img class="network__icon" src="https://www.sparkleappz.com/wp-content/uploads/2019/12/fb.png" alt=""/>Facebook</a></div>
+                <div class="col-2"><a class="network__link" href="https://www.twitter.com/"><img class="network__icon" src="https:www.sparkleappz.com/wp-content/uploads/2019/12/twitter.png" alt=""/>Twitter</a></div>
+                <div class="col-2"><a class="network__link" href="https://www.instagram.com/" target="_blank"><img class="network__icon" src="https:www.sparkleappz.com/wp-content/uploads/2019/12/insta.png" alt=""/>Instagram</a></div>
+                <div class="col-2"><a class="network__link" href="www.linkedin.com" target="_blank"><img class="network__icon" src="https://www.sparkleappz.com/wp-content/uploads/2019/12/inkedin.png" alt=""/>Linkedin</a></div>
+                <div class="col-2"><a class="network__link" href="" target="_blank"><img class="network__icon" src="https://www.sparkleappz.com/wp-content/uploads/2019/12/clutch.png" alt=""/>Clutch</a></div>
+                <div class="col-2"><a class="network__link" href="" target="_blank"><img class="network__icon" src="https://www.sparkleappz.com/wp-content/uploads/2019/12/upwork.png" alt=""/>Upwork</a></div>
               </div>
             </div>
           </div>
@@ -885,12 +877,15 @@
         </div>
       </div>
     </main>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="https://kit.fontawesome.com/b7ba7defb8.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="owl.carousel.min.js"></script>
     <script src="scripts.js"></script>
+    <script src="accordeon.js"></script>
   </body>
 </html>

@@ -200,3 +200,7 @@ $(document).ready(function() {
       .slideUp();
   });
 });
+
+AOS.init();
+
+

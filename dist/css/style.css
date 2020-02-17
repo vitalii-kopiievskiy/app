@@ -8936,6 +8936,10 @@ a.text-dark:hover, a.text-dark:focus {
   text-align: center;
   text-align: start; }
 
+.head__img {
+  width: 90%;
+  margin-bottom: 10%; }
+
 .work {
   background-color: #f9fafd; }
   .work__title {
