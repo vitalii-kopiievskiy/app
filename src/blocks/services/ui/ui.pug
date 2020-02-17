@@ -1,0 +1,93 @@
+include ../../blocks-secondary/title/_title.pug
+include ../../blocks-secondary/nav/_nav.pug
+include ../../blocks-secondary/head/_head.pug
+include ../glimpse/_glimpse.pug
+include ../build/_build.pug
+include ../development/_development.pug
+include ../questions/_questions.pug
+
+<!DOCTYPE html>
+    html(lang="en")
+        head
+            meta(charset="UTF-8")
+            meta(name="viewport", content="width=device-width, initial-scale=1.0")
+            meta(http-equiv="X-UA-Compatible", content="ie=edge")
+            link(href='https://fonts.googleapis.com/css?family=Archivo+Black|Montserrat:300,400,500,700|Poppins:400,700,900|Varela+Round&display=swap', rel='stylesheet')
+            link(rel="stylesheet", href="css/style.css")
+            //- link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh', crossorigin='anonymous')
+            link(rel='stylesheet', href='https://unpkg.com/swiper/css/swiper.css')
+            link(rel='stylesheet', href='https://unpkg.com/swiper/css/swiper.min.css')
+            title sparkleappz.com
+        body
+            include ../../blocks-secondary/headline/_headline.pug
+            +nav('','','nav__active')
+           
+            +head('UI/UX DESIGN', 
+                '', 
+                'We design and launch digital products that deliver great user experiences We bring together professional user experience design and top-notch technology to deliver compelling experiences that solve business challenges and make people happy. We do extensive research to build up your user requirements, in order to map your product’s full smooth user experience.', 
+                '',
+                'portfolio.html',
+                'Our portfolio',
+                "https://www.sparkleappz.com/wp-content/uploads/2020/02/img_slider.png",
+                'UI/UX DESIGN'
+                )
+            
+            +glimpse('GLIMPSE OF WORK', 
+                'Our work depicts the amount of UI/UX done for the customers. Our designers understand the need of the users and the objectives of their application and then effectively translate it into functionalities.',
+            
+                'The UI design of application interface has left a deep impression on the user through reasonable color matching. The key success to our application design comes down to the user experience (UX) and the user interface (UI) we offer.', 
+            
+                'portfolio.html', 
+                'SEE OUR WORK'
+                )
+            
+            +build('BUILD AN UNITY APP FOR ANY DEVICE',
+                'We at SparkleAppz, ensure Unity3D development process which makes it very apparent for any business application to present their gaming standard with magnificent design & great UI/UX.',
+                
+                'https://www.sparkleappz.com/wp-content/uploads/2019/06/unnamed.png',
+                'LumberJack',
+                'LumberJack',
+                '',
+                
+                'https://www.sparkleappz.com/wp-content/uploads/2019/06/61XmRgGEbL.png',
+                'Swing Starboy',
+                'Swing Starboy',
+                ''
+            )
+            +dev('UI/UX DESIGNS INCLUDES',
+                'https://www.sparkleappz.com/wp-content/uploads/2020/01/intrection_design.png',
+                        'Interaction Design', 
+                        'Interaction Design', 
+                        "Keeping a focus on assets like animations, the flow of applications, proper navigation, and easy arrangements of functions, we convert end-user's need into the flawless interactive design, which provides users an ease to interact with each and specific elements of the application.",
+                'https://www.sparkleappz.com/wp-content/uploads/2020/01/website_design.png',
+                        'Website Design', 
+                        'Website Design', 
+                        "In the world full of electronic devices, we make sure that the website which we deliver be highly responsive that makes web pages render well on a variety of devices and window or screen resolutions.",
+                'https://www.sparkleappz.com/wp-content/uploads/2020/01/mpbile-app-design.png',
+                        'Mobile App Design', 
+                        'Mobile App Design', 
+                        'We follow "design first, develop-second" model. We provide appealing designs & unmistakable UIs, in order to attract customers towards our developed mobile application. The design process which we attain is collaborative, interactive, fun & energetic.',
+                'https://www.sparkleappz.com/wp-content/uploads/2020/01/ui_design.png',
+                        'User Experience', 
+                        'User Experience', 
+                        "In order to provide an engaging experience to our users, we focus on things like colors, spacing, font styles and hierarchy, button styles, and other aspects of the design and ensure to convey the flexible UI based apps."
+                )
+            +questionsUI
+            
+            include ../../blocks-secondary/partners/_partners.pug
+            include ../form-dev/_form-dev.pug
+            //- include ../../blocks-secondary/form-second/_form-second.pug
+            include ../../blocks-secondary/network/_network.pug
+            include ../../blocks-secondary/footer/_footer.pug
+            include ../../blocks-secondary/copyright/_copyright.pug
+            
+        
+            script(src='https://unpkg.com/swiper/js/swiper.js')
+            script(src='https://unpkg.com/swiper/js/swiper.min.js')
+            script(src="https://kit.fontawesome.com/b7ba7defb8.js" crossorigin="anonymous")
+            script(src='https://code.jquery.com/jquery-3.4.1.slim.min.js', integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n', crossorigin='anonymous')
+            script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js', integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo', crossorigin='anonymous')
+            script(src='https://code.jquery.com/jquery-3.4.1.js', crossorigin='anonymous')
+            script(src='owl.carousel.min.js')
+            script(src="scripts.js")
+            script(src="accordeon.js")

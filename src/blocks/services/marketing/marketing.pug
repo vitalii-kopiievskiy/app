@@ -1,0 +1,93 @@
+include ../../blocks-secondary/title/_title.pug
+include ../../blocks-secondary/nav/_nav.pug
+include ../../blocks-secondary/head/_head.pug
+include ../glimpse/_glimpse.pug
+include ../build/_build.pug
+include ../development/_development.pug
+include ../questions/_questions.pug
+
+<!DOCTYPE html>
+    html(lang="en")
+        head
+            meta(charset="UTF-8")
+            meta(name="viewport", content="width=device-width, initial-scale=1.0")
+            meta(http-equiv="X-UA-Compatible", content="ie=edge")
+            link(href='https://fonts.googleapis.com/css?family=Archivo+Black|Montserrat:300,400,500,700|Poppins:400,700,900|Varela+Round&display=swap', rel='stylesheet')
+            link(rel="stylesheet", href="css/style.css")
+            //- link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh', crossorigin='anonymous')
+            link(rel='stylesheet', href='https://unpkg.com/swiper/css/swiper.css')
+            link(rel='stylesheet', href='https://unpkg.com/swiper/css/swiper.min.css')
+            title sparkleappz.com
+        body
+            include ../../blocks-secondary/headline/_headline.pug
+            +nav('','','nav__active')
+           
+            +head('DIGITAL', 
+                'MARKETING', 
+                'SparkleAppz, Is A Trustworthy Digital Marketing Service Provider. Our team develops effective content strategies for companies with a vision of the future. We have a proven track record in increasing rankings in search engines.', 
+                '',
+                'portfolio.html',
+                'Our portfolio',
+                "https://www.sparkleappz.com/wp-content/uploads/2020/01/img_slider-4.png",
+                'marketing'
+                )
+            
+            +glimpse('GLIMPSE OF WORK', 
+                'SEO is a digital marketing technique and is meant to maximize the number of visitors to customer’s site.',
+            
+                'We are expert in the search engine optimization. We have a proven track record for crafting effective Internet marketing strategies with measurable, long-term results. When we work with clients to improve their search engine optimization, we focus on three different aspects: technical optimization, on-site optimization, and off-site optimization. We keep our clients up-to-date on all tactics we’re using to improve search engine results.', 
+            
+                'portfolio.html', 
+                'SEE OUR WORK'
+                )
+            
+            +build('BUILD AN UNITY APP FOR ANY DEVICE',
+                'We at SparkleAppz, ensure Unity3D development process which makes it very apparent for any business application to present their gaming standard with magnificent design & great UI/UX.',
+                
+                'https://www.sparkleappz.com/wp-content/uploads/2019/06/unnamed.png',
+                'LumberJack',
+                'LumberJack',
+                '',
+                
+                'https://www.sparkleappz.com/wp-content/uploads/2019/06/61XmRgGEbL.png',
+                'Swing Starboy',
+                'Swing Starboy',
+                ''
+            )
+            +dev('ANDROID APP DEVELOPMENT INCLUDES',
+                'https://www.sparkleappz.com/wp-content/uploads/2020/01/seo-1.png',
+                        'Optimization', 
+                        'Search Engine Optimization', 
+                        'We have an experienced SEO team at Sparkle Appz, who are experts in their field and will make your website, software or mobile application reach the top of the very most popular and competitive search engines like Google, resulting in more traffic, real conversions and quality leads.',
+                'https://www.sparkleappz.com/wp-content/uploads/2020/01/pay_per.png',
+                        'Pay', 
+                        'Pay Per Click', 
+                        "Sevenkoncepts provide you with guidance in a prompt way to achieve your target, aggregate leads, maximizing your ROI or creating brand awareness. At Seven Koncepts we specialize in PPC Account Management ,PPC Advertising , PPC Campaign Management , PC Bids Management , PPC Marketing , PPC SEM ,Landing page creation and optimization.",
+                'https://www.sparkleappz.com/wp-content/uploads/2020/01/social_media.png',
+                        'Media Marketing', 
+                        'Social Media Marketing', 
+                        'Every Business requires a prominent social media presence and exposure to generate sales. Sparkle Appz is a leading Digital Media Agency in India, which outlines a variety of different Social Media Techniques & Strategies, after identifying your targeted market and the business goals. We are reputed for providing a versatile and effective social media management services in different Countries to ensure maximum traffic for your business.',
+                'https://www.sparkleappz.com/wp-content/uploads/2020/01/content_marketing.png',
+                        'Marketing Service', 
+                        'Content Marketing Services', 
+                        "One of the marvels of the 21st century is the social media. At the turn of the century we were introduced with blogs and social media websites, which have now become a part of our everyday life. Sparkle Appz understands the importance of social media and thus, provides content marketing services to our clients. Our team has some brilliant marketers who can produce seo friendly content for our valued clients."
+                )
+            +questionsMarketing
+            
+            include ../../blocks-secondary/partners/_partners.pug
+            include ../form-dev/_form-dev.pug
+            //- include ../../blocks-secondary/form-second/_form-second.pug
+            include ../../blocks-secondary/network/_network.pug
+            include ../../blocks-secondary/footer/_footer.pug
+            include ../../blocks-secondary/copyright/_copyright.pug
+            
+        
+            script(src='https://unpkg.com/swiper/js/swiper.js')
+            script(src='https://unpkg.com/swiper/js/swiper.min.js')
+            script(src="https://kit.fontawesome.com/b7ba7defb8.js" crossorigin="anonymous")
+            script(src='https://code.jquery.com/jquery-3.4.1.slim.min.js', integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n', crossorigin='anonymous')
+            script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js', integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo', crossorigin='anonymous')
+            script(src='https://code.jquery.com/jquery-3.4.1.js', crossorigin='anonymous')
+            script(src='owl.carousel.min.js')
+            script(src="scripts.js")
+            script(src="accordeon.js")
