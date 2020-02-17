@@ -170,7 +170,7 @@ $(window).scroll(function() {
   );
 });
 
-// Аккордеон
+// Accordion
 
 $(document).ready(function() {
   $('.accordion__head').click(function() {
@@ -179,6 +179,21 @@ $(document).ready(function() {
       .next()
       .slideToggle();
     $('.accordion__head')
+      .not(this)
+      .removeClass('in')
+      .next()
+      .slideUp();
+  });
+});
+
+$(document).ready(function() {
+  $('.ques__headline').click(function() {
+    $(this)
+      .toggleClass('in')
+      .next()
+      .slideToggle();
+
+    $('.ques__headline')
       .not(this)
       .removeClass('in')
       .next()

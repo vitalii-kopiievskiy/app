@@ -4,6 +4,8 @@ include ../../blocks-secondary/head/_head.pug
 include ../glimpse/_glimpse.pug
 include ../build/_build.pug
 include ../development/_development.pug
+include ../questions/_questions.pug
+
 <!DOCTYPE html>
     html(lang="en")
         head
@@ -70,10 +72,11 @@ include ../development/_development.pug
                         'iPad Apps', 
                         'The iPad has remained the top-of-the-line and the most demanded tablet on the market. Our app developers are skilled enough to go with pace of developing responsive, robust and cherish able apps to meet the customer’s requirement.'
                 )
+            +questionsIos
             
             include ../../blocks-secondary/partners/_partners.pug
-            
-            include ../../blocks-secondary/form-second/_form-second.pug
+            include ../form-dev/_form-dev.pug
+            //- include ../../blocks-secondary/form-second/_form-second.pug
             include ../../blocks-secondary/network/_network.pug
             include ../../blocks-secondary/footer/_footer.pug
             include ../../blocks-secondary/copyright/_copyright.pug
