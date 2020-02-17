@@ -1,0 +1,13 @@
+mixin description(_title, _subtitle, _img, _alt, _txt)
+    section
+        .container
+            .descr
+                +title(_title).descr__title
+                h3.descr__subtitle.mt-4.text-center= _subtitle
+                .row.mt-5
+                    .col-6
+                        img.mt-5.mx-auto.d-block.img-fluid.descr__img(src= _img, alt= _alt)
+                    .col-5.d-flex.align-items-center.mx-auto
+                        p.descr__txt= _txt 
+                    .col-12
+                        a.mx-auto.mt-5.descr__link(href="portfolio.html") show more projects

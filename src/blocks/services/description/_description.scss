@@ -1,0 +1,40 @@
+.descr {
+  &__img {
+    width: 80%;
+  }
+
+  &__subtitle {
+    font-family: $mFont;
+    font-size: 35px;
+    line-height: 35px;
+    letter-spacing: 2.3px;
+    color: #6e626f;
+  }
+  &__txt {
+    color: #545454;
+  }
+  &__link {
+    display: block;
+    color: #4064d7;
+    font-family: $mFont;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 3px;
+    width: 274px;
+    height: 46px;
+    border: 2px solid #4064d7;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 50px;
+    transition: all 0.3s linear;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+    &:hover {
+      text-decoration: none;
+      color: white;
+      background-color: #4064d7;
+      transition: all 0.3s linear;
+    }
+  }
+}
