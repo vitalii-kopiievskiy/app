@@ -1,0 +1,93 @@
+include ../../blocks-secondary/title/_title.pug
+include ../../blocks-secondary/nav/_nav.pug
+include ../../blocks-secondary/head/_head.pug
+include ../glimpse/_glimpse.pug
+include ../build/_build.pug
+include ../development/_development.pug
+include ../questions/_questions.pug
+
+<!DOCTYPE html>
+    html(lang="en")
+        head
+            meta(charset="UTF-8")
+            meta(name="viewport", content="width=device-width, initial-scale=1.0")
+            meta(http-equiv="X-UA-Compatible", content="ie=edge")
+            link(href='https://fonts.googleapis.com/css?family=Archivo+Black|Montserrat:300,400,500,700|Poppins:400,700,900|Varela+Round&display=swap', rel='stylesheet')
+            link(rel="stylesheet", href="css/style.css")
+            //- link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh', crossorigin='anonymous')
+            link(rel='stylesheet', href='https://unpkg.com/swiper/css/swiper.css')
+            link(rel='stylesheet', href='https://unpkg.com/swiper/css/swiper.min.css')
+            title sparkleappz.com
+        body
+            include ../../blocks-secondary/headline/_headline.pug
+            +nav('','','nav__active')
+           
+            +head('ANDROID APP', 
+                'DEVELOPMENT', 
+                'SparkleAppz started off with android development and we feel pride to be considered as a specialist in Android App Development. Even though Android app development is a difficult task for any software professional due to its availability of variant screen sizes and resolutions. But our experienced developers have a deep understanding of the user requirement and the performance of Android applications across different devices. We use professional practices and proven methodologies for creating bug-free android applications.', 
+                '',
+                'portfolio.html',
+                'Our portfolio',
+                "https:/www.sparkleappz.com/wp-content/uploads/2020/01/img_slider-1.png",
+                'phones'
+                )
+            
+            +glimpse('GLIMPSE OF WORK', 
+                'We have a reputation to deliver services that are cost effective, yet quality oriented that customer expects. We have delivered beautiful, functional and fun to use apps that mesh with customer’s personal vision. Our solutions are known to be reliable and focused on customer’s business needs.',
+            
+                'We have designed advanced and beloved Apple iOS apps in a range of genres. Not only our applications pass Apple’s strict approval process, but they have also gone on to find audiences on countless iPhones and iPads around the globe.', 
+            
+                'portfolio.html', 
+                'SEE OUR WORK'
+                )
+            
+            +build('BUILD AN APP FOR IOS DEVICES',
+                'Our talented iOS app developers provide app development services by building applications that would work equally well across all Apple devices. Our team believe in helping you in every step from solution design to delivery of the product. We also offer ongoing maintenance to keeps solutions healthy to deal with changing technical and business environment.',
+                
+                'https://www.sparkleappz.com/wp-content/uploads/2019/05/Life-Listr_inner.jpg',
+                'Life Lister',
+                'Life Lister',
+                'Plan your holidays with life listr and never miss anything.',
+                
+                'https://www.sparkleappz.com/wp-content/uploads/2019/05/GoTeach_Inner.jpg',
+                'Go Teach',
+                'Go Teach',
+                'Teacher plan book, lesson plans and more.'
+            )
+            +dev('IOS APP DEVELOPMENT SERVICES INCLUDES',
+                'https://www.sparkleappz.com/wp-content/uploads/2020/01/swift-1.png',
+                        'swift', 
+                        'Swift', 
+                        'Swift was lauched by Apple for developing iOS applications Swift provides safeguards to prevent errors and improve readability. Fast. Swift was built with performance in mind. Swift minimizes the monotonous undertakings, workload, and bookkeeping',
+                'https://www.sparkleappz.com/wp-content/uploads/2020/01/objectiveC.png',
+                        'Objective C', 
+                        'Objective C', 
+                        'The language which was represented as Objective-C without C by the beginner Apple. Our pool of talented developers highly endorse this language because it is protected, speedier,and packed with an abnormal state of interactivity aids, responsive, resulting robust apps for customers as well as business holders.',
+                'https://www.sparkleappz.com/wp-content/uploads/2020/01/iphone.png',
+                        'iPhone Apps', 
+                        'iPhone Apps', 
+                        'We ensure that customers are provided with rich experience through our iOS app development services with an emphasis on timely delivery, cost effective solutions and transparent development processes.',
+                'https://www.sparkleappz.com/wp-content/uploads/2020/01/ipad.png',
+                        'iPad Apps', 
+                        'iPad Apps', 
+                        'The iPad has remained the top-of-the-line and the most demanded tablet on the market. Our app developers are skilled enough to go with pace of developing responsive, robust and cherish able apps to meet the customer’s requirement.'
+                )
+            +questionsIos
+            
+            include ../../blocks-secondary/partners/_partners.pug
+            include ../form-dev/_form-dev.pug
+            //- include ../../blocks-secondary/form-second/_form-second.pug
+            include ../../blocks-secondary/network/_network.pug
+            include ../../blocks-secondary/footer/_footer.pug
+            include ../../blocks-secondary/copyright/_copyright.pug
+            
+        
+            script(src='https://unpkg.com/swiper/js/swiper.js')
+            script(src='https://unpkg.com/swiper/js/swiper.min.js')
+            script(src="https://kit.fontawesome.com/b7ba7defb8.js" crossorigin="anonymous")
+            script(src='https://code.jquery.com/jquery-3.4.1.slim.min.js', integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n', crossorigin='anonymous')
+            script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js', integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo', crossorigin='anonymous')
+            script(src='https://code.jquery.com/jquery-3.4.1.js', crossorigin='anonymous')
+            script(src='owl.carousel.min.js')
+            script(src="scripts.js")
+            script(src="accordeon.js")
