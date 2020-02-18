@@ -119,6 +119,10 @@
 
 .info {
   margin-top: 120px;
+
+  @media screen and (max-width: 575px) {
+    margin-top: 0;
+  }
   &__title {
     @include title($pFont, 30px, 30px, bold);
     color: white;
