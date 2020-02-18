@@ -1,7 +1,9 @@
 .items {
   color: white;
-
   padding-bottom: 170px;
+  @media screen and (max-width: 1230px) {
+    padding-bottom: 0;
+  }
 
   &__blocks {
     margin-top: -100px;
@@ -25,7 +27,11 @@
     line-height: 26px;
     color: #3a3a3a;
   }
-
+  &__desc {
+    @media screen and (max-width: 575px) {
+      font-size: 2vw;
+    }
+  }
   &__link {
     font-family: $vFont;
     font-weight: bold;
@@ -40,7 +46,9 @@
     padding-top: 4px;
     border: 1px solid $bg;
     transition: all 0.3s linear;
-
+    @media screen and (max-width: 575px) {
+      width: 100%;
+    }
     &:hover {
       text-decoration: none;
       background-color: white;
