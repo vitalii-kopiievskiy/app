@@ -8463,6 +8463,10 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 62px;
   -webkit-box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.16);
   box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.16); }
+  @media screen and (max-width: 575px) {
+    .main-head__btn {
+      margin: 0 auto;
+      margin-bottom: 20px; } }
   .main-head__btn:hover {
     text-decoration: none;
     color: white;
@@ -8476,7 +8480,7 @@ a.text-dark:hover, a.text-dark:focus {
   margin-left: 14px; }
 
 .main-head__image {
-  width: 400px; }
+  width: 70%; }
 
 .partners {
   background-color: #f9fafd; }
