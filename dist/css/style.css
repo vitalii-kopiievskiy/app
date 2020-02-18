@@ -8603,6 +8603,10 @@ a.text-dark:hover, a.text-dark:focus {
     background-color: #f9fafd;
     margin-top: 56px;
     padding: 20px; }
+    @media screen and (max-width: 575px) {
+      .form-group {
+        margin-right: -20px;
+        margin-left: -20px; } }
   .form-title {
     font-family: "Poppins", sans-serif;
     font-size: 30px;
@@ -8825,6 +8829,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .nav {
   background-color: white;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
   z-index: 100; }
   .nav__item {
@@ -8870,7 +8876,8 @@ a.text-dark:hover, a.text-dark:focus {
 .scroll {
   margin-top: -80px;
   -webkit-box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.16);
-  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.16); }
+  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.16);
+  background-color: rgba(255, 255, 255, 0.623); }
 
 .submenu {
   visibility: hidden;
@@ -8907,8 +8914,8 @@ a.text-dark:hover, a.text-dark:focus {
   align-items: center;
   position: absolute;
   right: 20px;
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   cursor: pointer;
   z-index: 2; }
 
@@ -8918,7 +8925,7 @@ a.text-dark:hover, a.text-dark:focus {
   visibility: hidden;
   opacity: 0;
   width: 100%;
-  height: 460px;
+  height: 700px;
   margin: 0;
   list-style: none;
   text-align: center;
@@ -9040,7 +9047,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .burger__submenu {
   display: none;
-  background-color: #fff; }
+  background-color: #fff;
+  position: relative; }
 
 .burger-item {
   display: block;
@@ -9135,11 +9143,15 @@ a.text-dark:hover, a.text-dark:focus {
     .head__title {
       font-size: 8vw;
       text-align: center;
-      line-height: 48px; } }
+      line-height: 48px;
+      margin-top: 60px; } }
 
 .head__img {
   width: 90%;
   margin-bottom: 10%; }
+  @media screen and (max-width: 575px) {
+    .head__img {
+      width: 100%; } }
 
 .work {
   background-color: #f9fafd; }
@@ -9570,6 +9582,9 @@ a.text-dark:hover, a.text-dark:focus {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s; }
+    @media screen and (max-width: 575px) {
+      .accordion__head .accordion__item::after {
+        right: 5px; } }
   .accordion__head.in .accordion__item::after {
     content: '\f068'; }
   .accordion__num {
@@ -9920,7 +9935,8 @@ a.text-dark:hover, a.text-dark:focus {
     border-bottom: 2px solid #f0f0f0; }
     @media screen and (max-width: 575px) {
       .ques__headline {
-        padding: 15px 0; } }
+        padding: 15px 0;
+        text-align: center; } }
   .ques__headline.in {
     border-bottom: none; }
   .ques__num {
