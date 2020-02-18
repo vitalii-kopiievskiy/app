@@ -1,6 +1,6 @@
 .form {
   &__content {
-    margin-top: 45%;
+    margin-top: 150px;
   }
   &__headline {
     @include title($pFont, 42px, 80px, bold);

@@ -2,6 +2,10 @@
   &__blocks {
     margin-top: 50px;
     margin-bottom: 100px;
+    @media screen and (max-width: 575px) {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
   }
   &__title {
     @extend %title-p-b;

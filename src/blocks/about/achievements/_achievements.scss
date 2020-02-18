@@ -6,12 +6,18 @@
   }
   &__blocks {
     padding-bottom: 90px;
+    @media screen and (max-width: 575px) {
+      padding-bottom: 40px;
+    }
   }
   &__number {
     @include title($vFont, 70px, 70px, 400);
     color: white;
     display: block;
     margin: 0 auto;
+    @media screen and (max-width: 575px) {
+      font-size: 42px;
+    }
   }
   &__desc {
     @include title($vFont, 19px, 47px, 400);
@@ -22,5 +28,10 @@
     background-color: white;
     width: 1px;
     height: 100%;
+
+    @media screen and (max-width: 991px) {
+      width: 30px;
+      height: 4px;
+    }
   }
 }

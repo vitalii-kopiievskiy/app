@@ -16,6 +16,9 @@
     grid-template-rows: 2fr;
     grid-gap: 4px;
     margin: 25px 25px 120px;
+    @media screen and (max-width: 575px) {
+      margin-bottom: 40px;
+    }
   }
   &__link {
     position: relative;
@@ -47,6 +50,11 @@
   &__min-item {
     grid-row: span 2;
     grid-column: span 2;
+
+    @media screen and (max-width: 575px) {
+      grid-row: span 3;
+      grid-column: span 3;
+    }
   }
 
   &__max-item {

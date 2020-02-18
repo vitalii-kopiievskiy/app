@@ -5,6 +5,9 @@
   }
   &__content {
     margin-bottom: 160px;
+    @media screen and (max-width: 575px) {
+      margin-bottom: 40px;
+    }
   }
   &__txt {
     @extend %text-v-r;
