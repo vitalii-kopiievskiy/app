@@ -9673,15 +9673,27 @@ a.text-dark:hover, a.text-dark:focus {
     font-family: "Varela Round", sans-serif;
     font-size: 30px;
     line-height: 42px; }
+    @media screen and (max-width: 575px) {
+      .gallery__title {
+        font-size: 5vw;
+        line-height: 24px; } }
   .gallery__subtitle {
     font-family: "Varela Round", sans-serif;
     font-size: 11px;
     line-height: 24px;
     letter-spacing: 1px; }
+    @media screen and (max-width: 575px) {
+      .gallery__subtitle {
+        font-size: 2vw;
+        line-height: 24px; } }
   .gallery__txt {
     font-family: "Varela Round", sans-serif;
     font-size: 14px;
     line-height: 26px; }
+    @media screen and (max-width: 575px) {
+      .gallery__txt {
+        font-size: 3vw;
+        line-height: 20px; } }
   .gallery__link {
     font-family: "Varela Round", sans-serif;
     font-weight: bold;
@@ -9694,6 +9706,10 @@ a.text-dark:hover, a.text-dark:focus {
     background-color: #fff;
     text-align: center;
     padding-top: 5px; }
+    @media screen and (max-width: 575px) {
+      .gallery__link {
+        font-size: 12px;
+        width: 100%; } }
     .gallery__link:hover {
       text-decoration: none; }
   .gallery__img {
@@ -9703,6 +9719,14 @@ a.text-dark:hover, a.text-dark:focus {
     z-index: 2;
     top: 0;
     margin-top: 20%; }
+    @media screen and (max-width: 1199px) {
+      .gallery__content {
+        margin-top: 15%;
+        padding: 20px; } }
+    @media screen and (max-width: 575px) {
+      .gallery__content {
+        margin-top: 0;
+        padding: 20px; } }
 
 .items {
   color: white;

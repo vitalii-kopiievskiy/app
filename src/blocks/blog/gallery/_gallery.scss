@@ -10,17 +10,29 @@
     font-family: $vFont;
     font-size: 30px;
     line-height: 42px;
+    @media screen and (max-width: 575px) {
+      font-size: 5vw;
+      line-height: 24px;
+    }
   }
   &__subtitle {
     font-family: $vFont;
     font-size: 11px;
     line-height: 24px;
     letter-spacing: 1px;
+    @media screen and (max-width: 575px) {
+      font-size: 2vw;
+      line-height: 24px;
+    }
   }
   &__txt {
     font-family: $vFont;
     font-size: 14px;
     line-height: 26px;
+    @media screen and (max-width: 575px) {
+      font-size: 3vw;
+      line-height: 20px;
+    }
   }
 
   &__link {
@@ -35,6 +47,10 @@
     background-color: #fff;
     text-align: center;
     padding-top: 5px;
+    @media screen and (max-width: 575px) {
+      font-size: 12px;
+      width: 100%;
+    }
 
     &:hover {
       text-decoration: none;
@@ -48,5 +64,13 @@
     z-index: 2;
     top: 0;
     margin-top: 20%;
+    @media screen and (max-width: 1199px) {
+      margin-top: 15%;
+      padding: 20px;
+    }
+    @media screen and (max-width: 575px) {
+      margin-top: 0;
+      padding: 20px;
+    }
   }
 }

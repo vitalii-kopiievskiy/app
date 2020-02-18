@@ -3,7 +3,7 @@ mixin image(_title, _path, _alt)
         img.gallery__img(src= _path, alt= _alt)
         .gallery__content
             .row
-                .col-8.offset-2
+                .col-md-12.col-xl-8.offset-xl-2
                     h2.gallery__title= _title
                     h3.gallery__subtitle DECEMBER 27, 2018 
                         span.ml-5 NO COMMENTS
@@ -16,7 +16,7 @@ section
     .gallery
         .container
             .row
-                .col-5.offset-1
+                .col-xl-5.offset-xl-1
                     +image('Web animation', 'images/blog/block1.jpg', 'blog image')
-                .col-5
+                .col-xl-5
                     +image('Standardization between design tools', 'images/blog/block2.jpg', 'blog image two')
