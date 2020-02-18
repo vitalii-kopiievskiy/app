@@ -14,8 +14,10 @@
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+
   @media screen and (max-width: 575px) {
     margin-top: 40px;
+    font-size: 8vw;
   }
 }
 %subtitle-v-r {

@@ -8353,7 +8353,8 @@ a.text-dark:hover, a.text-dark:focus {
   text-align: center; }
   @media screen and (max-width: 575px) {
     .main__title, .clients__title, .clients__subtitle, .achiev__title, .history__title, .desc__title, .choose__title, .projects__title {
-      margin-top: 40px; } }
+      margin-top: 40px;
+      font-size: 8vw; } }
 
 .process__subtitle, .network__link, .service__subtitle, .features__subtitle, .industries__desc {
   font-family: "Varela Round", sans-serif;
@@ -9185,22 +9186,39 @@ a.text-dark:hover, a.text-dark:focus {
   background-image: url("https://www.sparkleappz.com/wp-content/uploads/2019/12/blue_img-2.png"); }
   .help__headline {
     margin-top: 91px; }
+    @media screen and (max-width: 575px) {
+      .help__headline {
+        margin-top: 40px; } }
   .help__title {
     font-family: 'Archivo Black', sans-serif;
     font-size: 42px;
     line-height: 42px;
     text-align: center;
     text-transform: uppercase; }
+    @media screen and (max-width: 575px) {
+      .help__title {
+        font-size: 8vw;
+        text-align: center; } }
   .help__txt {
     margin-top: 36px;
     font-family: 'Varela Round', sans-serif;
     font-size: 14px;
     line-height: 26px;
     margin-bottom: 91px; }
+    @media screen and (max-width: 575px) {
+      .help__txt {
+        margin-bottom: 40px; } }
 
 .service__blocks {
   margin-top: 56px;
   margin-bottom: 110px; }
+  @media screen and (max-width: 575px) {
+    .service__blocks {
+      margin-top: 40px;
+      margin-bottom: 40px; } }
+
+.service__image {
+  text-align: center; }
 
 .portfolio__slider {
   margin-top: 45px; }

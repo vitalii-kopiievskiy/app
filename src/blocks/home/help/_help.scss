@@ -4,6 +4,10 @@
 
   &__headline {
     margin-top: 91px;
+
+    @media screen and (max-width: 575px) {
+      margin-top: 40px;
+    }
   }
 
   &__title {
@@ -12,6 +16,11 @@
     line-height: 42px;
     text-align: center;
     text-transform: uppercase;
+
+    @media screen and (max-width: 575px) {
+      font-size: 8vw;
+      text-align: center;
+    }
   }
 
   &__txt {
@@ -20,6 +29,10 @@
     font-size: 14px;
     line-height: 26px;
     margin-bottom: 91px;
+
+    @media screen and (max-width: 575px) {
+      margin-bottom: 40px;
+    }
   }
 
   &__link {
