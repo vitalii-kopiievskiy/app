@@ -34,8 +34,8 @@ new Swiper('.portfolio__slider', {
   // Optional parameters
   direction: 'horizontal', // направление слайдов ("vertical" или "horizontal")
   loop: true, // зацикливание слайдера
-  width: 526, //ширина
-  height: 300, //высота
+  // width: 526, //ширина
+  // height: 300, //высота
   // spaceBetween: 40,
   // autoHeight: true, // автоматическая подгонка слайдера по высоте слайдов
   //   initialSlide: 1, //номер индекса начального слайда
