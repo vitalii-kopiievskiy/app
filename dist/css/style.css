@@ -8483,12 +8483,25 @@ a.text-dark:hover, a.text-dark:focus {
   .partners__button {
     color: #8c8c8c;
     font-size: 22px;
-    margin-top: 119px;
+    margin-top: -7vw;
     cursor: pointer; }
     .partners__button :focus {
       outline: none; }
+    .partners__button--right {
+      margin-top: -17vw;
+      position: absolute;
+      margin-left: 100%; }
+    .partners__button--left {
+      margin-top: -17vw;
+      position: absolute;
+      margin-left: -5%; }
   .partners__slider {
     margin-bottom: 90px; }
+    @media screen and (max-width: 575px) {
+      .partners__slider {
+        margin-bottom: 40px; } }
+  .partners__image {
+    width: 99%; }
 
 .process {
   background-color: #f9fafd;

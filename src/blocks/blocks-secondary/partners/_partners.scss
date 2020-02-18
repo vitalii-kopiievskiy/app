@@ -4,14 +4,32 @@
   &__button {
     color: #8c8c8c;
     font-size: 22px;
-    margin-top: 119px;
+    margin-top: -7vw;
     cursor: pointer;
+
     :focus {
       outline: none;
+    }
+    &--right {
+      margin-top: -17vw;
+      position: absolute;
+      margin-left: 100%;
+    }
+    &--left {
+      margin-top: -17vw;
+      position: absolute;
+      margin-left: -5%;
     }
   }
 
   &__slider {
     margin-bottom: 90px;
+    @media screen and (max-width: 575px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__image {
+    width: 99%;
   }
 }

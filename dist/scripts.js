@@ -1,15 +1,26 @@
 new Swiper('.partners__slider', {
   direction: 'horizontal',
   loop: true,
-  spaceBetween: 40,
-  autoHeight: true,
+  // spaceBetween: 40,
+  // autoHeight: true,
   speed: 1000,
   slidesPerView: 3,
   centeredSlides: true,
   effect: 'slide',
-  slidesOffsetBefore: 360,
+  // slidesOffsetBefore: 360,
   autoplay: {
     delay: 2000
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      // slidesOffsetBefore: 350,
+      spaceBetween: 40
+    },
+    425: {
+      slidesPerView: 3
+      // slidesOffsetBefore: 360
+    }
   },
 
   // Navigation arrows
@@ -202,5 +213,3 @@ $(document).ready(function() {
 });
 
 AOS.init();
-
-
