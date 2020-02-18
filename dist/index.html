@@ -14,7 +14,7 @@
     <header class="header">
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 d-none d-md-block">
             <div class="header__headline headline d-flex justify-content-end">
               <div class="headline__links"><a class="headline__link" href="tel:+91-7737791591"><i class="headline__icon fas fa-phone-alt"></i>+91-7737791591</a><a class="headline__link" href="mailto:info@sparkleappz.com"><i class="headline__icon fas fa-envelope"></i> info@sparkleappz.com</a></div>
             </div>
@@ -22,39 +22,10 @@
         </div>
       </div>
     </header>
-        <nav class="nav">
+        <nav class="burger d-block d-md-none">
           <div class="container">
-            <div class="row d-flex align-items-center">
-              <div class="col-2">
-                <div class="nav__logo"><a href="index.html"><img src="https://www.sparkleappz.com/wp-content/uploads/2019/12/logo-187x66.png" alt="logo"/></a></div>
-              </div>
-              <div class="col-5 offset-2">
-                <ul class="nav__menu menu d-flex justify-content-between">
-                  <li class="nav__item"><a class="menu-item nav__active" href="index.html">Home  </a></li>
-                  <li class="nav__item"><a class="menu-item active undefined" href="about.html">About</a></li>
-                  <li class="nav__item"><a class="menu-item undefined" href="javascript:void(0)">Services<i class="menu__icon fas fa-chevron-down ml-2"></i></a>
-                    <ul class="nav__submenu submenu">
-                      <div class="row">
-                        <div class="col-12">
-                          <li class="submenu__item"><a class="submenu-item" href="ios.html">iOS App Development</a></li>
-                          <li class="submenu_item"><a class="submenu-item" href="android.html">Android App Development</a></li>
-                          <li class="submenu__item"><a class="submenu-item" href="websites.html">Websites Development Services</a></li>
-                          <li class="submenu__item"><a class="submenu-item" href="unity.html">Unity 3D Game Development</a></li>
-                          <li class="submenu__item"><a class="submenu-item" href="marketing.html">Digital Marketing Services</a></li>
-                          <li class="submenu__item"><a class="submenu-item" href="ui.html">UI/UX Design Services</a></li>
-                        </div>
-                      </div>
-                    </ul>
-                  </li>
-                  <li class="nav__item"><a class="menu-item undefined" href="portfolio.html">Portfolio</a></li>
-                  <li class="nav__item"><a class="menu-item undefined" href="blog.html">Blog</a></li>
-                  <li class="nav__item"><a class="menu-item undefined" href="contact.html">Contact</a></li>
-                </ul>
-              </div>
-              <div class="col-3">
-                <div class="nav__links d-flex justify-content-end"><a class="nav-link" href="services/contact.html">Get a free quote</a><a class="nav-link nav-link--call" href="services/contact.html">Call <i class="contact-icon fas fa-phone"></i></a></div>
-              </div>
-              <div class="col-12 d-block d-sm-none">
+            <div class="row">
+              <div class="col-12">
                 <div class="burger__menu">
                   <input id="checkbox" type="checkbox"/>
                   <label class="burger__button" for="checkbox">
@@ -88,7 +59,42 @@
             </div>
           </div>
         </nav>
-        <hr class="nav__line"/>
+        <nav class="nav d-none d-md-block">
+          <div class="container">
+            <div class="row d-flex align-items-center">
+              <div class="col-12 col-xl-2">
+                <div class="nav__logo"><a href="index.html"><img class="mt-2" src="https://www.sparkleappz.com/wp-content/uploads/2019/12/logo-187x66.png" alt="logo"/></a></div>
+              </div>
+              <div class="col-12 col-lg-8 col-xl-5 offset-xl-2">
+                <ul class="nav__menu menu d-flex justify-content-between">
+                  <li class="nav__item"><a class="menu-item nav__active" href="index.html">Home  </a></li>
+                  <li class="nav__item"><a class="menu-item active undefined" href="about.html">About</a></li>
+                  <li class="nav__item"><a class="menu-item undefined" href="javascript:void(0)">Services<i class="menu__icon fas fa-chevron-down ml-2"></i></a>
+                    <ul class="nav__submenu submenu">
+                      <div class="row">
+                        <div class="col-12">
+                          <li class="submenu__item"><a class="submenu-item" href="ios.html">iOS App Development</a></li>
+                          <li class="submenu_item"><a class="submenu-item" href="android.html">Android App Development</a></li>
+                          <li class="submenu__item"><a class="submenu-item" href="websites.html">Websites Development Services</a></li>
+                          <li class="submenu__item"><a class="submenu-item" href="unity.html">Unity 3D Game Development</a></li>
+                          <li class="submenu__item"><a class="submenu-item" href="marketing.html">Digital Marketing Services</a></li>
+                          <li class="submenu__item"><a class="submenu-item" href="ui.html">UI/UX Design Services</a></li>
+                        </div>
+                      </div>
+                    </ul>
+                  </li>
+                  <li class="nav__item"><a class="menu-item undefined" href="portfolio.html">Portfolio</a></li>
+                  <li class="nav__item"><a class="menu-item undefined" href="blog.html">Blog</a></li>
+                  <li class="nav__item"><a class="menu-item undefined" href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+              <div class="col-8 col-lg-4 col-xl-3">
+                <div class="nav__links d-flex justify-content-end"><a class="nav-link" href="services/contact.html">Get a free quote</a><a class="nav-link nav-link--call" href="services/contact.html">Call <i class="contact-icon fas fa-phone"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <hr class="nav__line d-none d-md-block"/>
     <main class="main">
       <section>
         <div class="main__head head">

@@ -1,13 +1,12 @@
 mixin nav(_c1, _c2, _c3, _c4, _c5, _c6)
-    nav.nav
+    nav.nav.d-none.d-md-block
         .container
             .row.d-flex.align-items-center
-                .col-2
+                .col-12.col-xl-2
                     .nav__logo
                         a(href="index.html")
-                            img(src="https://www.sparkleappz.com/wp-content/uploads/2019/12/logo-187x66.png", alt="logo")
-                .col-5.offset-2
-                    
+                            img.mt-2(src="https://www.sparkleappz.com/wp-content/uploads/2019/12/logo-187x66.png", alt="logo")
+                .col-12.col-lg-8.col-xl-5.offset-xl-2
                         ul.nav__menu.menu.d-flex.justify-content-between
                             li.nav__item
                                 a.menu-item(href="index.html", class= `${_c1}`) Home  
@@ -38,11 +37,13 @@ mixin nav(_c1, _c2, _c3, _c4, _c5, _c6)
                             li.nav__item
                                 a.menu-item(href="contact.html", class= `${_c6}`) Contact
                                 
-                .col-3
+                .col-8.col-lg-4.col-xl-3
                     .nav__links.d-flex.justify-content-end
                         a.nav-link(href="services/contact.html") Get a free quote
                         a.nav-link.nav-link--call(href="services/contact.html") Call 
                                 i.contact-icon.fas.fa-phone
-                include burger/_burger.pug
                 
-    hr.nav__line
+                
+    hr.nav__line.d-none.d-md-block
+include burger/_burger.pug
++burger
