@@ -8869,7 +8869,7 @@ a.text-dark:hover, a.text-dark:focus {
   -ms-flex-align: center;
   align-items: center;
   position: absolute;
-  right: 40px;
+  right: 20px;
   width: 60px;
   height: 60px;
   cursor: pointer;
@@ -9093,6 +9093,11 @@ a.text-dark:hover, a.text-dark:focus {
   text-transform: uppercase;
   text-align: center;
   text-align: start; }
+  @media screen and (max-width: 575px) {
+    .head__title {
+      font-size: 8vw;
+      text-align: center;
+      line-height: 48px; } }
 
 .head__img {
   width: 90%;

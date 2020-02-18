@@ -2,9 +2,18 @@
   &__title {
     @include title($mFont, 40px, 64px, 500);
     text-align: start;
+
+    @media screen and (max-width: 575px) {
+      font-size: 8vw;
+      text-align: center;
+      line-height: 48px;
+    }
   }
   &__img {
     width: 90%;
     margin-bottom: 10%;
+
+    @media screen and (max-width: 575px) {
+    }
   }
 }
