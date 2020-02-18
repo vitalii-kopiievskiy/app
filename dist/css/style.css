@@ -9801,6 +9801,9 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 42px;
     line-height: 63px;
     letter-spacing: 2.3px; }
+    @media screen and (max-width: 575px) {
+      .glimpse__title {
+        margin-top: 40px; } }
   .glimpse__txt, .glimpse__subtxt {
     font-family: "Varela Round", sans-serif;
     font-size: 16px;
@@ -9822,6 +9825,9 @@ a.text-dark:hover, a.text-dark:focus {
     -webkit-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
     transition: all 0.3s linear; }
+    @media screen and (max-width: 575px) {
+      .glimpse__link {
+        width: 100%; } }
     .glimpse__link:hover {
       text-decoration: none;
       color: #315fda;
@@ -9870,6 +9876,9 @@ a.text-dark:hover, a.text-dark:focus {
   transition: all 0.3s linear;
   text-transform: uppercase;
   margin-bottom: 80px; }
+  @media screen and (max-width: 575px) {
+    .build__link {
+      margin-bottom: 40px; } }
   .build__link:hover {
     text-decoration: none;
     color: white;
@@ -9891,18 +9900,27 @@ a.text-dark:hover, a.text-dark:focus {
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     height: 80%; }
+    @media screen and (max-width: 575px) {
+      .dev__block {
+        margin: 20px -20px 0px; } }
   .dev__subtitle {
     font-family: "Varela Round", sans-serif;
     font-size: 30px; }
 
 .ques {
   padding-bottom: 100px; }
+  @media screen and (max-width: 575px) {
+    .ques {
+      padding-bottom: 20px; } }
   .ques__accordion {
     padding: 15px; }
   .ques__headline {
     cursor: pointer;
     padding: 15px 20px;
     border-bottom: 2px solid #f0f0f0; }
+    @media screen and (max-width: 575px) {
+      .ques__headline {
+        padding: 15px 0; } }
   .ques__headline.in {
     border-bottom: none; }
   .ques__num {
@@ -9918,6 +9936,9 @@ a.text-dark:hover, a.text-dark:focus {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s; }
+    @media screen and (max-width: 575px) {
+      .ques__item {
+        font-size: 16px; } }
   .ques__txt {
     padding: 15px 20px;
     font-family: "Varela Round", sans-serif;
@@ -9931,6 +9952,9 @@ a.text-dark:hover, a.text-dark:focus {
 
 .form__content {
   margin-top: 45%; }
+  @media screen and (max-width: 1199px) {
+    .form__content {
+      margin-top: 40px; } }
 
 .form__headline {
   font-family: "Poppins", sans-serif;
@@ -9940,6 +9964,10 @@ a.text-dark:hover, a.text-dark:focus {
   text-transform: uppercase;
   text-align: center;
   color: white; }
+  @media screen and (max-width: 575px) {
+    .form__headline {
+      font-size: 32px;
+      line-height: 42px; } }
 
 .form__txt {
   font-family: "Varela Round", sans-serif;

@@ -4,8 +4,8 @@ mixin glimpse(_title, _txt, _subtxt, _link, _linktxt)
             .container
                 .row
                     .col-12.d-flex.flex-column.align-items-center
-                        h2.glimpse__title= _title
-                        p.mt-4.text-center.glimpse__txt= _txt
+                        h2.glimpse__title.text-center= _title
+                        p.mt-2.mt-sm-4.text-center.glimpse__txt= _txt
                         p.text-center.glimpse__subtxt= _subtxt
                         a.mt-3.mb-5.glimpse__link(href= _link)= _linktxt
              

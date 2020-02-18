@@ -39,6 +39,11 @@
     transition: all 0.3s linear;
     text-transform: uppercase;
     margin-bottom: 80px;
+
+    @media screen and (max-width: 575px) {
+      margin-bottom: 40px;
+    }
+
     &:hover {
       text-decoration: none;
       color: white;

@@ -8,6 +8,9 @@
     font-size: 42px;
     line-height: 63px;
     letter-spacing: 2.3px;
+    @media screen and (max-width: 575px) {
+      margin-top: 40px;
+    }
   }
 
   &__txt,
@@ -31,6 +34,9 @@
     padding-top: 15px;
     border-radius: 50px;
     transition: all 0.3s linear;
+    @media screen and (max-width: 575px) {
+      width: 100%;
+    }
     &:hover {
       text-decoration: none;
       color: #315fda;
