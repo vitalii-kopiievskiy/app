@@ -1,5 +1,6 @@
 #scrollTop {
   position: fixed;
+  width: 60px;
   right: 30px;
   bottom: 30px;
   z-index: 100;
@@ -7,6 +8,7 @@
   font-size: 42px;
   color: #2354da83;
   transition: all 0.3s linear;
+
   &:hover {
     color: #2354da;
     transition: all 0.3s linear;
