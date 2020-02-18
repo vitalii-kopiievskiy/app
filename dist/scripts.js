@@ -224,3 +224,21 @@ $(document).ready(function() {
 });
 
 AOS.init();
+
+$(function() {
+  $(window).scroll(function() {
+    if ($(this).scrollTop() != 0) {
+      $('#scrollTop').fadeIn();
+    } else {
+      $('#scrollTop').fadeOut();
+    }
+  });
+  $('#scrollTop').click(function() {
+    $('body,html').animate(
+      {
+        scrollTop: 0
+      },
+      700
+    );
+  });
+});

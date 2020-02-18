@@ -8829,8 +8829,6 @@ a.text-dark:hover, a.text-dark:focus {
 
 .nav {
   background-color: white;
-  position: -webkit-sticky;
-  position: sticky;
   top: 0;
   z-index: 100; }
   .nav__item {
@@ -9130,6 +9128,23 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: "Varela Round", sans-serif;
   font-size: 14px;
   line-height: 26px; }
+
+#scrollTop {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 100;
+  cursor: pointer;
+  font-size: 42px;
+  color: #2354da83;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+  #scrollTop:hover {
+    color: #2354da;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
 
 .head__title {
   font-family: "Montserrat", sans-serif;
