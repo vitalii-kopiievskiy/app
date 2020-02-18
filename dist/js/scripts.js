@@ -1,78 +1,53 @@
+// Slider block partners
 new Swiper('.partners__slider', {
   direction: 'horizontal',
   loop: true,
-  // spaceBetween: 40,
-  // autoHeight: true,
   speed: 1000,
   slidesPerView: 3,
   centeredSlides: true,
   effect: 'slide',
-  // slidesOffsetBefore: 360,
   autoplay: {
     delay: 2000
   },
   breakpoints: {
     320: {
       slidesPerView: 1,
-      // slidesOffsetBefore: 350,
       spaceBetween: 40
     },
     425: {
       slidesPerView: 3
-      // slidesOffsetBefore: 360
     }
   },
 
-  // Navigation arrows
   navigation: {
     nextEl: '.partners__icon-prev',
     prevEl: '.partners__icon-next'
   }
 });
 
+// Slider block portfolio
 new Swiper('.portfolio__slider', {
-  // Optional parameters
-  direction: 'horizontal', // направление слайдов ("vertical" или "horizontal")
-  loop: true, // зацикливание слайдера
-  // width: 526, //ширина
-  // height: 300, //высота
-  // spaceBetween: 40,
-  // autoHeight: true, // автоматическая подгонка слайдера по высоте слайдов
-  //   initialSlide: 1, //номер индекса начального слайда
-  speed: 1000, // продолжительность перехода
-
-  slidesPerView: 1, // колличество слайдов на просмотр
-  centeredSlides: true, // активный слайд по центру
-  effect: 'fade', // "slide", "fade", "cube", "coverflow" or "flip" - эффект переключения слайдов
-  // slidesOffsetBefore: 360, // смещение слайдов в начале
-  //   slidesOffsetAfter: 100, // смещение слайдов в конце
+  direction: 'horizontal',
+  loop: true,
+  speed: 1000,
+  slidesPerView: 1,
+  centeredSlides: true,
+  effect: 'fade',
   autoplay: {
-    delay: 2000 // автовоспроизведение
+    delay: 2000
   },
-
-  //   grabCursor: true, // перемещение слайдов курсором
-
-  // If we need pagination
-
   pagination: {
     el: '.portfolio__pagination',
-    type: 'bullets', // "bullets", "fraction", "progressbar" or "custom"
-    clickable: true // переключение слайдов пагинацией
-    // dynamicBullets: true
+    type: 'bullets',
+    clickable: true
   },
-
-  // Navigation arrows
   navigation: {
     nextEl: '.ortfolio__icon-prev',
     prevEl: '.tech__icon-next'
   }
-
-  // // And if we need scrollbar
-  // scrollbar: {
-  //   el: '.swiper-scrollbar'
-  // }
 });
 
+// Slider block technologies
 new Swiper('.tech__slider', {
   direction: 'horizontal',
   loop: true,
@@ -82,55 +57,25 @@ new Swiper('.tech__slider', {
   slidesPerView: 3,
   centeredSlides: true,
   effect: 'slide',
-
   autoplay: {
     delay: 2000
   },
   breakpoints: {
     320: {
       slidesPerView: 1,
-      // slidesOffsetBefore: 350,
       spaceBetween: 40
     },
     425: {
       slidesPerView: 3
-      // slidesOffsetBefore: 360
     }
   },
-
-  // Navigation arrows
   navigation: {
     nextEl: '.tech__icon-prev',
     prevEl: '.tech__icon-next'
   }
 });
 
-let nav = document.querySelector('.nav');
-document.addEventListener('scroll', function() {
-  if (window.pageYOffset >= 4) {
-    nav.classList.add('scroll');
-  } else {
-    nav.classList.remove('scroll');
-  }
-});
-
-// Выпадающее меню пункта service
-$(function() {
-  $('#menu li#sub__menu ul').hide();
-  // $('#menu li#sub__menu').hover(
-  //   function() {
-  //     $(this)
-  //       .find('ul')
-  //       .slideDown();
-  //   },
-  //   function() {
-  //     $(this)
-  //       .find('ul')
-  //       .slideUp('fast');
-  //   }
-  // );
-});
-
+// Slider block clients
 $(document).ready(function() {
   $('.owl-carousel').owlCarousel({
     loop: true,
@@ -143,7 +88,7 @@ $(document).ready(function() {
   });
 });
 
-// Block about - animate numbers
+// Animate numbers - block about
 $(window).scroll(function() {
   $('.achiev__number--first').animate(
     { num: 150 - 3 /* - начало */ },
@@ -192,7 +137,7 @@ $(window).scroll(function() {
   );
 });
 
-// Accordion
+// Accordion block about
 
 $(document).ready(function() {
   $('.accordion__head').click(function() {
@@ -208,6 +153,7 @@ $(document).ready(function() {
   });
 });
 
+// Accordion block questions
 $(document).ready(function() {
   $('.ques__headline').click(function() {
     $(this)
@@ -223,8 +169,10 @@ $(document).ready(function() {
   });
 });
 
+//Blocks AOS
 AOS.init();
 
+// Button scrollTop
 $(function() {
   $(window).scroll(function() {
     if ($(this).scrollTop() != 0) {
