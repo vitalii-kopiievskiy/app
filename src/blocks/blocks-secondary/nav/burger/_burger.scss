@@ -98,6 +98,11 @@
 }
 
 .burger {
+  display: none;
+  @media screen and (max-width: 991px) {
+    display: block;
+  }
+
   &__links {
     margin-top: 7px;
     margin-left: -5px;

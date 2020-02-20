@@ -31,12 +31,16 @@
   background-color: white;
   top: 0;
   z-index: 100;
-  
+
   &__item {
     &:hover .submenu {
       visibility: visible;
       transition: all 0.2s linear;
       opacity: 1;
+    }
+
+    @media screen and (max-width: 991px) {
+      display: none !important;
     }
   }
   &__links {
