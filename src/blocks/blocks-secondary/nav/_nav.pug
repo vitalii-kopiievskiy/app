@@ -1,19 +1,19 @@
 mixin nav(_c1, _c2, _c3, _c4, _c5, _c6)
     nav.nav.d-none.d-md-block
         .container
-            .row.d-flex.align-items-baseline
-                .col-md-4.col-xl-2.mt-2
+            .row.d-flex.align-items-baseline.justify-content-between
+                .col-lg-3.mt-2
                     .nav__logo
                         a(href="index.html")
                             img.img-fluid(src="https://www.sparkleappz.com/wp-content/uploads/2019/12/logo-187x66.png", alt="logo")
-                .col-xl-10.d-flex.justify-content-end.align-items-baseline
+                .col-lg-8.d-flex.justify-content-end.align-items-baseline
                         ul.nav__menu.menu.d-flex.align-items-center
                             li.nav__item
                                 a.menu-item(href="index.html", class= `${_c1}`) Home  
                             li.nav__item
                                 a.menu-item.active(href="about.html", class= `${_c2}`) About
                             li.nav__item
-                                a.menu-item(href="javascript:void(0)", class= `${_c3}`) Services
+                                a.menu-item.menu-item--float.d-inline-flex.align-items-center(href="javascript:void(0)", class= `${_c3}`) Services
                                     i.menu__icon.fas.fa-chevron-down.ml-2
                                 ul.nav__submenu.submenu
                                     li.submenu__item
