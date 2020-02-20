@@ -6,11 +6,14 @@
   display: flex;
   align-items: center;
   position: absolute;
+  top: -70px;
   right: 20px;
-  width: 55px;
-  height: 55px;
+  width: 42px;
+  height: 42px;
   cursor: pointer;
   z-index: 2;
+  background-color: #0aa5aa;
+  border-radius: 2px;
 }
 
 .burger-nav__list {
@@ -21,10 +24,9 @@
   width: 100%;
   height: 700px;
   margin: 0;
-
   list-style: none;
-  text-align: center;
-  background-color: white;
+  background-color: $bg;
+
   left: 0;
   z-index: 1;
   transition: all 0.3s linear;
@@ -37,22 +39,26 @@
 }
 
 .burger-nav {
+  &__item {
+    border-bottom: 1px solid #eaeaea;
+  }
+
   &__list {
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
+    border-top: 1px solid #eaeaea;
   }
 
   &__link {
-    font-family: 'Varela Round', sans-serif;
-    font-size: 16px;
-    line-height: 42px;
+    font-family: $vFont;
+    font-size: 12px;
+    line-height: 38px;
     text-transform: uppercase;
     color: #3a3a3a;
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s linear;
-
+    padding-left: 20px;
     &:hover {
       color: #4169e1;
       transition: all 0.3s linear;
@@ -79,7 +85,7 @@
 .line {
   fill: none;
   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-  stroke: #2355da;
+  stroke: white;
   stroke-width: 5.5;
   stroke-linecap: round;
 }
@@ -99,6 +105,7 @@
 
 .burger {
   display: none;
+
   @media screen and (max-width: 991px) {
     display: block;
   }
@@ -107,7 +114,23 @@
     margin-top: 7px;
     margin-left: -5px;
   }
+  &-item {
+    font-family: $vFont;
+    font-size: 12px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #3a3a3a;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s linear;
+    padding-left: 20px;
 
+    &:hover {
+      color: #4169e1;
+      transition: all 0.3s linear;
+      text-decoration: none;
+    }
+  }
   &-link {
     display: block;
     width: 40px;
@@ -135,21 +158,12 @@
 }
 
 .burger__submenu {
+  border-top: 1px solid #eaeaea;
   display: none;
   background-color: #fff;
   position: relative;
 }
-.burger-item {
-  display: block;
-  font-family: $vFont;
-  font-size: 16px;
 
-  line-height: 32px;
-  font-weight: bold;
-  color: #3a3a3a;
-
-  &:hover {
-    color: #2355da;
-    text-decoration: none;
-  }
+.submenu__item {
+  border-bottom: 1px solid #eaeaea;
 }
