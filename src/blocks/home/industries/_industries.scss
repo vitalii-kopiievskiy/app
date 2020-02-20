@@ -1,6 +1,7 @@
 .industries {
   &__blocks {
     margin-bottom: 90px;
+
     @media screen and (max-width: 575px) {
       margin-bottom: 40px;
     }
@@ -19,6 +20,7 @@
       transition: all 0.3s linear;
     }
   }
+
   &__subtitle {
     @extend %text-v-r;
     line-height: 26px;
