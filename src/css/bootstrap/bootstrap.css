@@ -461,7 +461,7 @@ pre {
       max-width: 960px; } }
   @media (min-width: 1440px) {
     .container {
-      max-width: 1340px; } }
+      max-width: 1600px; } }
 
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
   width: 100%;
@@ -484,7 +484,7 @@ pre {
 
 @media (min-width: 1440px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1340px; } }
+    max-width: 1600px; } }
 
 .row {
   display: -webkit-box;
