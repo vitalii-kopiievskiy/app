@@ -1,14 +1,13 @@
 mixin nav(_c1, _c2, _c3, _c4, _c5, _c6)
     nav.nav.d-none.d-md-block
         .container
-            .row.d-flex.align-items-center
-                .col-md-4.col-xl-2
-                    
+            .row.d-flex.align-items-baseline
+                .col-md-4.col-xl-2.mt-2
                     .nav__logo
                         a(href="index.html")
-                            img.img-fluid.mt-2(src="https://www.sparkleappz.com/wp-content/uploads/2019/12/logo-187x66.png", alt="logo")
-                .col-md-8.col-xl-5.offset-xl-2
-                        ul.nav__menu.menu.d-flex.justify-content-between
+                            img.img-fluid(src="https://www.sparkleappz.com/wp-content/uploads/2019/12/logo-187x66.png", alt="logo")
+                .col-xl-10.d-flex.justify-content-end.align-items-baseline
+                        ul.nav__menu.menu.d-flex.align-items-center
                             li.nav__item
                                 a.menu-item(href="index.html", class= `${_c1}`) Home  
                             li.nav__item
@@ -35,14 +34,10 @@ mixin nav(_c1, _c2, _c3, _c4, _c5, _c6)
                                 a.menu-item(href="blog.html", class= `${_c5}`) Blog
                             li.nav__item
                                 a.menu-item(href="contact.html", class= `${_c6}`) Contact
-                                
-                .col-xl-3.d-none.d-xl-block
-                    .nav__links.d-flex.justify-content-end
-                        a.nav-link(href="mailto:info@sparkleappz.com") Get a free quote
-                        a.nav-link.nav-link--call(href="tel:+91-7737791591") Call 
-                                i.contact-icon.fas.fa-phone
-                
-                
+                        .nav__links.d-flex.justify-content-end
+                            a.nav-link(href="mailto:info@sparkleappz.com") Get a free quote
+                            a.nav-link.nav-link--call(href="tel:+91-7737791591") Call 
+                                    i.contact-icon.fas.fa-phone
         hr.nav__line.d-none.d-md-block
-include burger/_burger.pug
-+burger
+    include burger/_burger.pug
+    +burger

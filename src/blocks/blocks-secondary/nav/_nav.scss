@@ -1,5 +1,4 @@
 .menu {
-  position: relative;
   &-item {
     font-family: 'Varela Round', sans-serif;
     font-size: 14px;
@@ -9,6 +8,11 @@
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s linear;
+    padding: 0 14px;
+
+    @media screen and (max-width: 921px) {
+      display: none;
+    }
 
     &:hover {
       color: #4169e1;
@@ -16,6 +20,7 @@
       text-decoration: none;
     }
   }
+
   &__icon {
     font-size: 9px;
   }
@@ -26,16 +31,15 @@
   z-index: 100;
 
   &__item {
-    padding-top: 16px;
-
     &:hover .submenu {
       visibility: visible;
       transition: all 0.2s linear;
       opacity: 1;
     }
   }
+
   &-link {
-    padding-top: 11px;
+    padding-top: 12px;
     font-family: 'Varela Round', sans-serif;
     font-size: 13px;
     font-weight: 600;
@@ -50,6 +54,10 @@
     border: 2px solid #2355da;
     text-decoration: none;
     transition: all 0.3s linear;
+
+    @media screen and (max-width: 921px) {
+      display: none;
+    }
     &:hover {
       color: white;
       background-color: #2355da;
@@ -68,6 +76,10 @@
   }
   &__active {
     color: #2355da;
+  }
+
+  &__line {
+    margin-top: 0;
   }
 }
 .scroll {
