@@ -11,12 +11,9 @@
   &__subtitle {
     @extend %subtitle-v-r;
     font-weight: 600;
-
-    @media screen and (max-width: 575px) {
-      margin-top: 20px;
-    }
   }
   &__text {
     @extend %text-v-r;
+    
   }
 }
