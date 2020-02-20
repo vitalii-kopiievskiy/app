@@ -10,8 +10,16 @@
     transition: all 0.3s linear;
     padding: 0 14px;
 
-    
-    
+    // &--float {
+    //   @media screen and (max-width: 921px) {
+    //     display: none;
+    //   }
+    // }
+
+    // @media screen and (max-width: 921px) {
+    //   display: none !important;
+    // }
+
     &:hover {
       color: #4169e1;
       transition: all 0.3s linear;
@@ -35,7 +43,11 @@
       opacity: 1;
     }
   }
-
+  &__links {
+    @media screen and (max-width: 991px) {
+      display: none !important;
+    }
+  }
   &-link {
     padding-top: 12px;
     font-family: 'Varela Round', sans-serif;
@@ -53,9 +65,9 @@
     text-decoration: none;
     transition: all 0.3s linear;
 
-    @media screen and (max-width: 921px) {
-      display: none;
-    }
+    // @media screen and (max-width: 921px) {
+    //   display: none;
+    // }
     &:hover {
       color: white;
       background-color: #2355da;
