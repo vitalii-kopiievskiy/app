@@ -5,6 +5,11 @@
     background-color: $bg;
     margin-top: 56px;
     padding: 20px;
+
+    @media screen and (max-width: 1199px) and (min-width: 768px) {
+      margin-right: -40px;
+    }
+
     @media screen and (max-width: 575px) {
       margin-right: -20px;
       margin-left: -20px;
@@ -131,6 +136,9 @@
     @include title($pFont, 30px, 30px, bold);
     color: white;
     text-align: left;
+    @media screen and (max-width: 991px) and (min-width: 768px) {
+      font-size: 24px;
+    }
   }
   &__subtitle {
     @include title($vFont, 17px, 23px, bold);
@@ -149,6 +157,10 @@
     }
     &:hover .info__icon {
       text-decoration: underline;
+    }
+
+    @media screen and (max-width: 991px) and (min-width: 768px) {
+      font-size: 1.4vw;
     }
   }
   &__btn {
