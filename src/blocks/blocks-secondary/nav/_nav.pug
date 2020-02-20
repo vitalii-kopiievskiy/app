@@ -2,11 +2,11 @@ mixin nav(_c1, _c2, _c3, _c4, _c5, _c6)
     nav.nav.d-none.d-md-block
         .container
             .row.d-flex.align-items-baseline.justify-content-between
-                .col-xl-3.mt-2.d-none.d-md-block
+                .col-lg-3.mt-2.d-none.d-md-block
                     .nav__logo
                         a(href="index.html")
-                            img.img-fluid(src="https://www.sparkleappz.com/wp-content/uploads/2019/12/logo-187x66.png", alt="logo")
-                .col-lg-8.col-xl-6.d-flex.justify-content-center.align-items-baseline
+                            img.nav__img.img-fluid(src="https://www.sparkleappz.com/wp-content/uploads/2019/12/logo-187x66.png", alt="logo")
+                .col-lg-9.d-flex.justify-content-center.align-items-baseline
                         ul.nav__menu.menu.d-flex.align-items-center
                             li.nav__item
                                 a.menu-item(href="index.html", class= `${_c1}`) Home  
@@ -34,11 +34,10 @@ mixin nav(_c1, _c2, _c3, _c4, _c5, _c6)
                                 a.menu-item(href="blog.html", class= `${_c5}`) Blog
                             li.nav__item
                                 a.menu-item(href="contact.html", class= `${_c6}`) Contact
-                .col-lg-4.col-xl-3.d-flex.justify-content-end.align-items-baseline.d-none.d-md-block
-                    .nav__links.d-flex.justify-content-end
-                        a.nav-link(href="mailto:info@sparkleappz.com") Get a free quote
-                        a.nav-link.nav-link--call(href="tel:+91-7737791591") Call 
-                                i.contact-icon.fas.fa-phone
+                        .nav__links.d-flex.justify-content-end
+                            a.nav-link(href="mailto:info@sparkleappz.com") Get a free quote
+                            a.nav-link.nav-link--call(href="tel:+91-7737791591") Call 
+                                    i.contact-icon.fas.fa-phone
         hr.nav__line.d-none.d-md-block
     include burger/_burger.pug
     +burger
