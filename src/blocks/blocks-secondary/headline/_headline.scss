@@ -3,6 +3,14 @@
 }
 .headline {
   margin: 8px 0;
+  &__links {
+    @media screen and (max-width: 365px) {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-end;
+    }
+  }
+
   &__link {
     padding: 8px;
     font-family: 'Varela Round', sans-serif;

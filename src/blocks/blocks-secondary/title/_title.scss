@@ -1,4 +1,6 @@
 .main__title {
   @extend %title-p-b;
-  
+  @media screen and (max-width: 575px) {
+    font-size: 24px;
+  }
 }

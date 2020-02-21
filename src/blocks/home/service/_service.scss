@@ -11,9 +11,11 @@
 
   &__image {
     text-align: center;
+    
   }
   &__subtitle {
     @extend %subtitle-v-r;
+    font-style: 20px;
   }
   &__text {
     @extend %text-v-r;

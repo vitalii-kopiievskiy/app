@@ -7,14 +7,13 @@
       font-size: 8vw;
       text-align: center;
       line-height: 48px;
-      margin-top: 60px;
     }
   }
   &__img {
     width: 90%;
     margin-bottom: 10%;
 
-    @media screen and (max-width: 575px) {
+    @media screen and (max-width: 767px) {
       width: 100%;
     }
   }

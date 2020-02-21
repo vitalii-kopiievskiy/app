@@ -1,44 +1,45 @@
 mixin nav(_c1, _c2, _c3, _c4, _c5, _c6)
-    nav.nav.d-none.d-md-block
-        .container
-            .row.d-flex.align-items-baseline.justify-content-between
-                .col-xl-3.mt-2.d-none.d-md-block
-                    .nav__logo
-                        a(href="index.html")
-                            img.img-fluid(src="https://www.sparkleappz.com/wp-content/uploads/2019/12/logo-187x66.png", alt="logo")
-                .col-lg-8.col-xl-6.d-flex.justify-content-center.align-items-baseline
-                        ul.nav__menu.menu.d-flex.align-items-center
-                            li.nav__item
-                                a.menu-item(href="index.html", class= `${_c1}`) Home  
-                            li.nav__item
-                                a.menu-item.active(href="about.html", class= `${_c2}`) About
-                            li.nav__item
-                                a.menu-item.menu-item--float.d-inline-flex.align-items-center(href="javascript:void(0)", class= `${_c3}`) Services
-                                    i.menu__icon.fas.fa-chevron-down.ml-2
-                                ul.nav__submenu.submenu
-                                    li.submenu__item
-                                        a.submenu-item(href="ios.html") iOS App Development
-                                    li.submenu_item
-                                        a.submenu-item(href="android.html") Android App Development
-                                    li.submenu__item
-                                        a.submenu-item(href="websites.html") Websites Development Services
-                                    li.submenu__item
-                                        a.submenu-item(href="unity.html") Unity 3D Game Development
-                                    li.submenu__item
-                                        a.submenu-item(href="marketing.html") Digital Marketing Services
-                                    li.submenu__item
-                                        a.submenu-item(href="ui.html") UI/UX Design Services
-                            li.nav__item
-                                a.menu-item(href="portfolio.html", class= `${_c4}`) Portfolio
-                            li.nav__item
-                                a.menu-item(href="blog.html", class= `${_c5}`) Blog
-                            li.nav__item
-                                a.menu-item(href="contact.html", class= `${_c6}`) Contact
-                .col-lg-4.col-xl-3.d-flex.justify-content-end.align-items-baseline.d-none.d-md-block
-                    .nav__links.d-flex.justify-content-end
-                        a.nav-link(href="mailto:info@sparkleappz.com") Get a free quote
-                        a.nav-link.nav-link--call(href="tel:+91-7737791591") Call 
-                                i.contact-icon.fas.fa-phone
-        hr.nav__line.d-none.d-md-block
-    include burger/_burger.pug
-    +burger
+    nav
+        .nav
+            .container
+                .row
+                    .col-12
+                        .nav__block.pt-3
+                            .nav__logo
+                                a(href="index.html")
+                                    img.nav__img.img-fluid(src="https://www.sparkleappz.com/wp-content/uploads/2019/12/logo-187x66.png", alt="logo")
+                        
+                            ul.nav__menu.menu.d-flex.justify-content-end.align-items-baseline
+                                li.nav__item
+                                    a.menu-item(href="index.html", class= `${_c1}`) Home  
+                                li.nav__item
+                                    a.menu-item.active(href="about.html", class= `${_c2}`) About
+                                li.nav__item
+                                    a.menu-item.menu-item--float.d-inline-flex.align-items-center(href="javascript:void(0)", class= `${_c3}`) Services
+                                        i.menu__icon.fas.fa-chevron-down.ml-2
+                                    ul.nav__submenu.submenu
+                                        li.submenu__item
+                                            a.submenu-item(href="ios.html") iOS App Development
+                                        li.submenu_item
+                                            a.submenu-item(href="android.html") Android App Development
+                                        li.submenu__item
+                                            a.submenu-item(href="websites.html") Websites Development Services
+                                        li.submenu__item
+                                            a.submenu-item(href="unity.html") Unity 3D Game Development
+                                        li.submenu__item
+                                            a.submenu-item(href="marketing.html") Digital Marketing Services
+                                        li.submenu__item
+                                            a.submenu-item(href="ui.html") UI/UX Design Services
+                                li.nav__item
+                                    a.menu-item(href="portfolio.html", class= `${_c4}`) Portfolio
+                                li.nav__item
+                                    a.menu-item(href="blog.html", class= `${_c5}`) Blog
+                                li.nav__item
+                                    a.menu-item(href="contact.html", class= `${_c6}`) Contact
+                                li.nav__links.d-flex.justify-content-end
+                                    a.nav-link(href="mailto:info@sparkleappz.com") Get a free quote
+                                    a.nav-link.nav-link--call(href="tel:+91-7737791591") Call 
+                                            i.contact-icon.fas.fa-phone
+            hr.nav__line.d-none.d-md-block
+        include burger/_burger.pug
+        +burger

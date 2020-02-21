@@ -1,16 +1,26 @@
 .network {
   &__link {
     @extend %subtitle-v-r;
-
     transition: all 0.3s linear;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 991px) and (min-width: 768px) {
+      font-size: 16px;
+    }
     &:hover {
       color: #4169e1;
       transition: all 0.3s linear;
       text-decoration: none;
     }
   }
-
+  &__item {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
   &__icon {
+    width: 30px;
     margin-right: 5px;
     width: 30px;
   }

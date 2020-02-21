@@ -1,5 +1,5 @@
 mixin burger
-    nav.burger.d-block.d-md-none
+    nav.burger
         .container
             .row
                 .col-12
@@ -10,21 +10,19 @@ mixin burger
                                 path.line.top(d='m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20')
                                 path.line.middle(d='m 70,50 h -40')
                                 path.line.bottom(d='m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20')
-                        ul.burger-nav__list
-                            li
-                                a.nav__img(href="index.html")
-                                    img.img-fluid.nav-img(src="https://www.sparkleappz.com/wp-content/uploads/2019/12/logo-187x66.png", alt="logo")
-                                
-                            li.burger-nav__item.mt-3
+                        ul.burger__list
+                            li.burger-nav__item
                                 a.burger-nav__link(href="index.html") Home
                             li.burger-nav__item
                                 a.burger-nav__link(href="about.html") About
                             li.burger-nav__item
                                 a.burger-nav__link(href="javascript:void(0)") Services
+                                input#submenubox(type='checkbox')
+                                label.submenu__button(for='submenubox')
                                 ul.burger__submenu
                                     li.submenu__item
                                         a.burger-item(href="ios.html") iOS App Development
-                                    li.submenu_item
+                                    li.submenu__item
                                         a.burger-item(href="android.html") Android App Development
                                     li.submenu__item
                                         a.burger-item(href="websites.html") Websites Development Services
@@ -40,7 +38,7 @@ mixin burger
                                 a.burger-nav__link(href="blog.html") Blog
                             li.burger-nav__item
                                 a.burger-nav__link(href="contact.html") Contact
-                                .nav__links.d-flex.justify-content-center.mt-3
-                                        a.nav-link(href="mailto:info@sparkleappz.com") Get a free quote
-                                        a.nav-link.nav-link--call(href="tel:+91-7737791591") Call 
-                                                i.contact-icon.fas.fa-phone
+                            li.burger__links.d-flex.justify-content-center.mt-3.pb-3
+                                    a.burger-link(href="mailto:info@sparkleappz.com") Get a free quote
+                                    a.burger-link.burger-link--call(href="tel:+91-7737791591") Call 
+                                            i.contact-icon.fas.fa-phone
