@@ -15,23 +15,36 @@
     color: white;
     display: block;
     margin: 0 auto;
-    @media screen and (max-width: 575px) {
-      font-size: 42px;
+
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      font-size: 4.8vw;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      font-size: 4vw;
     }
   }
   &__desc {
     @include title($vFont, 19px, 47px, 400);
     color: white;
     text-transform: unset;
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      font-size: 1.4vw;
+      line-height: 24px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      font-size: 1.1vw;
+      line-height: 24px;
+    }
   }
   &__line {
     background-color: white;
-    width: 1px;
+    width: 2px;
     height: 100%;
 
-    @media screen and (max-width: 991px) {
-      width: 30px;
-      height: 4px;
+    @media screen and (max-width: 767px) {
+      display: none;
     }
   }
 }
