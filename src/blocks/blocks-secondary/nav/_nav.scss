@@ -37,6 +37,9 @@
     }
   }
   &__menu {
+    display: flex;
+    margin-left: auto;
+
     @media screen and (max-width: 921px) {
       display: none !important;
     }
