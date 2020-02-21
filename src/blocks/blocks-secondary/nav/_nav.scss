@@ -10,12 +10,6 @@
     transition: all 0.3s linear;
     padding: 0 14px;
 
-    // &--float {
-    //   @media screen and (max-width: 921px) {
-    //     display: none;
-    //   }
-    // }
-
     &:hover {
       color: #4169e1;
       transition: all 0.3s linear;
@@ -29,9 +23,24 @@
 }
 .nav {
   background-color: white;
-  top: 0;
   z-index: 100;
 
+  &__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: between;
+    align-items: baseline;
+
+    @media screen and (max-width: 1032px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__menu {
+    @media screen and (max-width: 921px) {
+      display: none !important;
+    }
+  }
   &__item {
     &:hover .submenu {
       visibility: visible;
@@ -39,14 +48,14 @@
       opacity: 1;
     }
 
-    @media screen and (max-width: 991px) {
-      display: none !important;
-    }
-  }
-  &__links {
-    @media screen and (max-width: 991px) {
-      display: none !important;
-    }
+    //   @media screen and (max-width: 991px) {
+    //     display: none !important;
+    //   }
+    // }
+    // &__links {
+    //   @media screen and (max-width: 991px) {
+    //     display: none !important;
+    //   }
   }
   &-link {
     padding-top: 12px;
