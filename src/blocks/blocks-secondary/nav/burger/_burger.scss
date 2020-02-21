@@ -17,6 +17,11 @@
   border-radius: 2px;
 }
 
+
+.burger__menu {
+  margin-right: -20px;
+  margin-left: -20px;
+}
 .submenu__button {
   align-items: center;
   position: absolute;
@@ -64,7 +69,7 @@
   margin: 0;
   list-style: none;
   background-color: $bg;
-  left: 0;
+  border-top: 1px solid #eaeaea;
   z-index: 1;
   transition: all 0.3s linear;
 }
@@ -96,6 +101,7 @@
     text-decoration: none;
     transition: all 0.3s linear;
     padding-left: 20px;
+
     &:hover {
       color: #4169e1;
       transition: all 0.3s linear;
@@ -155,12 +161,11 @@
     font-family: $vFont;
     font-size: 12px;
     line-height: 38px;
-    text-transform: uppercase;
     color: #3a3a3a;
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s linear;
-    padding-left: 40px;
+    padding-left: 43px;
 
     &:before {
       content: '\f054';
@@ -170,6 +175,7 @@
       z-index: 2;
       left: 25px;
       font-size: 10px;
+      margin-left: 5px;
     }
     &:hover {
       color: #4169e1;
