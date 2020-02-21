@@ -1,7 +1,4 @@
 .form {
-  &__item {
-    margin-left: -40px;
-  }
   &__headline {
     @include title($pFont, 42px, 80px, bold);
     color: white;
