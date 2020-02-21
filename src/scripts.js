@@ -190,3 +190,19 @@ $(function() {
     );
   });
 });
+
+// Add burger icon
+
+$(document).ready(function() {
+  $('.submenu__button').click(function() {
+    $(this)
+      .toggleClass('in')
+      .next()
+      .slideToggle();
+    $('.submenu__button')
+      .not(this)
+      .removeClass('in')
+      .next()
+      .slideUp();
+  });
+});
