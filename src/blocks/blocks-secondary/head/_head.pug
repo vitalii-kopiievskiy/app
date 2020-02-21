@@ -3,7 +3,7 @@ mixin head(_title, _subtitle, _txt, _txtTwo, _link, _txtlink, _img, _alt)
         .main-head.mb-5
             .container
                 .row
-                    .col-lg-6
+                    .col-md-6.order-2.order-md-1
                         .main-head__content.ml-md-5
                             h1.main-head__title.text-center.text-md-left.mt-5= _title
                             h2.main-head__subtitle.text-center.text-md-left= _subtitle 
@@ -13,6 +13,6 @@ mixin head(_title, _subtitle, _txt, _txtTwo, _link, _txtlink, _img, _alt)
                             .col-lg-12.ml-md-5
                                 a.main-head__btn.mt-md-5(href= _link)= _txtlink
                                     i.main-head__icon.fas.fa-long-arrow-alt-right
-                    .col-lg-6
+                    .col-md-6.order-1.order-md-2
                         .main-head__img( data-aos="zoom-in")
                             img.img-fluid.d-block.mx-auto.main-head__image.mt-4(src= _img, alt= _alt)
