@@ -13,9 +13,8 @@
     padding: 15px 20px;
     border-bottom: 2px solid #f0f0f0;
 
-    @media screen and (max-width: 575px) {
-      padding: 15px 0;
-      text-align: center;
+    @media screen and (max-width: 767px) {
+      padding: 10px 0;
     }
   }
   &__headline.in {
@@ -35,8 +34,11 @@
     position: relative;
     transition: 0.3s;
 
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+    }
     @media screen and (max-width: 575px) {
-      font-size: 16px;
+      font-size: 12px;
     }
   }
   &__txt {
@@ -46,6 +48,10 @@
     line-height: 26px;
     color: #7a7a7a;
     margin-bottom: 0;
+
+    @media screen and (max-width: 575px) {
+      font-size: 12px;
+    }
   }
   &__panel {
     display: none;
