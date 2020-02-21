@@ -15,11 +15,6 @@
   z-index: 2;
   background-color: #0aa5aa;
   border-radius: 2px;
-
-  
-  @media screen and (min-width: 922px) {
-    display: none;
-  }
 }
 
 .burger__menu {
@@ -37,6 +32,7 @@
   z-index: 2;
   transition: all 0.3s linear;
   font-size: 12px;
+
   &:hover {
     color: #4169e1;
     transition: all 0.3s linear;

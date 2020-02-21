@@ -24,21 +24,17 @@
 .nav {
   background-color: white;
   z-index: 100;
-  &__line {
-    @media screen and (min-width: 922px) {
-      display: none;
-    }
-  }
+
   &__block {
     display: flex;
     flex-direction: row;
     justify-content: between;
     align-items: baseline;
 
-    // @media screen and (max-width: 1032px) {
-    //   display: flex;
-    //   flex-direction: column;
-    // }
+    @media screen and (max-width: 1032px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
   &__menu {
     @media screen and (max-width: 921px) {
