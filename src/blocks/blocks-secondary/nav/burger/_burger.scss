@@ -1,8 +1,3 @@
-#checkbox,
-#submenubox {
-  visibility: hidden;
-}
-
 .burger {
   display: none;
 
@@ -41,6 +36,24 @@
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+  }
+  &__el .top {
+    stroke-dasharray: 40 121;
+  }
+
+  &__el.active .top {
+    stroke-dashoffset: -68px;
+  }
+
+  &__el.active .bottom {
+    stroke-dashoffset: -68px;
+  }
+  &__el.active {
+    transform: rotate(45deg);
+  }
+
+  &__el .bottom {
+    stroke-dasharray: 40 121;
   }
 
   &__list {
@@ -144,7 +157,15 @@
       }
     }
   }
+
+  &__submenu {
+    border-top: 1px solid #eaeaea;
+    display: none;
+    background-color: $bg;
+    position: relative;
+  }
 }
+
 .submenu {
   &__button {
     display: block;
@@ -164,26 +185,29 @@
     }
   }
 
+  &__button:after {
+    content: '\f078';
+    font-family: 'FontAwesome';
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  &__button.in:after {
+    content: '\f077';
+    font-family: 'FontAwesome';
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    z-index: 2;
+  }
   &__item {
     border-bottom: 1px solid #eaeaea;
   }
 }
-.submenu__button:after {
-  content: '\f078';
-  font-family: 'FontAwesome';
-  position: absolute;
-  right: 15px;
-  cursor: pointer;
-  z-index: 2;
-}
-
-.submenu__button.in:after {
-  content: '\f077';
-  font-family: 'FontAwesome';
-  position: absolute;
-  right: 15px;
-  cursor: pointer;
-  z-index: 2;
+#checkbox,
+#submenubox {
+  visibility: hidden;
 }
 
 #submenubox:checked ~ .burger__submenu {
@@ -196,34 +220,10 @@
   transition: all 0.3s linear;
 }
 
-.burger__el.active {
-  transform: rotate(45deg);
-}
-
 .line {
   fill: none;
   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
   stroke: white;
   stroke-width: 5.5;
   stroke-linecap: round;
-}
-
-.burger__el .top {
-  stroke-dasharray: 40 121;
-}
-.burger__el .bottom {
-  stroke-dasharray: 40 121;
-}
-.burger__el.active .top {
-  stroke-dashoffset: -68px;
-}
-.burger__el.active .bottom {
-  stroke-dashoffset: -68px;
-}
-
-.burger__submenu {
-  border-top: 1px solid #eaeaea;
-  display: none;
-  background-color: $bg;
-  position: relative;
 }
