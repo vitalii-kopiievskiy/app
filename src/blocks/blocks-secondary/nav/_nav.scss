@@ -1,5 +1,41 @@
+.nav {
+  &__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: between;
+    align-items: baseline;
+
+    @media screen and (max-width: 1032px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__line {
+    margin-top: 0;
+    @media screen and (max-width: 921px) {
+      display: none;
+    }
+  }
+}
+
 .menu {
-  &-item {
+  display: flex;
+  margin-left: auto;
+
+  @media screen and (max-width: 921px) {
+    display: none !important;
+  }
+
+  &__item {
+    &:hover .submenu {
+      visibility: visible;
+      transition: all 0.2s linear;
+      opacity: 1;
+    }
+  }
+
+  &__link {
     font-family: 'Varela Round', sans-serif;
     font-size: 14px;
     line-height: 56px;
@@ -17,50 +53,7 @@
     }
   }
 
-  &__icon {
-    font-size: 9px;
-  }
-}
-.nav {
-  background-color: white;
-  z-index: 100;
-
-  &__block {
-    display: flex;
-    flex-direction: row;
-    justify-content: between;
-    align-items: baseline;
-
-    @media screen and (max-width: 1032px) {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-  &__menu {
-    display: flex;
-    margin-left: auto;
-
-    @media screen and (max-width: 921px) {
-      display: none !important;
-    }
-  }
-  &__item {
-    &:hover .submenu {
-      visibility: visible;
-      transition: all 0.2s linear;
-      opacity: 1;
-    }
-
-    //   @media screen and (max-width: 991px) {
-    //     display: none !important;
-    //   }
-    // }
-    // &__links {
-    //   @media screen and (max-width: 991px) {
-    //     display: none !important;
-    //   }
-  }
-  &-link {
+  &__btn {
     padding-top: 12px;
     font-family: 'Varela Round', sans-serif;
     font-size: 13px;
@@ -77,12 +70,10 @@
     text-decoration: none;
     transition: all 0.3s linear;
 
-    // @media screen and (max-width: 921px) {
-    //   display: none;
-    // }
     &:hover {
       color: white;
       background-color: #2355da;
+      text-decoration: none;
     }
 
     &--call {
@@ -93,24 +84,14 @@
       width: 80px;
       &:hover {
         background-color: #4de55c;
+        text-decoration: none;
       }
     }
   }
-  &__active {
-    color: #2355da;
-  }
 
-  &__line {
-    margin-top: 0;
-    @media screen and (max-width: 921px) {
-      display: none;
-    }
+  &__icon {
+    font-size: 9px;
   }
-}
-.scroll {
-  margin-top: -80px;
-  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.16);
-  background-color: rgba(255, 255, 255, 0.623);
 }
 
 .submenu {
@@ -122,7 +103,7 @@
   border: 1px solid #2355da;
   background-color: #fff;
 
-  &-item {
+  &__link {
     display: block;
     font-family: $vFont;
     font-size: 14px;
