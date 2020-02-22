@@ -6,7 +6,29 @@
   @media screen and (max-width: 575px) {
     padding-bottom: 140px;
   }
+  &__img {
+    height: 110%;
+  }
+  &__content {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    margin-top: -25%;
 
+    @media screen and (max-width: 991px) {
+      top: 25%;
+    }
+
+    @media screen and (max-width: 767px) {
+      padding: 30px;
+      top: 50%;
+    }
+
+    @media screen and (max-width: 575px) {
+      padding: 30px;
+      top: 35%;
+    }
+  }
   &__block {
     position: relative;
   }
@@ -35,11 +57,6 @@
     font-family: $vFont;
     font-size: 14px;
     line-height: 26px;
-
-    @media screen and (max-width: 575px) {
-      font-size: 3vw;
-      line-height: 18px;
-    }
   }
 
   &__link {
@@ -55,34 +72,18 @@
     text-align: center;
     padding-top: 5px;
 
-    @media screen and (max-width: 575px) {
-      font-size: 12px;
-      width: 100%;
+    @media screen and (max-width: 991px) {
+      width: 50%;
     }
-
+    @media screen and (max-width: 767px) {
+      font-size: 12px;
+      width: 25%;
+    }
+    @media screen and (max-width: 767px) {
+      width: 40%;
+    }
     &:hover {
       text-decoration: none;
-    }
-  }
-  // &__img {
-  //   height: 100%;
-  //   max-width: 100%;
-  // }
-  &__content {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-
-    // @media screen and (max-width: 1230px) {
-    //   margin-top: 5%;
-    //   padding: 20px;
-    // }
-    // @media screen and (max-width: 1199px) {
-    //   margin-top: 35%;
-    //   padding: 20px;
-    // }
-    @media screen and (max-width: 767px) {
-      padding: 30px;
     }
   }
 }
