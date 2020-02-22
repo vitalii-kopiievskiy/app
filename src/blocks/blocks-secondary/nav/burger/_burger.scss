@@ -3,29 +3,157 @@
   visibility: hidden;
 }
 
-.burger__button {
+.burger {
   display: none;
-  align-items: center;
-  position: absolute;
-  top: -54px;
-  right: 20px;
-  width: 38px;
-  height: 38px;
-  cursor: pointer;
-  z-index: 2;
-  background-color: #0aa5aa;
-  border-radius: 2px;
 
-  @media screen and (max-width: 921px) {
-    display: flex;
+  @media screen and (max-width: 991px) {
+    display: block;
+  }
+
+  &__buttons {
+    margin-top: 7px;
+    margin-left: -5px;
+  }
+
+  &__item {
+    border-bottom: 1px solid #eaeaea;
+  }
+
+  &__link {
+    font-family: $vFont;
+    font-size: 12px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #3a3a3a;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s linear;
+    padding-left: 20px;
+
+    &:hover {
+      color: #4169e1;
+      transition: all 0.3s linear;
+      text-decoration: none;
+    }
+  }
+  &-item {
+    font-family: $vFont;
+    font-size: 12px;
+    line-height: 38px;
+    color: #3a3a3a;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s linear;
+    padding-left: 43px;
+
+    &:before {
+      content: '\f054';
+      font-family: 'FontAwesome';
+      position: absolute;
+      cursor: pointer;
+      z-index: 2;
+      left: 25px;
+      font-size: 10px;
+      margin-left: 5px;
+    }
+    &:hover {
+      color: #4169e1;
+      transition: all 0.3s linear;
+      text-decoration: none;
+    }
+  }
+  &__btn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    margin-left: 20px;
+    color: white;
+    padding-top: 11px;
+    transition: all 0.4s linear;
+
+    &:hover {
+      color: #59b0fe;
+      background-color: #fff;
+      transition: all 0.4s linear;
+    }
+  }
+
+  &__btn {
+    padding-top: 12px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #191a1d;
+    display: block;
+    text-align: center;
+    height: 45px;
+    width: 150px;
+    border-radius: 50px;
+    font-size: 13px;
+    color: #2355da;
+    border: 2px solid #2355da;
+
+    transition: all 0.3s linear;
+
+    &:hover {
+      color: white;
+      background-color: #2355da;
+      text-decoration: none;
+    }
+
+    &--call {
+      margin-left: 3px;
+      color: #4de55c;
+      border: 2px solid #4de55c;
+      height: 45px;
+      width: 80px;
+      &:hover {
+        background-color: #4de55c;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__menu {
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+
+  &__list {
+    display: none;
+    position: relative;
+    opacity: 0;
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    background-color: $bg;
+    border-top: 1px solid #eaeaea;
+    z-index: 1;
+    transition: all 0.3s linear;
+  }
+
+  &__button {
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: -54px;
+    right: 20px;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    z-index: 2;
+    background-color: #0aa5aa;
+    border-radius: 2px;
+
+    @media screen and (max-width: 921px) {
+      display: flex;
+    }
   }
 }
 
-.burger__menu {
-  margin-right: -20px;
-  margin-left: -20px;
-}
-.submenu__button {
+.burger .submenu__button {
   align-items: center;
   position: absolute;
   top: 87px;
@@ -64,53 +192,10 @@
   display: block;
 }
 
-.burger__list {
-  display: none;
-  position: relative;
-  opacity: 0;
-  width: 100%;
-  margin: 0;
-  list-style: none;
-  background-color: $bg;
-  border-top: 1px solid #eaeaea;
-  z-index: 1;
-  transition: all 0.3s linear;
-}
-
 #checkbox:checked ~ .burger__list {
   display: block;
   opacity: 1;
   transition: all 0.3s linear;
-}
-
-.burger-nav {
-  &__item {
-    border-bottom: 1px solid #eaeaea;
-  }
-
-  &__list {
-    display: flex;
-    flex-direction: column;
-    border-top: 1px solid #eaeaea;
-  }
-
-  &__link {
-    font-family: $vFont;
-    font-size: 12px;
-    line-height: 38px;
-    text-transform: uppercase;
-    color: #3a3a3a;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s linear;
-    padding-left: 20px;
-
-    &:hover {
-      color: #4169e1;
-      transition: all 0.3s linear;
-      text-decoration: none;
-    }
-  }
 }
 
 .ham {
@@ -149,63 +234,6 @@
   stroke-dashoffset: -68px;
 }
 
-.burger {
-  display: none;
-
-  @media screen and (max-width: 991px) {
-    display: block;
-  }
-
-  &__links {
-    margin-top: 7px;
-    margin-left: -5px;
-  }
-  &-item {
-    font-family: $vFont;
-    font-size: 12px;
-    line-height: 38px;
-    color: #3a3a3a;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s linear;
-    padding-left: 43px;
-
-    &:before {
-      content: '\f054';
-      font-family: 'FontAwesome';
-      position: absolute;
-      cursor: pointer;
-      z-index: 2;
-      left: 25px;
-      font-size: 10px;
-      margin-left: 5px;
-    }
-    &:hover {
-      color: #4169e1;
-      transition: all 0.3s linear;
-      text-decoration: none;
-    }
-  }
-  &-link {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    border-radius: 20px;
-    margin-left: 20px;
-    color: white;
-
-    padding-top: 11px;
-    transition: all 0.4s linear;
-
-    &:hover {
-      color: #59b0fe;
-      background-color: #fff;
-      transition: all 0.4s linear;
-    }
-  }
-}
-
 .burger__submenu {
   border-top: 1px solid #eaeaea;
   display: none;
@@ -215,42 +243,4 @@
 
 .submenu__item {
   border-bottom: 1px solid #eaeaea;
-}
-
-.burger {
-  &-link {
-    padding-top: 12px;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 13px;
-    font-weight: 600;
-    color: #191a1d;
-    display: block;
-    text-align: center;
-    height: 45px;
-    width: 150px;
-    border-radius: 50px;
-    font-size: 13px;
-    color: #2355da;
-    border: 2px solid #2355da;
-
-    transition: all 0.3s linear;
-
-    &:hover {
-      color: white;
-      background-color: #2355da;
-      text-decoration: none;
-    }
-
-    &--call {
-      margin-left: 3px;
-      color: #4de55c;
-      border: 2px solid #4de55c;
-      height: 45px;
-      width: 80px;
-      &:hover {
-        background-color: #4de55c;
-        text-decoration: none;
-      }
-    }
-  }
 }

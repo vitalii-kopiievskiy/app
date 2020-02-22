@@ -11,12 +11,12 @@ mixin burger
                                 path.line.middle(d='m 70,50 h -40')
                                 path.line.bottom(d='m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20')
                         ul.burger__list
-                            li.burger-nav__item
-                                a.burger-nav__link(href="index.html") Home
-                            li.burger-nav__item
-                                a.burger-nav__link(href="about.html") About
-                            li.burger-nav__item
-                                a.burger-nav__link(href="javascript:void(0)") Services
+                            li.burger__item
+                                a.burger__link(href="index.html") Home
+                            li.burger__item
+                                a.burger__link(href="about.html") About
+                            li.burger__item
+                                a.burger__link(href="javascript:void(0)") Services
                                 input#submenubox(type='checkbox')
                                 label.submenu__button(for='submenubox')
                                 ul.burger__submenu
@@ -32,13 +32,13 @@ mixin burger
                                         a.burger-item(href="marketing.html") Digital Marketing Services
                                     li.submenu__item
                                         a.burger-item(href="ui.html") UI/UX Design Services
-                            li.burger-nav__item
-                                a.burger-nav__link(href="portfolio.html") Portfolio
-                            li.burger-nav__item
-                                a.burger-nav__link(href="blog.html") Blog
-                            li.burger-nav__item
-                                a.burger-nav__link(href="contact.html") Contact
-                            li.burger__links.d-flex.justify-content-center.mt-3.pb-3
-                                    a.burger-link(href="mailto:info@sparkleappz.com") Get a free quote
-                                    a.burger-link.burger-link--call(href="tel:+91-7737791591") Call 
-                                            i.contact-icon.fas.fa-phone
+                            li.burger__item
+                                a.burger__link(href="portfolio.html") Portfolio
+                            li.burger__item
+                                a.burger__link(href="blog.html") Blog
+                            li.burger__item
+                                a.burger__link(href="contact.html") Contact
+                            li.burger__buttons.d-flex.justify-content-center.mt-3.pb-3
+                                    a.burger__btn(href="mailto:info@sparkleappz.com") Get a free quote
+                                    a.burger__btn.burger__btn--call(href="tel:+91-7737791591") Call 
+                                            i.fas.fa-phone
