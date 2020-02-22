@@ -10,9 +10,50 @@
     display: block;
   }
 
-  &__buttons {
-    margin-top: 7px;
-    margin-left: -5px;
+  &__menu {
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+
+  &__button {
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: -54px;
+    right: 20px;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    z-index: 2;
+    background-color: #0aa5aa;
+    border-radius: 2px;
+
+    @media screen and (max-width: 921px) {
+      display: flex;
+    }
+  }
+
+  &__el {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  &__list {
+    display: none;
+    position: relative;
+    opacity: 0;
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    background-color: $bg;
+    border-top: 1px solid #eaeaea;
+    z-index: 1;
+    transition: all 0.3s linear;
   }
 
   &__item {
@@ -36,6 +77,12 @@
       text-decoration: none;
     }
   }
+
+  &__buttons {
+    margin-top: 7px;
+    margin-left: -5px;
+  }
+
   &-item {
     font-family: $vFont;
     font-size: 12px;
@@ -62,23 +109,6 @@
       text-decoration: none;
     }
   }
-  &__btn {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    border-radius: 20px;
-    margin-left: 20px;
-    color: white;
-    padding-top: 11px;
-    transition: all 0.4s linear;
-
-    &:hover {
-      color: #59b0fe;
-      background-color: #fff;
-      transition: all 0.4s linear;
-    }
-  }
 
   &__btn {
     padding-top: 12px;
@@ -94,7 +124,6 @@
     font-size: 13px;
     color: #2355da;
     border: 2px solid #2355da;
-
     transition: all 0.3s linear;
 
     &:hover {
@@ -115,61 +144,30 @@
       }
     }
   }
-
-  &__menu {
-    margin-right: -20px;
-    margin-left: -20px;
-  }
-
-  &__list {
-    display: none;
-    position: relative;
-    opacity: 0;
-    width: 100%;
-    margin: 0;
-    list-style: none;
-    background-color: $bg;
-    border-top: 1px solid #eaeaea;
-    z-index: 1;
-    transition: all 0.3s linear;
-  }
-
+}
+.submenu {
   &__button {
-    display: none;
+    display: block;
     align-items: center;
     position: absolute;
-    top: -54px;
+    top: 87px;
     right: 20px;
-    width: 38px;
-    height: 38px;
+    width: 42px;
+    height: 42px;
     cursor: pointer;
     z-index: 2;
-    background-color: #0aa5aa;
-    border-radius: 2px;
-
-    @media screen and (max-width: 921px) {
-      display: flex;
+    transition: all 0.3s linear;
+    font-size: 12px;
+    &:hover {
+      color: #4169e1;
+      transition: all 0.3s linear;
     }
   }
-}
 
-.burger .submenu__button {
-  align-items: center;
-  position: absolute;
-  top: 87px;
-  right: 20px;
-  width: 42px;
-  height: 42px;
-  cursor: pointer;
-  z-index: 2;
-  transition: all 0.3s linear;
-  font-size: 12px;
-  &:hover {
-    color: #4169e1;
-    transition: all 0.3s linear;
+  &__item {
+    border-bottom: 1px solid #eaeaea;
   }
 }
-
 .submenu__button:after {
   content: '\f078';
   font-family: 'FontAwesome';
@@ -198,21 +196,10 @@
   transition: all 0.3s linear;
 }
 
-.ham {
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-  transition: transform 400ms;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.hamRotate.active {
+.burger__el.active {
   transform: rotate(45deg);
 }
-.hamRotate180.active {
-  transform: rotate(180deg);
-}
+
 .line {
   fill: none;
   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
@@ -221,16 +208,16 @@
   stroke-linecap: round;
 }
 
-.ham4 .top {
+.burger__el .top {
   stroke-dasharray: 40 121;
 }
-.ham4 .bottom {
+.burger__el .bottom {
   stroke-dasharray: 40 121;
 }
-.ham4.active .top {
+.burger__el.active .top {
   stroke-dashoffset: -68px;
 }
-.ham4.active .bottom {
+.burger__el.active .bottom {
   stroke-dashoffset: -68px;
 }
 
@@ -239,8 +226,4 @@
   display: none;
   background-color: $bg;
   position: relative;
-}
-
-.submenu__item {
-  border-bottom: 1px solid #eaeaea;
 }
